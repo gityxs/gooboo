@@ -1462,7 +1462,7 @@ var cnItems = {
     "Holding effect:": "保持效果：",
     "Keep: Bronze cache": "保留：青铜缓存",
     "Keep: Compressor": "保留：压缩机",
-    "Keep: Depth Dweller": "保留：深海居民",
+    "Keep: Depth Dweller": "保留：深度居民",
     "Keep: Dodging guide": "保留：躲避指南",
     "Keep: Furnace": "保留：熔炉",
     "Keep: Hoarding": "保留：囤积",
