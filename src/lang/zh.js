@@ -956,7 +956,7 @@ export default {
     debug: 'Debug'
   },
   theme: {
-    name: 'Theme',
+    name: '主题',
     icon: {
       hasCustomNavbar: 'Custom navigation bar',
       hasCustomBackground: 'Custom background',
@@ -965,62 +965,62 @@ export default {
       hasAnimations: 'Includes animations',
       hasParticles: 'Includes particles',
     },
-    default: 'Blue',
-    cyan: 'Cyan',
-    green: 'Green',
-    yellow: 'Yellow',
-    orange: 'Orange',
-    brown: 'Brown',
-    red: 'Red',
-    pink: 'Pink',
-    purple: 'Purple',
-    grey: 'Grey',
-    sepia: 'Sepia',
-    factory: 'Factory',
-    forest: 'Forest',
-    cherry: 'Cherry',
-    sky: 'Sky',
-    polar: 'Polar',
-    prismatic: 'Prismatic',
-    candlelight: 'Candlelight',
-    colorful: 'Colorful',
-    rain: 'Rain',
-    waves: 'Waves',
-    autumnForest: 'Autumn forest',
-    frozen: 'Frozen',
+    default: '蓝色',
+    cyan: '青色',
+    green: '绿色',
+    yellow: '黄色',
+    orange: '橙色',
+    brown: '棕色',
+    red: '红色',
+    pink: '粉色',
+    purple: '紫色',
+    grey: '灰色',
+    sepia: '棕褐色',
+    factory: '工业',
+    forest: '森林',
+    cherry: '樱桃色',
+    sky: '天空色',
+    polar: '极光',
+    prismatic: '棱柱形',
+    candlelight: '烛光',
+    colorful: '彩色',
+    rain: '雨色',
+    waves: '波浪',
+    autumnForest: '秋天的森林',
+    frozen: '冰冷',
   },
   settings: {
     keybinds: {
-      name: 'Keybinds',
+      name: '键盘绑定',
       nextMainFeature: {
-        name: 'Next main feature'
+        name: '下一个主要功能'
       },
       debugSkip1m: {
-        name: 'Skip 1 minute'
+        name: '跳过 1 分钟'
       },
       debugSkip10m: {
-        name: 'Skip 10 minutes'
+        name: '跳过 10 分钟'
       },
       debugSkip1h: {
-        name: 'Skip 1 hour'
+        name: '跳过 1 小时'
       },
       debugSkip1d: {
-        name: 'Skip 1 day'
+        name: '跳过 1 天'
       }
     },
     theme: {
-      name: 'Theme'
+      name: '主题'
     },
     general: {
-      name: 'Generic',
+      name: '通用',
       pause: {
-        name: 'Pause'
+        name: '暂停'
       },
       dark: {
-        name: 'Dark mode'
+        name: '深色模式'
       },
       autosaveTimer: {
-        name: 'Autosave'
+        name: '自动保存'
       },
       lang: {
         name: '语言',
