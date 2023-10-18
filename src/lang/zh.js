@@ -1025,8 +1025,8 @@ export default {
       lang: {
         name: 'Language',
         zh: '简体中文',
-        en: 'English',
-        de: 'Deutsch'
+        en: '英文',
+        de: '德文'
       },
       tabDisplayDesktop: {
         name: 'Tab display',
