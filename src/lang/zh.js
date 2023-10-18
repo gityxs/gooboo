@@ -1,80 +1,80 @@
-import { en } from 'vuetify/lib/locale'
-import card from './en/card'
-import consumable from './en/consumable'
-import currency from './en/currency'
-import mult from './en/mult'
-import note from './en/note'
-import relic from './en/relic'
-import stat from './en/stat'
-import unlock from './en/unlock'
-import upgrade from './en/upgrade'
-import patchnote from './en/patchnote'
+import { zh } from 'vuetify/lib/locale'
+import card from './zh/card'
+import consumable from './zh/consumable'
+import currency from './zh/currency'
+import mult from './zh/mult'
+import note from './zh/note'
+import relic from './zh/relic'
+import stat from './zh/stat'
+import unlock from './zh/unlock'
+import upgrade from './zh/upgrade'
+import patchnote from './zh/patchnote'
 
 export default {
-  ...en,
+  ...zh,
 
   gooboo: {
-    buy: 'Buy',
-    craft: 'Craft',
-    feature: 'Feature',
-    features: 'Features',
-    cantAfford: 'Can\'t afford',
-    capTooLow: 'Capacity too low',
-    equip: 'Equip',
-    unequip: 'Unequip',
-    unequipAll: 'Unequip all',
-    max: 'Max',
-    maxed: 'Max',
-    free: 'Free',
-    capacity: 'Capacity',
-    multCapacity: '{0} capacity',
-    gain: 'Gain',
-    multGain: '{0} gain',
-    apply: 'Apply',
-    reset: 'Reset',
-    unlock: 'Unlock',
-    keep: 'Keep',
-    consumable: 'Consumable',
-    lock: 'Lock',
-    upgrade: 'Upgrade',
-    upgrades: 'Upgrades',
-    upgradeVerb: 'Upgrade',
-    upgradesPrestige: 'Prestige upgrades',
-    prestige: 'Prestige',
-    prestigeDescription: 'Reset this feature in exchange for prestige currency',
-    prestigeTime: 'Time spent this prestige cycle',
-    saveManual: 'Save',
-    saveExport: 'Export to file',
-    saveImport: 'Load from file',
-    closeAll: 'Close all',
-    draw: 'Draw',
-    finish: 'Finish',
-    boost: 'Boost',
-    skip: 'Skip',
-    level: 'Level',
-    chance: 'Chance',
-    effect: 'Effect',
-    effects: 'Effects',
-    confirm: 'Confirm',
-    cancel: 'Cancel',
-    maxLevel: 'maximum level',
-    inventory: 'Inventory',
-    newGame: 'New game',
-    levelSuffix: 'level',
-    delete: 'Delete',
-    convert: 'Convert',
+    buy: '购买',
+    craft: '制作',
+    feature: '功能',
+    features: '功能',
+    cantAfford: '买不起',
+    capTooLow: '容量太低',
+    equip: '装备',
+    unequip: '脱下',
+    unequipAll: '全部脱下',
+    max: '最大',
+    maxed: '最大',
+    free: '空闲',
+    capacity: '容量',
+    multCapacity: '{0} 容量',
+    gain: '增益',
+    multGain: '{0} 增益',
+    apply: '应用',
+    reset: '充值',
+    unlock: '解锁',
+    keep: '保留',
+    consumable: '消耗品',
+    lock: '未解锁',
+    upgrade: '升级',
+    upgrades: '升级',
+    upgradeVerb: '升级',
+    upgradesPrestige: '声望升级',
+    prestige: '声望',
+    prestigeDescription: '重置此功能以换取声望货币',
+    prestigeTime: '此声望周期花费的时间',
+    saveManual: '保存',
+    saveExport: '导出到文件',
+    saveImport: '从文件加载',
+    closeAll: '全部关闭',
+    draw: '画画',
+    finish: '完成',
+    boost: '提升',
+    skip: '跳过',
+    level: '等级',
+    chance: '几率',
+    effect: '效果',
+    effects: '效果',
+    confirm: '确认',
+    cancel: '取消',
+    maxLevel: '最大等级',
+    inventory: '库存',
+    newGame: '新游戏',
+    levelSuffix: '等级',
+    delete: '删除',
+    convert: '转换',
     playedBefore: {
-      0: 'Already played before? Load your savefile ',
-      1: 'here'
+      0: '以前玩过吗？ 加载你的保存文件 ',
+      1: '这里'
     },
     offlineSummary: {
-      title: 'Welcome back! You have been offline for {0}',
-      newVersion: 'New version! ',
-      upgradesFinished: 'Upgrades finished',
-      downloadBackup: 'Download backup',
-      eventEnded: 'Event ended',
-      eventStarted: 'Event started',
-      toFeature: 'To feature'
+      title: '欢迎回来! 你已经离开了 {0}',
+      newVersion: '新版本! ',
+      upgradesFinished: '升级完成',
+      downloadBackup: '下载存档备份',
+      eventEnded: '事件结束',
+      eventStarted: '事件开始',
+      toFeature: '进入功能'
     },
     operator: {
       '>=': 'at least',
@@ -85,54 +85,54 @@ export default {
     }
   },
   endOfContent: {
-    name: 'End of content',
-    description: 'You reached the end of content for this feature, making progression past this point slower than intended. Wait for a future update or focus on other features to keep progressing'
+    name: '内容结束',
+    description: '您已到达此功能的内容末尾，使得经过此点的进度比预期慢。 等待未来的更新或专注于其他功能以继续进步'
   },
   message: {
     achievement: {
-      get: 'Achievement get!',
-      gained: 'gained',
-      relicGained: 'Relic gained'
+      get: '成就获得!',
+      gained: '获得',
+      relicGained: '获得圣遗物'
     },
     card: {
-      get: 'Card pack contents',
-      new: 'NEW!'
+      get: '卡包内容',
+      new: '新!'
     },
     feature: {
-      feature: 'New feature unlocked!',
-      subfeature: 'New subfeature unlocked!',
-      school: 'New subject unlocked!',
-      general: 'New general unlocked!'
+      feature: '新的功能已解锁!',
+      subfeature: '新的子功能已解锁!',
+      school: '新的科目已解锁!',
+      general: '新的将军已解锁!'
     },
     heirloom: {
-      get: 'Heirloom found'
+      get: '发现了传家宝'
     },
     note: {
-      get: 'Note #{0} found',
-      read: 'Read'
+      get: '笔记 #{0} 已发现',
+      read: '阅读'
     },
     save: {
-      success: 'Game saved',
-      error: 'Autosave failed'
+      success: '游戏已保存',
+      error: '自动保存失败'
     },
     prize: {
-      get: 'You won a prize!',
+      get: '你赢得了奖品!',
       bingo1: 'BINGO!',
-      bingo2: 'DOUBLE BINGO!',
-      bingo3: 'TRIPLE BINGO!'
+      bingo2: '双倍 BINGO!',
+      bingo3: '三倍 BINGO!'
     },
     school: {
-      get: 'Lesson complete!',
-      getExam: 'Exam complete!',
-      score: 'Score: {0}',
-      perfectScore: '(PERFECT!)',
-      grade: '{0}% grade',
-      gradePlus: 'Your grade improved!',
-      dust: '+{0} Golden dust'
+      get: '课程完成!',
+      getExam: '考试完成!',
+      score: '分数: {0}',
+      perfectScore: '(完美!)',
+      grade: '{0}% 成绩',
+      gradePlus: '你的成绩提高了!',
+      dust: '+{0} 金尘'
     },
     update: {
-      get: 'New update!',
-      apply: 'Refresh + apply'
+      get: '新的更新!',
+      apply: '刷新 + 应用'
     }
   },
   duplicateTab: {
@@ -1023,7 +1023,7 @@ export default {
         name: 'Autosave'
       },
       lang: {
-        name: 'Language',
+        name: '语言',
         zh: '简体中文',
         en: '英文',
         de: '德文'

@@ -1,11 +1,11 @@
 export default {
   text: {
-    meta_0: 'Increase global level. Unlock new features. See requirement in feature list.',
-    meta_1: 'Expand resource capacity. Buy bigger upgrades. Avoid resource waste.',
-    meta_2: 'Leave whenever you want. Everything here keeps working.',
-    meta_3: 'Multiple features. All keep working at the same time.',
-    meta_4: 'Do not neglect features. All important.',
-    meta_5: 'Global level. Need to unlock new features. Progress in features to increase.',
+    meta_0: '提高全局等级。 解锁新功能。 请参阅功能列表中的要求。',
+    meta_1: '扩大资源容量。 购买更大的升级。 避免资源浪费。',
+    meta_2: '你想什么时候离开就什么时候离开。 这里的一切都在继续运转。',
+    meta_3: '多种功能。 所有人同时继续工作。',
+    meta_4: '不要忽视功能。 一切都重要。',
+    meta_5: '全局等级。 需要解锁新功能。 进步功能增加。',
 
     mining_0: 'Use pickaxe. Dig deeper.',
     mining_1: 'Collect scrap. Buy upgrades.',
@@ -242,11 +242,11 @@ export default {
   },
   author: {
     g: 'G',
-    grobodal: 'Grobodal',
-    orladee: 'Orladee',
-    oppenschroe: 'Oppenschroe',
-    bellux: 'Bellux',
-    onoclua: 'Onoclua',
-    omnisolix: 'Omnisolix'
+    grobodal: '格罗博达尔',
+    orladee: '奥拉迪',
+    oppenschroe: '奥本施罗',
+    bellux: '贝卢克斯',
+    onoclua: '奥诺克卢亚',
+    omnisolix: '奥尼索利克斯'
   }
 };

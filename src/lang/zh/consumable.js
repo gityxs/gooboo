@@ -1,76 +1,76 @@
 export default {
-  owned: 'owned',
+  owned: '拥有',
 
   gem_prestigeStone: {
-    name: 'Prestige stone',
-    description: 'Get prestige currency equal to your best cycle'
+    name: '声望石',
+    description: '获得与您的最佳周期相等的声望货币'
   },
   mining_goldenHammer: {
-    name: 'Golden hammer',
-    description: 'Get the best pickaxe possible for this craft'
+    name: '金锤',
+    description: '为这门手艺找到最好的镐'
   },
   farm_basic: {
-    name: 'Basic fertilizer',
+    name: '基础肥料',
     description: ''
   },
   farm_flower: {
-    name: 'Flower fertilizer',
+    name: '花肥',
     description: ''
   },
   farm_speedGrow: {
-    name: 'Speed-grow',
+    name: '快速生长',
     description: ''
   },
   farm_richSoil: {
-    name: 'Rich soil',
+    name: '肥沃的土壤',
     description: ''
   },
   farm_shiny: {
-    name: 'Shiny fertilizer',
+    name: '闪亮肥料',
     description: ''
   },
   farm_potatoWater: {
-    name: 'Potato water',
+    name: '土豆水',
     description: ''
   },
   farm_roseWater: {
-    name: 'Rose water',
+    name: '玫瑰水',
     description: ''
   },
   farm_weedKiller: {
-    name: 'Weed killer',
+    name: '除草剂',
     description: ''
   },
   farm_turboGrow: {
-    name: 'Turbo-grow',
+    name: '涡轮生长',
     description: ''
   },
   farm_premium: {
-    name: 'Premium fertilizer',
+    name: '优质肥料',
     description: ''
   },
   farm_sunshine: {
-    name: 'Sunshine',
+    name: '阳光',
     description: ''
   },
   farm_superFlower: {
-    name: 'Super flower',
+    name: '超级鲜花',
     description: ''
   },
   farm_smellyMud: {
-    name: 'Smelly mud',
+    name: '臭泥',
     description: ''
   },
   farm_tropicalWater: {
-    name: 'Tropical water',
+    name: '热带水',
     description: ''
   },
   farm_fieldBlessing: {
-    name: 'Field blessing',
+    name: '田野祝福',
     description: ''
   },
   farm_cinnamonBag: {
-    name: 'Cinnamon bag',
+    name: '肉桂袋',
     description: ''
   },
 };
