@@ -1,74 +1,74 @@
 export default {
-  overcapGain: 'Income is reduced to {0}% due to overcap',
-  overcapNoGain: 'No income due to overcap',
-  benefitLoss: 'Buying this results in the loss of benefits',
+  overcapGain: '由于达到上限，收入减少至 {0}%',
+  overcapNoGain: '由于超果上限没有收入',
+  benefitLoss: '购买这个会导致利益损失',
 
   // Premium currencies
   gem_ruby: {
-    name: 'Ruby',
-    description: 'A shiny red gem that can be exchanged for powerful permanent upgrades'
+    name: '红宝石',
+    description: '闪亮的红色宝石，可以兑换强大的永久升级'
   },
   gem_emerald: {
-    name: 'Emerald',
-    description: 'A dull green gem that can be used to buy various improvements. Your villagers seem to like it'
+    name: '翡翠',
+    description: '一种暗绿色的宝石，可用于购买各种改进品。 你的村民似乎喜欢它'
   },
   gem_sapphire: {
-    name: 'Sapphire',
-    description: 'A dark blue gem that can be used to buy consumables to help you progress faster'
+    name: '蓝宝石',
+    description: '深蓝色宝石，可用于购买消耗品，帮助你更快进步'
   },
   gem_amethyst: {
-    name: 'Amethyst',
-    description: 'This beautiful purple gem can be used to buy themes or other cosmetic items'
+    name: '紫水晶',
+    description: '这种美丽的紫色宝石可用于购买主题或其他化妆品'
   },
   gem_topaz: {
-    name: 'Topaz',
-    description: 'A yellow gem that can be used to improve your performance or participate in events. During large events, topaz cannot be gained from the gem generator. You will receive an event-specific currency instead'
+    name: '黄玉',
+    description: '黄色宝石，可用于提高你的表现或参加活动。 在大型活动期间，黄玉无法从宝石生成器中获得。 您将收到一种特定于活动的货币'
   },
   gem_diamond: {
-    name: 'Diamond',
+    name: '钻石',
     description: ''
   },
   gem_onyx: {
-    name: 'Onyx',
+    name: '玛瑙',
     description: ''
   },
 
   // Event currencies
   event_wax: {
-    name: 'Wax',
-    description: 'Natural wax used to make candles'
+    name: '蜡',
+    description: '用于制作蜡烛的天然蜡'
   },
   event_humus: {
-    name: 'Humus',
-    description: 'Your flowers love this fresh and fertile soil'
+    name: '腐殖质',
+    description: '你的花喜欢这新鲜肥沃的土壤'
   },
   event_cloud: {
-    name: 'Cloud',
-    description: 'A tiny cloud, captured in a bottle'
+    name: '云',
+    description: '瓶子里捕捉到的一朵小云'
   },
   event_cocktail: {
-    name: 'Cocktail',
-    description: 'You are tempted to drink these yourself, but they are an excellent source of motivation for your builders'
+    name: '混合物',
+    description: '您很想自己喝这些，但它们对您的建造者来说是一个极好的动力源泉'
   },
   event_magic: {
-    name: 'Magic',
-    description: 'Magic is slowly consumed to convert your other currencies into magical currencies. The more magic you have, the faster the conversion process. Magical currencies can be identified by their unusual icon. To return them to their regular version, just hover over them and you\'ll get ingredients in return'
+    name: '魔法',
+    description: '魔法会慢慢消耗，将你的其他货币转换成魔法货币。 你拥有的魔法越多，转换过程就越快。 神奇货币可以通过其不寻常的图标来识别。 要将它们恢复到常规版本，只需将鼠标悬停在它们上方，您就会获得成分作为回报'
   },
   event_snowball: {
-    name: 'Snowball',
-    description: 'Catch!'
+    name: '雪球',
+    description: '抓住!'
   },
   event_cindersToken: {
-    name: 'Cinders token',
-    description: 'Reward for gaining a certain amount of light'
+    name: '煤渣代币',
+    description: '获得一定数量的光的奖励'
   },
   event_bloomToken: {
-    name: 'Bloom token',
-    description: 'Reward for reaching new tier records on flower types'
+    name: '绽放代币',
+    description: '达到花卉类型新等级记录的奖励'
   },
   event_weatherChaosToken: {
-    name: 'Weather chaos token',
-    description: 'Reward for reaching new size records on fish'
+    name: '天气混乱代币',
+    description: '达到鱼类新尺寸记录的奖励'
   },
   event_summerFestivalToken: {
     name: 'Summer festival token',

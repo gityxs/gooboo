@@ -136,91 +136,91 @@ export default {
     }
   },
   duplicateTab: {
-    title: 'Gooboo is already running in another tab',
-    description: 'To prevent inconsistencies with your savefile, Gooboo can only run once. Please close this tab and return to the game on the existing tab.'
+    title: 'Gooboo 已在另一个选项卡中运行',
+    description: '为了防止与您的保存文件不一致，Gooboo 只能运行一个。 请关闭此选项卡并返回现有选项卡上的游戏。'
   },
   confirm: {
-    title: 'Confirm action',
-    prestige: 'You are about to prestige, resetting all of your progress in this feature in exchange for prestige currency. Are you sure you want to prestige?',
-    prestigeNoGain: 'You are about to prestige, resetting all of your progress. Because of your lack of progress, you don\'t get any prestige currency. Are you sure you want to prestige?',
-    prestigeCrop: 'You are about to prestige this crop, resetting all of its levels, experience and genes in exchange for a permanent gain bonus to all crops. Are you sure you want to prestige?',
+    title: '确认操作',
+    prestige: '您即将获得声望，重置您在此功能中的所有进度，以换取声望货币。 你确定你想要声望吗？',
+    prestigeNoGain: '你即将获得声望，重置你所有的进步。 由于您缺乏进度，您不会获得任何声望货币。 你确定你想要声望吗？',
+    prestigeCrop: '您将要声望这种作物，重置其所有等级、经验和基因，以换取所有作物的永久增益奖励。 你确定你想要声望吗？',
     upgrade: {
-      0: 'You are about to buy the upgrade ',
-      1: ', which costs rare currency. Are you sure you want to buy this?'
+      0: '您即将购买升级 ',
+      1: ', 这需要稀有货币。 您确定要购买这个吗？'
     },
-    shop: 'You are about to buy an event reward, which costs rare currency. Are you sure you want to buy this?',
+    shop: '您将要购买活动奖励，这需要花费稀有货币。 您确定要购买这个吗？',
     theme: {
-      0: 'You are about to buy the theme ',
-      1: ', which costs rare currency. Are you sure you want to buy this?'
+      0: '您即将购买主题 ',
+      1: ', 这需要稀有货币。 您确定要购买这个吗？'
     },
     cardPack: {
-      0: 'You are about to buy the card pack ',
-      1: ', which costs rare currency. Are you sure you want to buy this?'
+      0: '您即将购买卡包 ',
+      1: ', 这需要稀有货币。 您确定要购买这个吗？'
     },
-    weatherChaosFishingRodBuy: 'You are about to buy the fishing rod "{0}", which costs rare currency. Are you sure you want to buy this?',
-    summerFestivalCellBuy: 'You are about to buy a new island cell, which costs rare currency. Are you sure you want to buy this?',
-    farmCrop: 'You are about to plant crops that cost rare currency. Are you sure you want to buy this?',
-    treasure: 'You are about to buy a new treasure, which costs rare currency. Are you sure you want to buy this?',
-    schoolExamPass: 'You are about to buy an exam pass, which cost rare currency. Are you sure you want to buy this?',
-    treasureFragment: 'You are about to buy fragments, which cost rare currency. Are you sure you want to buy this?',
-    treasureDelete: 'You are about to destroy a treasure, which will give fragments in return. Are you sure you want to buy this?',
-    casinoBingoBuy: 'You are about to buy a bingo card, which costs rare currency. Are you sure you want to buy this?',
-    casinoWheelSpin: 'You are about to spin the wheel of fortune, which costs rare currency. Are you sure you want to buy this?',
-    consumable: 'This action requires consumables that you do not have. Do you want to buy these for rare currency?'
+    weatherChaosFishingRodBuy: '您将要购买钓鱼竿“{0}”，它需要花费稀有货币。 您确定要购买这个吗？',
+    summerFestivalCellBuy: '您将要购买一个新的岛屿细胞，这需要花费稀有货币。 您确定要购买这个吗？',
+    farmCrop: '您将要种植需要稀有货币的农作物。 您确定要购买这个吗？',
+    treasure: '您将要购买一件新的宝藏，该宝藏需要花费稀有货币。 您确定要购买这个吗？',
+    schoolExamPass: '您将要购买一张考试通行证，这需要花费稀有货币。 您确定要购买这个吗？',
+    treasureFragment: '您将要购买碎片，这需要花费稀有货币。 您确定要购买这个吗？',
+    treasureDelete: '你即将摧毁一个宝藏，这将给予碎片作为回报。 您确定要购买这个吗？',
+    casinoBingoBuy: '您将要购买一张宾果卡，该卡需要稀有货币。 您确定要购买这个吗？',
+    casinoWheelSpin: '您即将转动命运之轮，这需要花费稀有货币。 您确定要购买这个吗？',
+    consumable: '此操作需要您没有的消耗品。 您想用稀有货币购买这些吗？'
   },
   feature: {
-    subfeature: 'Subfeature',
+    subfeature: '子功能',
 
     // Main features
-    mining: 'Mining',
-    village: 'Village',
-    horde: 'Horde',
-    farm: 'Farm',
-    gallery: 'Gallery',
+    mining: '采矿',
+    village: '村庄',
+    horde: '部落',
+    farm: '农场',
+    gallery: '画廊',
 
     // Side features
-    note: 'Notes',
-    relic: 'Relics',
-    gem: 'Gems',
-    achievement: 'Achievements',
-    school: 'School',
-    card: 'Cards',
-    general: 'Generals',
-    event: 'Event',
-    treasure: 'Treasure',
-    cryolab: 'Cryo lab',
-    debug: 'Debug',
+    note: '笔记',
+    relic: '圣遗物',
+    gem: '宝石',
+    achievement: '成就',
+    school: '学校',
+    card: '卡片',
+    general: '将军',
+    event: '事件',
+    treasure: '宝藏',
+    cryolab: '冷冻实验室',
+    debug: '调试',
 
     // Subfeatures
-    miningGas: 'Gas',
-    schoolLiterature: 'Literature',
-    schoolHistory: 'History',
-    schoolArt: 'Art',
-    generalOrladee: 'Orladee',
-    generalOppenschroe: 'Oppenschroe',
-    generalBellux: 'Bellux',
-    generalOnoclua: 'Onoclua',
-    generalOmnisolix: 'Omnisolix',
+    miningGas: '气体',
+    schoolLiterature: '文学',
+    schoolHistory: '历史',
+    schoolArt: '艺术',
+    generalOrladee: '奥拉迪',
+    generalOppenschroe: '奥本施罗',
+    generalBellux: '贝卢克斯',
+    generalOnoclua: '奥诺克卢亚',
+    generalOmnisolix: '奥尼索利克斯',
 
     // Meta
-    meta: 'Game'
+    meta: '游戏'
   },
   subfeature: {
     mining: {
-      0: 'Ore mine',
-      1: 'Gas giant',
+      0: '矿石开采',
+      1: '气态巨行星',
     },
     village: {
-      0: 'Workers',
+      0: '工人',
     },
     horde: {
-      0: 'Equipment',
+      0: '装备',
     },
     farm: {
-      0: 'Garden',
+      0: '花园',
     },
     gallery: {
-      0: 'Freestyle',
+      0: '花式',
     }
   },
   unlock,
@@ -232,47 +232,47 @@ export default {
   patchnote,
   info: {
     title: 'Gooboo',
-    subtitle: 'developed by Tendsty',
-    text: 'Gooboo is an idle / incremental game where you manage multiple features in a mysterious, unknown world. Gather different resources to buy a huge variety of upgrades to increase your resource gains. Progress in your main features to unlock new content and learn more about this world. And when progression starts slowing down, prestige individual features to take your gains to the next level.',
+    subtitle: '开发者是 Tendsty',
+    text: 'Gooboo 是一款放置/增量游戏，您可以在神秘、未知的世界中管理多个功能。 收集不同的资源来购买各种各样的升级，以增加你的资源收益。 取得主要功能的进展以解锁新内容并了解有关这个世界的更多信息。 当进展开始放缓时，声望个人功能可以将您的收获提升到一个新的等级。',
     updates: {
-      web: 'You are using the web version. The game regularly checks for updates, automatically uses the newest version and notifies you when an update is available.',
+      web: '您使用的是网页版。 游戏会定期检查更新，自动使用最新版本，并在有可用更新时通知您。',
       desktop: {
-        0: 'You are using the desktop version. You need to check for updates manually on the ',
-        1: 'releases',
-        2: ' page.'
+        0: '您正在使用桌面版本。 您需要手动检查更新在 ',
+        1: '正式版',
+        2: ' 页面.'
       },
-      steam: 'You are using the steam version. Updates are handled via steam.'
+      steam: '您使用的是steam版本。 更新是通过 steam 处理的。'
     },
-    viewPatchnotes: 'View patch notes',
-    numberFormatting: 'Number formatting',
-    numberFormattingDescription: 'To keep numbers readable, extremely big (and small) numbers are formatted using the units below.',
-    bigNumbers: 'Big numbers',
-    smallNumbers: 'Small numbers',
-    timeUnits: 'Time units',
+    viewPatchnotes: '查看更新日志',
+    numberFormatting: '数字格式',
+    numberFormattingDescription: '为了保持数字可读，极大（和极小）的数字使用以下单位进行格式化.',
+    bigNumbers: '大数字',
+    smallNumbers: '小数字',
+    timeUnits: '时间单位',
     timeUnit: {
-      s: 'Second',
-      m: 'Minute',
-      h: 'Hour',
-      d: 'Day'
+      s: '秒',
+      m: '分钟',
+      h: '小时',
+      d: '天'
     },
     socials: {
-      title: 'Socials',
-      text: 'Gooboo can be played on its own without the need for external guides. But if you feel like hanging out with other players, you can visit these places:',
-      viewCode: 'View source code',
+      title: '社交',
+      text: 'Gooboo 可以单独玩，无需外部指南。 但如果你想和其他玩家一起出去玩，你可以参观这些地方:',
+      viewCode: '查看源码',
       patreon: 'Patreon',
       reddit: 'Reddit',
       discord: 'Discord'
     },
     supportMe: {
-      title: 'Support me',
-      text: 'This game is free and has no microtransactions or ads. If you want to support the development, check out my patreon page:',
+      title: '支持我',
+      text: '该游戏是免费的，没有微交易或广告。 如果您想支持开发，请查看我的 patreon 页面:',
       patreon: 'Patreon'
     },
     tech: {
-      title: 'Used technologies',
+      title: '用到的技术',
       web: 'Web',
-      fonts: 'Fonts',
-      testing: 'Automated testing',
+      fonts: '字体',
+      testing: '自动化测试',
       vue: 'Vue.js',
       vuetify: 'Vuetify',
       vuex: 'vuex',
@@ -285,7 +285,7 @@ export default {
       cypress: 'Cypress',
       jest: 'Jest',
       github: 'GitHub',
-      website: 'Website',
+      website: '网站',
       googlefonts: 'Google Fonts'
     }
   },
@@ -301,53 +301,53 @@ export default {
   },
   note,
   school: {
-    school: 'School',
+    school: '学校',
     beginner: {
-      title: 'Still learning',
-      description: 'You are new to this school, reducing your golden dust reward to {0}%. Reach a higher global level to reduce this penalty, and remove it entirely by reaching global level 175.'
+      title: '仍在学习',
+      description: '您是这所学校的新手，您的金尘奖励减少至 {0}%。 达到更高的全局等级可以减少此惩罚，并通过达到全局等级 175 来完全消除它。'
     },
-    subjectBookGain: 'Each unlocked subject gives 10 books per hour, no matter the grade.',
-    passCapGain: 'You get a new exam pass every day (next one in {0}) and every 10 global levels.',
-    buyPass: 'Buy an exam pass for',
-    library: 'Library',
-    practice: 'Practice',
-    practiceDescription: 'Practice this subject without time pressure, but gain no rewards or grades',
-    study: 'Study',
-    studyDescription: 'Get the highest possible score in {0}, and get a chance to improve your grade if you study on your best grade. Depending on your score, you gain (or lose) progress to the next grade. An average score of {1} is expected.',
-    studyNoF: 'You cannot lose grade progress at F grade.',
-    takeExam: 'Take exam',
-    takeExamDescription: 'Take an exam, where you have {0} to get the highest possible score. You will receive golden dust as reward ({1} - {2}, based on your performance and chosen grade). If you achieve a score of {3}, the exam is rated as perfect and you unlock the next grade.',
-    takeExamNoF: 'You cannot take exams at F grade.',
-    takeExamNoFStudy: 'Study a bit first!',
-    takeExamCost: 'Requires',
-    examDustFull: 'Your ancient hourglass is full! All golden dust gained in this exam will be lost!',
-    examDustOvercap: 'Your ancient hourglass is almost full. Some golden dust gained from this exam could get lost due to overcap.',
-    answer: 'Answer',
-    begin: 'The lesson begins!',
-    beginExam: 'The exam begins!',
-    grade: 'Grades',
-    gradeDescription: 'Grades determine the difficulty of this subject. You can switch between grades at any time and unlock better grades by studying enough or getting a perfect exam score.',
+    subjectBookGain: '每个解锁的科目每小时都会提供 10 本书，无论年级如何。',
+    passCapGain: '您每天都会获得一张新的考试通行证（{0} 中的下一个考试通行证），并且每 10 个全局级别都会获得一张新的考试通行证。',
+    buyPass: '购买一张考试通行证花费',
+    library: '图书馆',
+    practice: '练习',
+    practiceDescription: '在没有时间压力的情况下练习该科目，但不会获得任何奖励或成绩',
+    study: '学习',
+    studyDescription: '在{0}中获得尽可能高的分数，如果您以最好的成绩学习，就有机会提高您的成绩。 根据您的分数，您会获得（或失去）升入下一年级的进度。 预计平均得分为 {1}。',
+    studyNoF: '您不能失去 F 级的成绩进度。',
+    takeExam: '参加考试',
+    takeExamDescription: '参加考试，您有 {0} 的机会获得最高分。 您将收到金粉作为奖励（{1} - {2}，根据您的表现和所选等级）。 如果您获得 {3} 分，则考试被评为完美，您可以解锁下一个等级。',
+    takeExamNoF: '您不能参加 F 级考试。',
+    takeExamNoFStudy: '先稍微学习一下吧！',
+    takeExamCost: '要求',
+    examDustFull: '你古老的沙漏已经满了！ 这次考试获得的所有金尘都将丢失！',
+    examDustOvercap: '你古老的沙漏快满了。 通过这次考试获得的一些金粉可能会因为上限而丢失。',
+    answer: '答题',
+    begin: '课程开始了！',
+    beginExam: '考试开始了！',
+    grade: '成绩',
+    gradeDescription: '成绩决定了该科目的难度。 您可以随时切换成绩，通过足够的学习或获得完美的考试成绩来解锁更好的成绩。',
     math: {
-      name: 'Math',
-      subtitle: 'Solve equations',
+      name: '数学',
+      subtitle: '求解方程式',
       description: 'Answer various equations to raise your score. Gain 1 score for each correct answer, and lose 1 score for each wrong answer (cannot go below 0). As your grade increases, numbers get bigger and new operators are introduced.',
     },
     literature: {
-      name: 'Literature',
-      subtitle: 'Write sentences',
+      name: '文学',
+      subtitle: '写句子',
       description: 'Type the displayed sentence to raise your score. Gain 1 score for each sentence typed. The same sentence will stay until it is typed correctly, and you can see the beginning of the next sentence. As your grade increases, sentences and words get longer and new special characters are introduced.',
     },
     history: {
-      name: 'History',
-      subtitle: 'Remember dates',
-      description: 'Remember the displayed dates and enter them correctly to raise your score. At the start you can see all dates. When you have remembered them, you can continue to the questions, which makes the dates disappear. You will be asked 5 questions about the dates you just saw, and gain 1 score for each correct date. As your grade increases, years get larger and more dates get introduced.',
-      year: 'Year {0}',
-      examInfo: 'In exams, you get two chances to remember dates. After your first answers are done, you get a new set of dates and questions'
+      name: '历史',
+      subtitle: '记住日期',
+      description: '记住显示的日期并正确输入它们以提高您的分数。 一开始您可以看到所有日期。 当您记住它们后，您可以继续做问题，这会使日期消失。 您将被问到 5 个问题，与您刚刚看到的日期有关，每个正确的日期将获得 1 分。 随着你的成绩提高，年份会变长，并且会引入更多的日期。',
+      year: '年份 {0}',
+      examInfo: '在考试中，您有两次记住日期的机会。 完成第一个答案后，您会收到一组新的日期和问题'
     },
     art: {
-      name: 'Art',
-      subtitle: 'Mix colors',
-      description: 'Guess colors correctly to raise your score. Two colors will be displayed, guess the result from mixing them. Gain 1 score for each correct answer, and lose 1 score for each wrong answer (cannot go below 0). As your grade increases, more answers get added and the answers get more similar.',
+      name: '艺术',
+      subtitle: '混合颜色',
+      description: '正确猜测颜色以提高你的分数。 将显示两种颜色，猜测它们混合的结果。 每个正确答案得 1 分，每个错误答案扣 1 分（不能低于 0）。 随着您的成绩提高，会添加更多答案，并且答案会变得更加相似。',
     }
   },
   hourglass: {
@@ -1167,13 +1167,13 @@ export default {
 
   // Feature specific translations
   mining: {
-    mine: 'Mine',
+    mine: '矿井',
     gainSummary: 'Gain {0} on hit, {1} (x{2}) on break, {3} per second',
     gainSummaryHit: 'Gain {0} on hit',
     gainSummaryBreak: 'Gain {0} on break',
     depthDweller: 'Depth dweller',
     dweller: {
-      title: 'Current / highest possible dweller depth',
+      title: '当前 / 最高可能的居住深度',
       description1: 'The dweller starts fast and gets slower the closer it gets to its limit.',
       description2: 'For each completed half meter of current dweller depth, your prestige reward increases.',
       description3: 'Highest possible dweller depth is {0}% of your maximum depth in the mine.',
@@ -1181,15 +1181,15 @@ export default {
       nextTime: 'You reach {0}m in {1}'
     },
     pickaxePower: 'This is the power of your pickaxe and your base damage. Increase it by crafting a better pickaxe.',
-    damage: 'Damage',
+    damage: '伤害',
     timeToBreak: 'Time needed to break the current rock',
-    durability: 'Durability',
+    durability: '耐用性',
     durabilityDescription: 'The amount of damage needed to break this rock',
     durabilityBreaks: {
       s: 'This rock was broken {0} time',
       p: 'This rock was broken {0} times'
     },
-    toughness: 'Toughness',
+    toughness: '韧性',
     toughnessDescription: 'Reduces incoming damage by a flat amount',
     toughnessHigh: 'Toughness is severely reducing your damage',
     toughnessTooHigh: 'Toughness is too high to deal any damage',
@@ -1213,10 +1213,10 @@ export default {
     scrapGainHint: 'You do not get scrap when hitting rocks you have never broken before. Sometimes it is smarter to stay on your current depth to collect more scrap instead of digging down immediately.',
     oreCrafting: 'Click on ores to add them to crafting slots',
     crafting: {
-      power: 'Power',
-      purity: 'Purity',
-      impurity: 'Impurity',
-      craftPickaxe: 'Craft pickaxe',
+      power: '力量',
+      purity: '纯度',
+      impurity: '杂质',
+      craftPickaxe: '制作镐子',
       purityDescription: 'To reach 50% minimum quality, your purity needs to match your impurity.',
       premiumSlot: 'This is a premium crafting slot. Impurity above x1 is halved and purity is doubled.'
     },
@@ -1225,12 +1225,12 @@ export default {
     smokeDescription: 'Consume all smoke to create a new pickaxe with a fixed power value',
     smeltery: 'Smeltery',
     smelteryTemperatureDescription: 'Reach certain temperatures to unlock more smelteries. Smelteries also gain +{0}% speed per degree above the requirement',
-    smelteryTemperatureDescription2: 'This smeltery has +{0}% speed because of temperature',
-    smelterySpeedDescription: 'This smeltery has a base time of {0}',
-    smelt: 'Smelt',
-    enhance: 'Enhance',
+    smelteryTemperatureDescription2: '由于温度原因，该冶炼厂的速度增加了 +{0}%',
+    smelterySpeedDescription: '该冶炼厂的基准时间为 {0}',
+    smelt: '冶炼',
+    enhance: '增强',
     enhancement: {
-      title: 'Enhancements',
+      title: '增强',
       description: 'Use bars to apply enhancements to your pickaxe. Each bar has their own unique enhancement that can be applied multiple times. But be careful, each successful enhancement makes the next one more difficult, so think about which enhancements you put on your pickaxe',
       chanceDescription: 'Your enhancements have a {0}% chance to succeed and get {1}% harder when they do. Bars will always be consumed, but the enhancement only applies on success. When you fail, your success chance keeps increasing until you get a successful enhancement. Enhancements are also more likely to succeed at the end of your success bar',
       barAluminium: 'Lightweight',
