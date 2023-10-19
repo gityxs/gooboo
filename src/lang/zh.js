@@ -768,100 +768,100 @@ export default {
       },
       item: {
         rollingPin: {
-          name: 'Rolling pin',
-          description: 'Produces dough, which can be baked into cookies, boosting your critical rating'
+          name: '擀面杖',
+          description: '生产面团，可以将其烘烤成饼干，从而提高您的暴击率'
         },
         forest: {
-          name: 'Forest',
-          description: 'Produces saplings, which can be grown into pine trees, boosting your attack'
+          name: '森林',
+          description: '产生树苗，可以长成松树，增强你的攻击力'
         },
         spiceJar: {
-          name: 'Spice jar',
-          description: 'Produces cinnamon, which can be used to make mulled wine, boosting your block rating'
+          name: '香料罐',
+          description: '生产肉桂，可用于制作热红酒，提高你的格挡率'
         },
         tap: {
-          name: 'Tap',
-          description: 'Produces water, which can be turned into ice sculptures, boosting your loot rating'
+          name: '水龙头',
+          description: '产生水，可以变成冰雕，提高你的战利品等级'
         },
         snowCannon: {
-          name: 'Snow cannon',
-          description: 'Produces snow, which can be used to make snowmen, giving you additional items'
+          name: '雪炮',
+          description: '产生雪，可以用来堆雪人，为你提供额外的物品'
         },
         shepherd: {
-          name: 'Shepherd',
-          description: 'Produces yarn, which can be turned into wool hats, boosting your health'
+          name: '牧羊人',
+          description: '生产纱线，可制成羊毛帽子，提升您的生命值'
         },
         animalTooth: {
-          name: 'Animal tooth',
+          name: '动物牙齿',
           description: ''
         },
         collar: {
-          name: 'Collar',
+          name: '项圈',
           description: ''
         },
         chili: {
-          name: 'Chili',
+          name: '辣椒',
           description: ''
         },
         drumstick: {
-          name: 'Drumstick',
+          name: '鼓槌',
           description: ''
         },
         mouse: {
-          name: 'Mouse',
-          description: 'Heal the player 1 when one of your pets attack'
+          name: '老鼠',
+          description: '当你的一只宠物攻击时治疗玩家 1'
         },
         bone: {
-          name: 'Bone',
-          description: 'Your pets heal 1 when they attack'
+          name: '骨头',
+          description: '你的宠物攻击时会治愈 1 点'
         },
         gravestone: {
-          name: 'Gravestone',
-          description: 'Pet freezes heal the player and other pets 15'
+          name: '墓碑',
+          description: '宠物冻结可以治愈玩家和其他宠物 15'
         },
         spikedCollar: {
-          name: 'Spiked collar',
-          description: '30 crit and block rating on a random pet, this bonus transfers to another random pet on freeze'
+          name: '尖刺项圈',
+          description: '随机宠物有 30 点暴击和格挡等级，此奖励在冻结时转移到另一只随机宠物'
         },
         heartCollar: {
-          name: 'Heart collar',
-          description: 'A random pet gets revived once'
+          name: '心形项圈',
+          description: '随机宠物复活一次'
         },
         treatBag: {
-          name: 'Treat bag',
-          description: 'Pets can choose to heal for 50% max health instead of attacking. 3 treats per bag'
+          name: '治疗袋',
+          description: '宠物可以选择治疗 50% 最大生命值而不是攻击。 每袋 3 份零食'
         },
         tennisBall: {
-          name: 'Tennis ball',
-          description: 'All pets get revived when the player freezes'
+          name: '网球',
+          description: '当玩家冻结时所有宠物都会复活'
         },
         appleJuice: {
-          name: 'Apple juice',
-          description: 'The player can choose to heal for 50% max health instead of attacking. Single use'
+          name: '苹果汁',
+          description: '玩家可以选择治疗 50% 最大生命值而不是攻击。 一次性使用'
         },
         hotWater: {
-          name: 'Hot water',
-          description: 'The player gets revived once with 25% health'
+          name: '热水',
+          description: '玩家以 25% 生命值复活一次'
         },
         dumbbell: {
-          name: 'Dumbbell',
-          description: 'The player gets 0.5 attack on attack'
+          name: '哑铃',
+          description: '玩家受到攻击时获得 0.5 攻击力'
         },
         target: {
-          name: 'Target',
-          description: 'The player gets 4 crit rating on attack'
+          name: '目标',
+          description: '玩家攻击时获得 4 暴击等级'
         },
         gloves: {
-          name: 'Gloves',
-          description: 'The player gets 0.2 attack and 1 crit rating when attacked'
+          name: '手套',
+          description: '玩家受到攻击时获得 0.2 攻击力和 1 暴击等级'
         },
         snowboard: {
-          name: 'Snowboard',
-          description: 'First 5 player attacks crit'
+          name: '滑雪板',
+          description: '前5次玩家攻击暴击'
         },
         tea: {
           name: '茶',
-          description: 'The player heals 25 and crits on the next attack after an enemy freezes'
+          description: '敌人被冻结后，玩家可以治疗 25 点并在下一次攻击中暴击'
         },
         starShield: {
           name: '星盾',
@@ -869,7 +869,7 @@ export default {
         },
         coffee: {
           name: '咖啡',
-          description: 'The player heals 8 on crit'
+          description: '玩家暴击时治疗 8 点'
         },
         pebbles: {
           name: '鹅卵石',
@@ -958,12 +958,12 @@ export default {
   theme: {
     name: '主题',
     icon: {
-      hasCustomNavbar: 'Custom navigation bar',
-      hasCustomBackground: 'Custom background',
-      hasCustomColors: 'Custom color palette',
-      hasCustomUI: 'Custom UI elements',
-      hasAnimations: 'Includes animations',
-      hasParticles: 'Includes particles',
+      hasCustomNavbar: '自定义导航栏',
+      hasCustomBackground: '自定义背景色',
+      hasCustomColors: '自定义调色板',
+      hasCustomUI: '自定义用户界面元素',
+      hasAnimations: '包括动画',
+      hasParticles: '包括粒子',
     },
     default: '蓝色',
     cyan: '青色',
@@ -1768,65 +1768,65 @@ export default {
     }
   },
   gallery: {
-    gallery: 'Gallery',
-    auction: 'Auction',
-    colorSuffix: 'color',
-    openPackage: 'Open',
+    gallery: '画廊',
+    auction: '拍卖',
+    colorSuffix: '颜色',
+    openPackage: '打开',
     idea: {
-      tier: 'Tier {0} idea',
-      unlock: 'Unlock idea',
+      tier: '层 {0} 创意',
+      unlock: '解锁创意',
 
-      makeItPretty: 'Make it pretty',
-      stompBerries: 'Stomp berries',
-      carvePumpkins: 'Carve pumpkins',
-      sortWaste: 'Sort waste',
-      advertise: 'Advertise',
-      beImpatient: 'Be impatient',
+      makeItPretty: '让它变得漂亮',
+      stompBerries: '踩碎浆果',
+      carvePumpkins: '雕刻南瓜',
+      sortWaste: '垃圾分类',
+      advertise: '广告',
+      beImpatient: '缺乏耐心',
 
-      makeLemonade: 'Make lemonade',
-      growATree: 'Grow a tree',
-      buildComposter: 'Build composter',
-      observeRainbow: 'Observe rainbow',
-      buildRedReservoir: 'Build red reservoir',
-      orderMassiveSafe: 'Order massive safe',
+      makeLemonade: '制作柠檬水',
+      growATree: '种一棵树',
+      buildComposter: '建造堆肥机',
+      observeRainbow: '观察彩虹',
+      buildRedReservoir: '修建红色水库',
+      orderMassiveSafe: '订购大量保险箱',
 
-      drawOcean: 'Draw ocean',
-      makeWine: 'Make wine',
-      calculateOdds: 'Calculate odds',
-      buildOrangeReservoir: 'Build orange reservoir',
-      thinkHarder: 'Think harder',
+      drawOcean: '画海洋',
+      makeWine: '酿酒',
+      calculateOdds: '计算胜算',
+      buildOrangeReservoir: '修建橙色水库',
+      thinkHarder: '更加努力地思考',
     },
     nextInspiration: {
-      0: 'Next ',
-      1: ' in '
+      0: '下一个 ',
+      1: ' 还有 '
     }
   },
   gem: {
-    newGemsTime: 'Gain new gems every time the bar fills. The generator creates new gems every {0}.',
-    newGemsTimeAchievement: 'Gain new gems every time the bar fills. Each achievement increases generation speed by +{0}%. Your {1} achievements increase generation speed by +{2}%, from {3} to {4}.'
+    newGemsTime: '每次进度条填满时都会获得新的宝石。 生成器创建新宝石每 {0}.',
+    newGemsTimeAchievement: '每次进度条填满时都会获得新的宝石。 每项成就都会使生成速度提高 +{0}%。 您的 {1} 成就将生成速度提高了 +{2}%，从 {3} 提高到了 {4}。'
   },
   achievement: {
-    relicReward: 'This relic is given as a reward when completing the next level of this achievement.',
-    secret: 'This achievement is secret and does not give any bonuses.'
+    relicReward: '此圣遗物是在完成此成就的下一级时作为奖励而给予的。',
+    secret: '这项成就是秘密的，不提供任何奖励。'
   },
   treasure: {
-    effectSummary: 'Effect summary',
-    tier: 'Tier',
-    tierItem: 'Tier {0} treasure',
+    effectSummary: '效果总结',
+    tier: '层',
+    tierItem: '层 {0} 宝藏',
     tierEffect: {
-      globalLevel: 'Your global level increases both treasure tier and the chance for higher tier treasure.',
-      upgrade: 'Upgrade cost',
-      destroy: 'Fragments when destroyed',
-      regular: 'Regular effects',
-      special: 'Special effects'
+      globalLevel: '你的全局等级增加了宝藏层级和获得更高层级宝藏的机会。',
+      upgrade: '升级成本',
+      destroy: '碎片当被摧毁时',
+      regular: '普通效果',
+      special: '特殊效果'
     },
     buyFragment: {
-      0: 'Buy fragments (',
-      1: ') for'
+      0: '购买片段 (',
+      1: ') 花费'
     },
-    buyTreasure: 'Get a treasure with random tier and effect',
-    upgradeDescription: 'Upgrade a treasure using fragments. The fragment cost depends on treasure tier and level.',
-    destroyDescription: 'Destroy a treasure to gain fragments based on treasure tier. All fragments spent on upgrading that treasure will also be returned.'
+    buyTreasure: '获得具有随机等级和效果的宝藏',
+    upgradeDescription: '使用碎片升级宝藏。 碎片成本取决于宝藏的层级和等级。',
+    destroyDescription: '摧毁宝藏即可根据宝藏层级获得碎片。 所有用于升级该宝藏的碎片也将被返还。'
   },
   relic,
   card
