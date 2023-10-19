@@ -71,318 +71,318 @@ export default {
     description: '达到鱼类新尺寸记录的奖励'
   },
   event_summerFestivalToken: {
-    name: 'Summer festival token',
-    description: 'Reward for completing quests'
+    name: '夏季节日代币',
+    description: '完成任务的奖励'
   },
   event_nightHuntToken: {
-    name: 'Night hunt token',
-    description: 'Reward for leveling up potions or succeeding in new rituals'
+    name: '夜间狩猎代币',
+    description: '升级药水或成功完成新仪式的奖励'
   },
   event_snowdownToken: {
-    name: 'Snowdown token',
-    description: 'Reward for winning snowball fights'
+    name: '降雪代币',
+    description: '打雪仗获胜的奖励'
   },
   event_light: {
-    name: 'Light',
-    description: 'Burning brighter'
+    name: '光',
+    description: '燃烧得更亮'
   },
   event_soot: {
-    name: 'Soot',
-    description: 'Left behind from burnt candles'
+    name: '煤烟',
+    description: '燃烧的蜡烛留下的'
   },
   event_blossom: {
-    name: 'Blossom',
-    description: 'They are beautiful, but they all look the same'
+    name: '开花',
+    description: '她们很漂亮，但看起来都一样'
   },
   event_algae: {
-    name: 'Algae',
-    description: 'Green and slimy'
+    name: '海藻',
+    description: '绿色且粘稠'
   },
   event_driftwood: {
-    name: 'Driftwood',
-    description: 'You don\'t know where it came from, but it still looks usable'
+    name: '浮木',
+    description: '你不知道它从哪里来，但它看起来仍然有用'
   },
   event_plastic: {
-    name: 'Plastic',
-    description: 'Why is there so much trash in the seas?'
+    name: '塑料',
+    description: '为什么海里有这么多垃圾？'
   },
   event_slime: {
-    name: 'Slime',
-    description: 'And you thought algae was slimy'
+    name: '粘液',
+    description: '你以为藻类是粘糊糊的'
   },
   event_log: {
-    name: 'Log',
-    description: 'A basic construction material'
+    name: '木头',
+    description: '一种基本建筑材料'
   },
   event_stoneBlock: {
-    name: 'Stone block',
-    description: 'Cut from the mountain'
+    name: '石块',
+    description: '从山上切下来的'
   },
   event_coconut: {
-    name: 'Coconut',
-    description: 'Hard to crack'
+    name: '椰子',
+    description: '很难破开'
   },
   event_shell: {
-    name: 'Shell',
-    description: 'Shells you found on a beach'
+    name: '贝壳',
+    description: '你在海滩上发现的贝壳'
   },
   event_music: {
-    name: 'Music',
-    description: 'You call that music?'
+    name: '音乐',
+    description: '你管这叫音乐?'
   },
   event_sand: {
-    name: 'Sand',
-    description: 'Sand, as far as the eye can see'
+    name: '沙子',
+    description: '沙子，一望无际'
   },
   event_freshWater: {
-    name: 'Fresh water',
-    description: 'Fresh and filtered'
+    name: '淡水',
+    description: '新鲜并经过过滤'
   },
   event_coal: {
-    name: 'Coal',
-    description: 'A resource often used to make fire to cook food'
+    name: '煤',
+    description: '经常用来生火烹饪食物的资源'
   },
   event_metalPart: {
-    name: 'Metal part',
-    description: 'Some call it trash, others call it treasure'
+    name: '金属零件',
+    description: '有人说是垃圾，有人说是宝藏'
   },
   event_pearl: {
-    name: 'Pearl',
-    description: 'A rare pearl, found in a shell'
+    name: '珍珠',
+    description: '在贝壳中发现的稀有珍珠'
   },
   event_salt: {
-    name: 'Salt',
-    description: 'Salty?'
+    name: '盐',
+    description: '咸的?'
   },
   event_pepper: {
-    name: 'Pepper',
-    description: 'Perfect when you need some spice'
+    name: '胡椒',
+    description: '当你需要一些香料时完美'
   },
   event_honey: {
-    name: 'Honey',
-    description: 'How sweet'
+    name: '蜂蜜',
+    description: '多么甜啊'
   },
   event_vegetable: {
-    name: 'Vegetable',
-    description: 'Nutritious and possibly delicious'
+    name: '蔬菜',
+    description: '营养丰富且可能美味'
   },
   event_citrusFruit: {
-    name: 'Citrus fruit',
-    description: 'Sweet and sour'
+    name: '柑橘类水果',
+    description: '酸甜可口'
   },
   event_rawFish: {
-    name: 'Raw fish',
-    description: 'Fresh from the ocean'
+    name: '生鱼',
+    description: '刚从海洋里捕捞上来'
   },
   event_cookedFish: {
-    name: 'Cooked fish',
-    description: 'This would go great with some lemon'
+    name: '熟鱼',
+    description: '配上一些柠檬会很棒'
   },
   event_rawMeat: {
-    name: 'Raw meat',
-    description: 'Fresh from the forest'
+    name: '生肉',
+    description: '刚从森林里出来的'
   },
   event_cookedMeat: {
-    name: 'Cooked meat',
-    description: 'Just needs some salt and pepper'
+    name: '熟肉',
+    description: '只需要一些盐和胡椒粉'
   },
   event_solidPlate: {
-    name: 'Solid plate',
-    description: 'Common building material made from wood and stone'
+    name: '实心板',
+    description: '常见的建筑材料由木材和石头制成'
   },
   event_sandstone: {
-    name: 'Sandstone',
-    description: 'Looks like sand, but behaves like stone'
+    name: '砂岩',
+    description: '看起来像沙子，但行为却像石头'
   },
   event_hardSteel: {
-    name: 'Hard steel',
-    description: 'Stainless and even harder than regular steel'
+    name: '硬钢',
+    description: '不锈钢，甚至比普通钢更硬'
   },
   event_compositePlate: {
-    name: 'Composite plate',
-    description: 'You decided to merge everything together and it... works!'
+    name: '复合板',
+    description: '您决定将所有内容合并在一起，并且它...有效！'
   },
   event_coconutSalad: {
-    name: 'Coconut salad',
-    description: 'Fresh and simple'
+    name: '椰子沙拉',
+    description: '清新又简单'
   },
   event_saltyShell: {
-    name: 'Salty shell',
-    description: 'It is... an acquired taste'
+    name: '咸贝壳',
+    description: '这是……后天习得的品味'
   },
   event_lemonCandy: {
-    name: 'Lemon candy',
-    description: 'Kids love these'
+    name: '柠檬糖',
+    description: '孩子们喜欢这些'
   },
   event_steak: {
-    name: 'Steak',
-    description: 'Perfectly cooked'
+    name: '牛扒',
+    description: '完全煮熟'
   },
   event_fishSticks: {
-    name: 'Fish sticks',
-    description: 'A timeless classic'
+    name: '鱼条',
+    description: '永恒的经典'
   },
   event_essence: {
-    name: 'Essence',
-    description: 'A strange liquid, but it looks powerful'
+    name: '精华',
+    description: '一种奇怪的液体，但看起来很强大'
   },
   event_lavender: {
-    name: 'Lavender',
-    description: 'Found in the forest'
+    name: '薰衣草',
+    description: '在森林里发现的'
   },
   event_mapleLeaf: {
-    name: 'Maple leaf',
-    description: 'Strange, there are no maple trees in sight'
+    name: '枫叶',
+    description: '奇怪，看不到枫树'
   },
   event_fourLeafClover: {
-    name: 'Four-leaf clover',
-    description: 'Lucky!'
+    name: '四叶草',
+    description: '幸运!'
   },
   event_charredSkull: {
-    name: 'Charred skull',
-    description: 'These bones are not only burnt, but look extremely old as well'
+    name: '烧焦的头骨',
+    description: '这些骨头不仅被烧焦，而且看上去也极其古老'
   },
   event_mysticalWater: {
-    name: 'Mystical water',
-    description: 'It looks like regular water, but a little brighter'
+    name: '神秘的水',
+    description: '看起来和普通水一样，但颜色更亮一些'
   },
   event_cheese: {
-    name: 'Cheese',
-    description: 'Most people would eat this, but it also has great magical uses'
+    name: '奶酪',
+    description: '大多数人都会吃这个，但它还有很大的神奇用途'
   },
   event_spiderWeb: {
-    name: 'Spider web',
-    description: 'No spider inside, looks like it\'s yours to take'
+    name: '蜘蛛网',
+    description: '里面没有蜘蛛，看起来是你的了'
   },
   event_strangeEgg: {
-    name: 'Strange egg',
-    description: 'What is this? What creature could this belong to? Well, into the mix you go!'
+    name: '奇怪的蛋',
+    description: '这是什么？这可能属于什么生物？好吧，你去混进去!'
   },
   event_puzzlePiece: {
-    name: 'Puzzle piece',
-    description: 'It can solve logical puzzles, but can it also solve magical ones?'
+    name: '一块拼图',
+    description: '它可以解决逻辑难题，但也可以解决魔法难题?'
   },
   event_wizardHat: {
-    name: 'Wizard hat',
-    description: 'Lookin\' fancy!'
+    name: '巫师帽',
+    description: '看起来很花哨!'
   },
   event_cactus: {
-    name: 'Cactus',
-    description: 'Don\'t touch it'
+    name: '仙人掌',
+    description: '别碰它'
   },
   event_feather: {
-    name: 'Feather',
-    description: 'Not a heavyweight'
+    name: '羽毛',
+    description: '不是重量级的'
   },
   event_dough: {
-    name: 'Dough',
-    description: 'Why eat the cookies when you can eat the dough?'
+    name: '面团',
+    description: '当你可以吃面团时为什么要吃饼干?'
   },
   event_cinnamon: {
-    name: 'Cinnamon',
-    description: 'What would winter be without cinnamon?'
+    name: '肉桂',
+    description: '没有肉桂的冬天会怎样?'
   },
   event_sapling: {
-    name: 'Sapling',
-    description: 'Pine tree saplings. With enough time, these can grow into massive trees'
+    name: '树苗',
+    description: '松树树苗。 如果有足够的时间，它们可以长成参天大树'
   },
   event_water: {
-    name: 'Water',
-    description: 'Clean and cold tap water'
+    name: '水',
+    description: '干净、冷的自来水'
   },
   event_snow: {
-    name: 'Snow',
-    description: 'It\'s cold, it\'s everywhere and with enough you could build an entire snowman'
+    name: '雪',
+    description: '天气很冷，到处都是，只要有足够的量，你就可以堆一个完整的雪人'
   },
   event_yarn: {
-    name: 'Yarn',
-    description: 'Keeping everyone warm and comfortable'
+    name: '纱',
+    description: '让每个人都温暖舒适'
   },
 
   // Feature currencies
   mining_scrap: {
-    name: 'Scrap',
-    description: 'For some reason, the underground rocks are full of scrap! But this can also be a good thing, scrap is versatile and can be used to create almost anything'
+    name: '废料',
+    description: '不知道为什么，地下岩石里充满了废料！ 但这也可能是一件好事，废料用途广泛，几乎可以用来创造任何东西'
   },
   mining_oreAluminium: {
-    name: 'Aluminium ore',
-    description: 'Finally, something that is not scrap. In its unrefined form its use is limited, but that does not mean useless'
+    name: '铝矿石',
+    description: '最后，有些东西不是废料。 在其未完善的形式中，它的用途是有限的，但这并不意味着无用'
   },
   mining_oreCopper: {
-    name: 'Copper ore',
-    description: 'Another one of the missing ores. This one seems to yield better results than the previous one. How many more are down here?'
+    name: '铜矿石',
+    description: '另一种失踪的矿石。 这一项似乎比前一项产生了更好的结果。 下面还有多少？'
   },
   mining_oreTin: {
-    name: 'Tin ore',
-    description: 'A light material is a welcome change to the darkness at these depths. The hole to the surface is getting hard to see'
+    name: '锡矿石',
+    description: '轻质材料对于这些深处的黑暗来说是一种受欢迎的改变。 表面的洞越来越难以看见'
   },
   mining_oreIron: {
-    name: 'Iron ore',
-    description: 'A hard and sturdy material. Parts of the scrap you found look similar to this one'
+    name: '铁矿石',
+    description: '一种坚硬而坚固的材料。 您发现的部分废料看起来与此类似'
   },
   mining_oreTitanium: {
-    name: 'Titanium ore',
-    description: 'Compared to iron, this one seems to be indestructible. This could be helpful to construct a few things where other ores would not have been stable enough'
+    name: '钛矿石',
+    description: '与铁相比，这似乎是坚不可摧的。 这可能有助于建造一些其他矿石不够稳定的东西'
   },
   mining_orePlatinum: {
-    name: 'Platinum ore',
-    description: 'This ore appears to be very beautiful if you polish it a bit. Let\'s hope it is not only beautiful, but useful as well'
+    name: '铂矿石',
+    description: '这种矿石如果稍微打磨一下，就会显得非常漂亮。 希望它不仅美观，而且实用'
   },
   mining_granite: {
-    name: 'Granite',
-    description: 'Huge blocks of granite cut from the underground. Surprisingly, there is no scrap in them'
+    name: '花岗岩',
+    description: '从地下开采出来的巨大花岗岩块。 令人惊讶的是，里面没有任何废料'
   },
   mining_salt: {
-    name: 'Salt',
-    description: 'This salt is not made for eating, it tastes bitter. Better use it to smelt your ores'
+    name: '盐',
+    description: '这种盐不是用来吃的，味道很苦。 最好用它来熔炼你的矿石'
   },
   mining_coal: {
-    name: 'Coal',
-    description: 'This resource seems to be scarce, after mining it you couldn\'t find any more nearby like with the ores'
+    name: '煤',
+    description: '这种资源似乎很稀缺，开采完后你在附近就找不到像矿石一样的资源了'
   },
   mining_sulfur: {
-    name: 'Sulfur',
-    description: 'Bright and yellow'
+    name: '硫',
+    description: '明亮、黄色'
   },
   mining_niter: {
-    name: 'Niter',
-    description: 'Another rare resource, this one is limited as well'
+    name: '硝',
+    description: '另一种稀有资源，这个也是有限的'
   },
   mining_obsidian: {
-    name: 'Obsidian',
-    description: 'Beautiful purple shards, they look fragile'
+    name: '黑曜石',
+    description: '美丽的紫色碎片，它们看起来很脆弱'
   },
   mining_barAluminium: {
-    name: 'Aluminium bar',
-    description: 'The first of many'
+    name: '铝锭',
+    description: '许多中的第一个'
   },
   mining_barBronze: {
-    name: 'Bronze bar',
-    description: 'More than the sum of its parts'
+    name: '青铜锭',
+    description: '大于其各部分之和'
   },
   mining_barSteel: {
-    name: 'Steel bar',
-    description: 'Reinforced iron'
+    name: '钢锭',
+    description: '强化的铁'
   },
   mining_barTitanium: {
-    name: 'Titanium bar',
-    description: 'Extremely durable and resistant'
+    name: '钛锭',
+    description: '极其耐用且耐腐蚀'
   },
   mining_barShiny: {
-    name: 'Shiny bar',
-    description: 'This one is not very sharp or durable, but seems to have other uses'
+    name: '闪亮的金属锭',
+    description: '这个不是很锋利也不耐用，但似乎还有其他用途'
   },
   mining_ember: {
-    name: 'Ember',
-    description: 'Careful, it\'s still hot!'
+    name: '余烬',
+    description: '小心，天气还很热！'
   },
   mining_resin: {
     name: 'Resin',
-    description: 'Extremely sticky resin that is used to make pickaxes last longer'
+    description: '用于使镐使用寿命更长的粘性树脂'
   },
   mining_crystalGreen: {
-    name: 'Green crystal',
-    description: 'These crystals look amazing! You would have never found them without your depth dweller'
+    name: '绿水晶',
+    description: '这些水晶看起来很神奇！如果没有你的深度居民，你永远不会找到它们'
   },
   mining_smoke: {
     name: 'Smoke',
