@@ -14,11 +14,11 @@ export default {
   },
   mining_depthDweller0: {
     achievement: '垂直向下钻',
-    description: '最大驻留深度'
+    description: '最大居民深度'
   },
   mining_depthDweller1: {
     achievement: '无火花',
-    description: '最大气体驻留深度'
+    description: '最大气体居民深度'
   },
   mining_totalDamage: {
     achievement: '毁灭',
@@ -60,7 +60,7 @@ export default {
   },
   mining_dwellerCapHit: {
     achievement: '谷底',
-    description: '达到最大驻留深度'
+    description: '达到最大居民深度'
   },
   mining_craftingLuck: {
     achievement: '百万分之一',

@@ -405,91 +405,91 @@ export default {
   },
   event: {
     shop: {
-      notFound: 'No shops found',
-      bought: 'In stock'
+      notFound: '没有找到商店',
+      bought: '有库存'
     },
     cinders: {
-      name: 'Cinders',
-      perProducer: 'per producer',
+      name: '煤渣',
+      perProducer: '每个生产者',
       candle: {
-        tealight: 'Tealight',
-        regular: 'Candle',
-        aroma: 'Scented candle',
-        chandelier: 'Chandelier',
-        duration: 'Lasts {0}',
+        tealight: '茶烛',
+        regular: '蜡烛',
+        aroma: '香薰蜡烛',
+        chandelier: '吊灯',
+        duration: '持续 {0}',
         sootGain: {
-          0: 'Generates ',
+          0: '产生 ',
           1: ' ',
-          2: ' after burning'
+          2: ' 在燃烧后'
         }
       }
     },
     bloom: {
-      name: 'Bloom',
-      tier: 'Tier',
-      canSell: 'Can be sold for {0} ',
-      sell: 'Choose a flower to sell. When you gain a flower with a full inventory, the lowest tier flower of that type is automatically sold.',
-      dragToBreeder: 'Drag a flower here to start breeding',
-      wildGrowth: 'Get a random gene on all flowers in your inventory. This cannot bypass the 3 gene limit per flower.',
-      boost: 'Get 1 day of progress instantly',
-      genes: 'Genes',
-      wildgrowth: 'Wild growth',
+      name: '开花',
+      tier: '层级',
+      canSell: '可以出售获得 {0} ',
+      sell: '选择一朵花出售。当你获得一朵库存充足的花时，该类型的最低级别的花会自动出售。',
+      dragToBreeder: '拖动一朵花到这里开始繁殖',
+      wildGrowth: '在你的库存中的所有花上随机获取一个基因。这不能绕过每朵花3个基因的限制。',
+      boost: '立即获得1天的进度',
+      genes: '基因',
+      wildgrowth: '野性生长',
       flower: {
-        daisy: 'Daisy',
-        poppy: 'Poppy',
-        iris: 'Iris',
-        lily: 'Lily',
-        orchid: 'Orchid',
-        cornflower: 'Cornflower',
+        daisy: '雏菊',
+        poppy: '罂粟',
+        iris: '鸢尾花',
+        lily: '百合',
+        orchid: '兰花',
+        cornflower: '矢车菊',
       },
       gene: {
         valuable: {
-          name: 'Valuable',
-          description: '3x blossom value'
+          name: '宝贵',
+          description: '3x 绽放价值'
         },
         mutating: {
-          name: 'Mutating',
-          description: '2x gene chance'
+          name: '变异',
+          description: '2x 基因几率'
         },
         splitting: {
-          name: 'Splitting',
-          description: '25% chance to breed 2 new flowers'
+          name: '分裂',
+          description: '25% 几率培育 2 朵新花'
         },
         resistant: {
-          name: 'Resistant',
-          description: '+10% tier chance'
+          name: '抗性',
+          description: '+10% 层级几率'
         },
         huge: {
-          name: 'Huge',
-          description: '+1 tier and consume this gene on merge'
+          name: '巨大',
+          description: '+1 层级并在合并时消耗该基因'
         }
       }
     },
     weatherChaos: {
-      name: 'Weather chaos',
-      chanceToCatch: 'chance to catch',
-      powerNeeded: 'fishing power needed',
-      maxSize: 'Maximum size',
-      owned: 'Owned',
-      fishingPowerDescription: 'Fishing power determines which fish you can catch. Reach double fishing power requirement for maximum chance to catch that fish.',
-      fishSizeDescription: 'Fish with a size at or below average have the same chance to get caught. Other sizes become harder to catch for each size above average.',
-      fishDescription: 'You have a chance to catch a fish if you didn\'t catch a treasure. Available fish types are based on location and weather.',
-      trashTitle: 'Trash chance',
-      trashDescription: 'You\'ll catch trash when you fail to catch a treasure or fish.',
-      treasureDescription: 'You have a small chance to catch a treasure. It can contain bait, new fishing rods or the key to a new location if your fishing power is at least {0}.',
-      treasureDescriptionFinal: 'You have a small chance to catch a treasure. It can contain bait or new fishing rods.',
-      changeWeather: 'Change weather',
+      name: '天气混乱',
+      chanceToCatch: '几率抓住',
+      powerNeeded: '需要的钓鱼力量',
+      maxSize: '最大尺寸',
+      owned: '拥有的',
+      fishingPowerDescription: '钓鱼能力决定了你能钓到什么鱼。 达到双倍钓鱼力量要求，以最大程度地捕获该鱼。',
+      fishSizeDescription: '大小等于或低于平均水平的鱼被捕获的几率相同。 当尺寸高于平均水平时，其他尺寸就变得更难捕获。',
+      fishDescription: '如果你没有钓到宝藏，你还有机会钓到鱼。 可用的鱼类类型取决于地点和天气。',
+      trashTitle: '垃圾几率',
+      trashDescription: '当你没能钓到宝藏或鱼时，你就会钓到垃圾。',
+      treasureDescription: '您有很小的机会捕获宝藏。 如果您的钓鱼能力至少为 {0}，它可能包含鱼饵、新钓鱼竿或新地点的钥匙。',
+      treasureDescriptionFinal: '您有很小的机会捕获宝藏。 它可以包含鱼饵或新的钓鱼竿。',
+      changeWeather: '改变天气',
       location: {
-        pond: 'Pond',
-        lake: 'Lake',
-        river: 'River',
-        ocean: 'Ocean',
-        mountain: 'Mountain',
-        cave: 'Cave',
+        pond: '池塘',
+        lake: '湖泊',
+        river: '河流',
+        ocean: '海洋',
+        mountain: '高山',
+        cave: '洞穴',
       },
       fish: {
-        bronzefish: 'Bronzefish',
-        snail: 'Snail',
+        bronzefish: '青铜鱼',
+        snail: '蜗牛',
         cablebiter: 'Cablebiter',
         blueshimmer: 'Blueshimmer',
         introvero: 'Introvero',
@@ -518,60 +518,60 @@ export default {
         shadowbiter: 'Shadowbiter',
       },
       fishingRod: {
-        name: 'Fishing rod',
-        basic: 'Basic',
-        fast: 'Fast',
-        leafy: 'Leafy',
-        heavy: 'Heavy',
-        hardwood: 'Hardwood',
-        master: 'Master',
-        smelly: 'Smelly',
-        turbo: 'Turbo',
-        golden: 'Golden',
-        dull: 'Dull',
-        mystical: 'Mystical',
-        twins: 'Twins',
+        name: '鱼竿',
+        basic: '基础',
+        fast: '快速',
+        leafy: '绿叶',
+        heavy: '重',
+        hardwood: '硬木',
+        master: '精通',
+        smelly: '臭',
+        turbo: '涡轮',
+        golden: '金色',
+        dull: '迟钝',
+        mystical: '神秘',
+        twins: '双胞胎',
       },
       bait: {
-        juicyBait: 'Juicy bait',
-        rainbowBait: 'Rainbow bait',
-        trashNet: 'Trash net',
-        magnet: 'Magnet',
+        juicyBait: '多汁的诱饵',
+        rainbowBait: '彩虹饵',
+        trashNet: '垃圾网',
+        magnet: '磁铁',
       }
     },
     summerFestival: {
-      name: 'Summer festival',
-      produces: 'Produces',
-      producesNothing: 'Produces nothing',
-      empty: 'Empty',
-      constructing: 'Constructing',
-      upgrading: 'Upgrading',
-      deleting: 'Deleting',
-      emptyQueue: 'No buildings queued',
-      inQueue: 'In queue',
-      inDeletionQueue: 'Queued for deletion',
-      placeOn: 'Must be placed on',
-      rotateDescription: 'Rotate building',
-      deleteDescription: 'Delete this building. Resources are not refunded and this needs time in the building queue.',
-      complete: 'Complete',
-      build: 'Build',
+      name: '夏日祭典',
+      produces: '生产',
+      producesNothing: '什么也不产生',
+      empty: '空',
+      constructing: '建造中',
+      upgrading: '升级',
+      deleting: '删除',
+      emptyQueue: '建筑队列为空',
+      inQueue: '在队列中',
+      inDeletionQueue: '队列待删除',
+      placeOn: '必须放置在',
+      rotateDescription: '旋转建筑物',
+      deleteDescription: '删除该建筑物。 资源不会退还，这需要在建造队列中花费时间。',
+      complete: '完成',
+      build: '建造',
       freeExpansion: {
-        s: '{0} free expansion',
-        p: '{0} free expansions'
+        s: '{0} 自由扩张',
+        p: '{0} 自由扩张'
       },
       quest: {
-        name: 'Quest',
-        currency: 'Collect {0} ',
-        building: 'Construct {0}x level {1} {2}'
+        name: '任务',
+        currency: '收集 {0} ',
+        building: '构造 {0}x 等级 {1} {2}'
       },
       tile: {
-        beach: 'Beach',
-        water: 'Water',
-        palm: 'Palm tree',
-        forest: 'Forest',
-        mountain: 'Mountain',
-        plain: 'Plains',
-        land: 'Land'
+        beach: '海滩',
+        water: '水',
+        palm: '棕榈树',
+        forest: '森林',
+        mountain: '高山',
+        plain: '平原',
+        land: '陆地'
       },
       tilePos: {
         0: 'center',
@@ -584,150 +584,150 @@ export default {
       },
       building: {
         collector: {
-          name: 'Collector',
-          description: 'Automatically collects resources from adjacent tiles'
+          name: '收集者',
+          description: '自动从相邻地块收集资源'
         },
         mainStage: {
-          name: 'Main stage',
-          description: 'Produces music and unlocks more buildings'
+          name: '主舞台',
+          description: '产生音乐并解锁更多建筑物'
         },
         speaker: {
-          name: 'Speaker',
+          name: '扬声器',
           description: ''
         },
         vegetablePatch: {
-          name: 'Vegetable patch',
+          name: '菜地',
           description: ''
         },
         kitchen: {
-          name: 'Kitchen',
-          description: 'Produces meals using ingredients',
+          name: '厨房',
+          description: '使用食材制作餐点',
           action: {
-            coconutSalad: 'Coconut salad',
-            saltyShell: 'Salty shell',
-            lemonCandy: 'Lemon candy',
-            steak: 'Steak',
-            fishSticks: 'Fish sticks',
+            coconutSalad: '椰子沙拉',
+            saltyShell: '咸贝壳',
+            lemonCandy: '柠檬糖',
+            steak: '牛扒',
+            fishSticks: '鱼条',
           }
         },
         sawmill: {
-          name: 'Sawmill',
-          description: 'Cut building materials into components',
+          name: '锯木厂',
+          description: '将建筑材料切割成组件',
           action: {
-            cutPlates: 'Cut plates',
-            cutSandstone: 'Cut sandstone',
-            smeltSteel: 'Smelt steel',
-            combineMaterial: 'Combine material'
+            cutPlates: '切割板材',
+            cutSandstone: '切割砂岩',
+            smeltSteel: '冶炼钢铁',
+            combineMaterial: '组合材料'
           }
         },
         huntingArea: {
-          name: 'Hunting area',
+          name: '狩猎区',
           description: ''
         },
         excavator: {
-          name: 'Excavator',
+          name: '挖掘机',
           description: ''
         },
         lighthouse: {
-          name: 'Lighthouse',
+          name: '灯塔',
           description: ''
         },
         grill: {
-          name: 'Grill',
-          description: 'Cooks food using coal',
+          name: '烤架',
+          description: '用煤做饭',
           action: {
-            cookMeat: 'Cook meat',
-            cookFish: 'Cook fish'
+            cookMeat: '烹饪肉类',
+            cookFish: '烹饪鱼类'
           }
         },
         mine: {
-          name: 'Mine',
-          description: 'Extracts resoures from the mountain'
+          name: '矿山',
+          description: '从山上开采资源'
         },
         hugeSpade: {
-          name: 'Huge spade',
-          description: 'Digs up sand from a beach'
+          name: '巨大的铲子',
+          description: '从海滩上挖沙子'
         },
         shellOpener: {
-          name: 'Shell opener',
-          description: 'Opens shells for metal parts and rare items',
+          name: '开壳器',
+          description: '打开金属零件和稀有物品的外壳',
           action: {
-            openShell: 'Open shell'
+            openShell: '打开外壳'
           }
         },
         waterPurifier: {
-          name: 'Water purifier',
-          description: 'Cleans the salty ocean water and extracts salt'
+          name: '净水器',
+          description: '净化咸海水并提取盐'
         },
         fishingNet: {
-          name: 'Fishing net',
-          description: 'Catches fish from the ocean'
+          name: '捕鱼网',
+          description: '从海洋中捕获鱼'
         },
         pepperField: {
-          name: 'Pepper field',
-          description: 'Grow and harvest pepper plants'
+          name: '胡椒田',
+          description: '种植和收获胡椒植物'
         },
         beehive: {
-          name: 'Beehive',
-          description: 'Take honey from hard-working bees'
+          name: '蜂窝',
+          description: '从勤劳的蜜蜂那里采集蜂蜜'
         },
         citrusPlantation: {
-          name: 'Citrus plantation',
-          description: 'Cultivates citrus fruit and harvests them'
+          name: '柑橘种植园',
+          description: '种植柑橘类水果并收获它们'
         }
       },
       buildingEffect: {
-        autocollectMult: 'Autocollect amount',
-        pearlChance: 'Pearl chance',
+        autocollectMult: '自动收集数量',
+        pearlChance: '珍珠几率',
       }
     },
     nightHunt: {
-      name: 'Night hunt',
-      potions: 'Potions',
-      performRitual: 'Perform ritual',
-      performRitualDescription: 'Consume all chosen ingredients to perform the ritual. Unlock a new potion if you find the right combination of ingredients. Position is important as well!',
-      asBonusIngredient: 'As bonus ingredient',
-      findablePotions: 'Findable potions of this tier',
-      ritualStabilityDescription: 'Stability influences multiple chances based on percentage:',
-      ritualStabilityDescription1: '100% - 200%: Chance to keep base ingredients (currently {0}%)',
-      ritualStabilityDescription2: '0% - 100%: Chance to keep bonus ingredients (currently {0}%)',
-      ritualStabilityDescription3: '-100% - 0%: Chance to fail the ritual without getting any rewards (currently {0}%)',
-      ritualSuccessDescription: 'A successful ritual will yield night hunt tokens for new rituals, as well as potentially finding a new potion. Successful rituals on known potions increase their level, yield night hunt tokens and make reaching the next level harder for that potion.',
-      ritualFamiliarityDescription: 'Raise stability and success chance for this ritual by this amount if it fails. This bonus stacks and resets on ritual success.',
-      ritualHintDescription: 'Chance to reveal a hint about either a slot or the amount of an ingredient. Hints are only given on successful new rituals. For each found hint, this chance is reduced by {0}%. Hints and the hint chance penalty reset when the hinted ritual is found.',
-      clickToAdd: 'Click on ingredients to add them to the ritual',
-      ingredientSizeDescription: 'Ingredient size allows you to find more ingredients per magical currency',
+      name: '夜间狩猎',
+      potions: '药水',
+      performRitual: '进行仪式',
+      performRitualDescription: '消耗所有选定的成分来执行仪式。 如果找到正确的成分组合，即可解锁新药水。 位置也很重要！',
+      asBonusIngredient: '一个好的成分',
+      findablePotions: '此层可找到的药水',
+      ritualStabilityDescription: '稳定性会影响基于百分比的批量几率:',
+      ritualStabilityDescription1: '100% - 200%: 保留基础成分的几率 (当前 {0}%)',
+      ritualStabilityDescription2: '0% - 100%: 保留奖励成分的几率 (当前 {0}%)',
+      ritualStabilityDescription3: '-100% - 0%: 仪式有几率失败而不会获得任何奖励 (当前 {0}%)',
+      ritualSuccessDescription: '一次成功的仪式将产生用于新仪式的夜间狩猎代币，并有可能找到新的药水。 对已知药水进行成功的仪式会提高其等级，产生夜间狩猎代币，并使该药水更难达到下一个等级。',
+      ritualFamiliarityDescription: '如果该仪式失败，则将该仪式的稳定性和成功几率提高一定量。 此奖励会在仪式成功时叠加并重置。',
+      ritualHintDescription: '有几率揭示有关插槽或成分数量的提示。 仅对成功的新仪式给出提示。 对于每个找到的提示，此几率会降低 {0}%。 当发现暗示的仪式时，提示和提示几率惩罚会重置。',
+      clickToAdd: '单击成分将其添加到仪式中',
+      ingredientSizeDescription: '成分尺寸可让您以每种魔法货币找到更多成分',
       newDescription: {
-        empty: 'Here you can see if the current recipe is new (not succeeded before) or not',
-        isNew: 'This is a new recipe and you will receive a night hunt token if it succeeds',
-        isNewPotion: 'You could also discover a new potion',
-        discoveredPotion: 'This is a known potion recipe. If this ritual succeeds, you level up the potion and receive night hunt tokens',
-        pointless: 'This is a known recipe, there is no point in performing more rituals on this one'
+        empty: '在这里你可以看到当前配方是否是新的（之前没有成功过）',
+        isNew: '这是一个新配方，如果成功，您将收到夜间狩猎代币',
+        isNewPotion: '你还可能发现一种新药水',
+        discoveredPotion: '这是已知的药剂配方。 如果这个仪式成功，你会升级药水并获得夜间狩猎代币',
+        pointless: '这是一个已知的配方，没有必要在这个配方上进行更多的仪式'
       },
       potion: {
-        power: 'Potion of power',
-        insight: 'Potion of insight',
-        rage: 'Potion of rage',
-        calming: 'Potion of calming',
-        sorrow: 'Potion of sorrow',
-        energy: 'Potion of energy',
-        nature: 'Potion of nature',
-        intensity: 'Potion of intensity',
-        hysteria: 'Potion of hysteria',
-        insanity: 'Potion of insanity',
-        patience: 'Potion of patience',
-        transformation: 'Potion of transformation',
-        silence: 'Potion of silence',
-        photosynthesis: 'Potion of photosynthesis',
-        sun: 'Potion of sun',
-        growth: 'Potion of growth',
-        solidification: 'Potion of solidification',
-        liquification: 'Potion of liquification',
-        glowing: 'Potion of glowing',
-        stasis: 'Potion of stasis',
-        creativity: 'Potion of creativity',
-        poison: 'Potion of poison',
-        warmth: 'Potion of warmth',
+        power: '力量药水',
+        insight: '洞察药水',
+        rage: '愤怒药水',
+        calming: '镇静药水',
+        sorrow: '悲伤药水',
+        energy: '能量药水',
+        nature: '自然药水',
+        intensity: '强化药水',
+        hysteria: '癔症药水',
+        insanity: '疯狂药水',
+        patience: '耐心药水',
+        transformation: '变身药水',
+        silence: '沉默药水',
+        photosynthesis: '光合药水',
+        sun: '太阳药水',
+        growth: '生长药水',
+        solidification: '凝固药水',
+        liquification: '液化药水',
+        glowing: '发光药水',
+        stasis: '瘀滞药水',
+        creativity: '创意药水',
+        poison: '毒药药水',
+        warmth: '温暖药水',
       }
     },
     snowdown: {
@@ -1029,30 +1029,30 @@ export default {
         de: '德文'
       },
       tabDisplayDesktop: {
-        name: 'Tab display',
-        icon: 'Icon only',
-        text: 'Text only',
-        both: 'Icon and text'
+        name: '选项卡显示',
+        icon: '只显示图标',
+        text: '只显示文字',
+        both: '显示图标和文字'
       },
       tabDisplayMobile: {
-        name: 'Tab display',
-        icon: 'Icon only',
-        text: 'Text only',
-        both: 'Icon and text'
+        name: '选项卡显示',
+        icon: '只显示图标',
+        text: '只显示文字',
+        both: '显示图标和文字'
       },
       relativeUpgradeStats: {
-        name: 'Relative upgrade stats',
-        description: 'Shows the difference instead of before / after values'
+        name: '相对升级统计',
+        description: '显示差异而不是之前/之后的值'
       }
     },
     automation: {
       name: '自动化',
       progressMining: {
-        name: 'Mining autoprogress limit',
-        description: 'When breaking a rock for the first time, you automatically advance to the next depth if breaking it takes X seconds or less'
+        name: '挖掘自动进度限制',
+        description: '第一次破碎岩石时，如果破碎需要 X 秒或更短时间，您会自动前进到下一个深度'
       },
       fightHordeBoss: {
-        name: 'Autofight horde boss'
+        name: '自动战斗部落首领'
       }
     },
     performance: {
@@ -1168,23 +1168,23 @@ export default {
   // Feature specific translations
   mining: {
     mine: '矿井',
-    gainSummary: 'Gain {0} on hit, {1} (x{2}) on break, {3} per second',
-    gainSummaryHit: 'Gain {0} on hit',
-    gainSummaryBreak: 'Gain {0} on break',
-    depthDweller: 'Depth dweller',
+    gainSummary: '获得 {0} 当击中时, {1} (x{2}) 当挖碎时, {3} 每秒',
+    gainSummaryHit: '获得 {0} 当击中时',
+    gainSummaryBreak: '获得 {0} 当挖碎时',
+    depthDweller: '深度居民',
     dweller: {
       title: '当前 / 最高可能的居住深度',
-      description1: 'The dweller starts fast and gets slower the closer it gets to its limit.',
-      description2: 'For each completed half meter of current dweller depth, your prestige reward increases.',
-      description3: 'Highest possible dweller depth is {0}% of your maximum depth in the mine.',
-      description4: 'Maximum dweller depth',
-      nextTime: 'You reach {0}m in {1}'
+      description1: '居民开始时速度很快，越接近极限，速度就越慢。',
+      description2: '当前居民深度每完成半米，你的声望奖励就会增加。',
+      description3: '居民的最大可能深度是矿井中最大深度的 {0}%。',
+      description4: '最大居民深度',
+      nextTime: '你达到 {0}米 在 {1}'
     },
-    pickaxePower: 'This is the power of your pickaxe and your base damage. Increase it by crafting a better pickaxe.',
+    pickaxePower: '这是你的镐的力量和基础伤害。 通过制作更好的镐来增加它。',
     damage: '伤害',
-    timeToBreak: 'Time needed to break the current rock',
+    timeToBreak: '击碎目前石头需要时间',
     durability: '耐用性',
-    durabilityDescription: 'The amount of damage needed to break this rock',
+    durabilityDescription: '击碎这块岩石所需的伤害量',
     durabilityBreaks: {
       s: '这块石头被打破了 {0} 次',
       p: '这块石头被打破了 {0} 次'
@@ -1341,7 +1341,7 @@ export default {
       magic: '{0}% 魔法伤害',
       bio: '{0}% 生物伤害'
     },
-    healthDescription: 'The amount of damage you can take before dying',
+    healthDescription: '你在死亡前可承受的伤害数量',
     respawnDescription: 'How much time you need to recover from dying',
     reviveDescription: 'Instead of dying, use a revive to get healed to full health',
     critDescription: 'Regular attacks have a chance to deal increased damage. Crit chance can reach values over 100%, in which case the attack damage gets multiplied multiple times',
@@ -1352,7 +1352,7 @@ export default {
     cuttingDescription: 'Deal a percentage of your targets current health as biological damage after attacking',
     recoveryDescription: 'Heal a percentage of your missing health after killing an enemy',
     boss: 'Boss',
-    miniboss: 'Miniboss',
+    miniboss: '小Boss',
     minibossDescription: 'Minibosses appear in place of regular enemies and are a bit stronger. They hold valuable loot and up to 2 can be waiting at once. Defeating one also counts as defeating 4 regular enemies',
     minibossSoul: 'Minibosses hold {0} souls',
     minibossHeirloom: 'Minibosses hold {0} souls and have a {1}% heirloom chance ({2} nostalgia)',
@@ -1446,14 +1446,14 @@ export default {
     },
     corruption: {
       name: 'Corruption',
-      effects: 'Effects',
-      power: 'Attack and health x',
-      sigil: 'Sigil +',
+      effects: '效果',
+      power: '攻击和生命值 x',
+      sigil: '印记 +',
       revive: 'Revive +'
     },
     activeCooldown: 'Active cooldown',
-    itemsEquipped: 'items equipped',
-    cleared: 'Cleared',
+    itemsEquipped: '装备的物品',
+    cleared: '已清理',
     fighting: 'Fighting',
     items: {
       name: '装备',
