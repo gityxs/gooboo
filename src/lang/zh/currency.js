@@ -385,288 +385,288 @@ export default {
     description: '这些水晶看起来很神奇！如果没有你的深度居民，你永远不会找到它们'
   },
   mining_smoke: {
-    name: 'Smoke',
-    description: 'It\'s getting hard to breathe in here, this smoke is heavier than regular smoke'
+    name: '烟雾',
+    description: '这里呼吸越来越困难，这烟比普通烟更重'
   },
   mining_helium: {
-    name: 'Helium',
-    description: 'Also known as real-life voice changer'
+    name: '氦',
+    description: '也称为现实生活变声器'
   },
   mining_neon: {
-    name: 'Neon',
-    description: 'Everything looks so bright...'
+    name: '氖',
+    description: '一切看起来都是那么明亮...'
   },
   mining_argon: {
-    name: 'Argon',
+    name: '氩',
     description: ''
   },
   mining_krypton: {
-    name: 'Krypton',
+    name: '氪',
     description: ''
   },
   mining_xenon: {
-    name: 'Xenon',
+    name: '氙',
     description: ''
   },
   mining_radon: {
-    name: 'Radon',
+    name: '氡',
     description: ''
   },
   mining_crystalYellow: {
-    name: 'Yellow crystal',
-    description: 'These crystals look amazing as well! Good thing you already have your depth dweller'
+    name: '黄水晶',
+    description: '这些晶体看起来也很棒！ 幸好你已经有了你的深度居民'
   },
   village_coin: {
-    name: 'Gold coin',
-    description: 'Coins earned by selling food to your villagers'
+    name: '金币',
+    description: '通过向村民出售食物赚取金币'
   },
   village_wood: {
-    name: 'Wood',
-    description: 'Logs harvested from nearby trees'
+    name: '木头',
+    description: '从附近树木采伐的原木'
   },
   village_plantFiber: {
-    name: 'Plant fiber',
-    description: 'Grass, small plants, leaves, doesn\'t matter. They are all useful'
+    name: '植物纤维',
+    description: '草，小植物，树叶，都没关系。 它们都很有用'
   },
   village_stone: {
-    name: 'Stone',
-    description: 'Small rocks your creatures collected'
+    name: '石头',
+    description: '你的生物收集的小石头'
   },
   village_metal: {
-    name: 'Metal',
-    description: 'Your creatures found this metal by digging underground. Seems like the ground beneath this village isn\'t full of scrap'
+    name: '金属',
+    description: '你的生物通过挖掘地下发现了这种金属。 看来这个村庄的地下并没有充满废料'
   },
   village_gem: {
-    name: 'Gem',
-    description: 'Precious and shiny, this gem was found by expert miners using explosives'
+    name: '宝石',
+    description: '这颗宝石珍贵而闪亮，是由专业矿工使用炸药发现的'
   },
   village_water: {
-    name: 'Water',
-    description: 'Just plain and simple water'
+    name: '水',
+    description: '只是简单的水'
   },
   village_vegetable: {
-    name: 'Vegetable',
-    description: 'Fresh vegetables, grown in your local village'
+    name: '蔬菜',
+    description: '当地村庄种植的新鲜蔬菜'
   },
   village_fruit: {
-    name: 'Fruit',
-    description: 'Sweet and juicy fruit, the villagers love these'
+    name: '水果',
+    description: '果实香甜多汁，深受村民喜爱'
   },
   village_fish: {
-    name: 'Fish',
-    description: 'These fish are from the river next to your village'
+    name: '鱼',
+    description: '这些鱼来自你村庄旁边的河里'
   },
   village_grain: {
-    name: 'Grain',
-    description: 'Grain from plants grown in the village. You think this should be processed before eating it, but the villagers don\'t care'
+    name: '粮食',
+    description: '村里种植的植物的谷物。 你认为这个应该加工一下再吃，但村民不在乎'
   },
   village_knowledge: {
-    name: 'Knowledge',
-    description: 'Observe and learn'
+    name: '知识',
+    description: '观察和学习'
   },
   village_science: {
-    name: 'Science',
-    description: 'By conducting experiments under scientific standards, you can gather data that allows you to understand this world better'
+    name: '科学',
+    description: '通过在科学标准下进行实验，您可以收集数据，让您更好地了解这个世界'
   },
   village_joy: {
-    name: 'Joy',
-    description: 'Gain joy by reaching a happiness value of over 125%. More happiness above that value generates even more joy'
+    name: '快乐',
+    description: '通过达到超过 125% 的幸福值来获得快乐。 高于该值的更多快乐会产生更多快乐'
   },
   village_glass: {
-    name: 'Glass',
-    description: 'Be careful, don\' drop it!'
+    name: '玻璃',
+    description: '小心点，别掉下来!'
   },
   village_faith: {
-    name: 'Faith',
-    description: 'Your villagers are certain that things will be better in the future'
+    name: '信仰',
+    description: '你的村民确信未来情况会更好'
   },
   village_blessing: {
-    name: 'Blessing',
-    description: 'The hopes of your villagers turned out to be true! Things are better in the future! It will get easier over time!'
+    name: '祝福',
+    description: '村民们的希望终于成真了！ 未来一切都会更好！ 随着时间的推移，它会变得更容易！'
   },
   village_offering: {
-    name: 'Offering',
-    description: 'A mysterious offering that required a resource sacrifice'
+    name: '供品',
+    description: '需要牺牲资源的神秘产品'
   },
   village_hardwood: {
-    name: 'Hardwood',
-    description: 'These logs are gained from giant trees that need centuries to grow. Their wood is hard, but still elastic'
+    name: '硬木',
+    description: '这些原木是从需要几个世纪才能生长的巨树中获得的。 他们的木材很硬，但仍然有弹性'
   },
   village_oil: {
-    name: 'Oil',
-    description: 'A flexible and precious resource'
+    name: '油',
+    description: '灵活而宝贵的资源'
   },
   village_marble: {
-    name: 'Marble',
-    description: 'This beautiful piece of stone is a common choice for more luxorious buildings'
+    name: '大理石',
+    description: '这块美丽的石头是更豪华建筑的常见选择'
   },
   village_meat: {
-    name: 'Meat',
-    description: 'These cows surely had a wonderful life... right?'
+    name: '肉',
+    description: '这些牛肯定过着美好的生活......对吧？'
   },
   village_loot0: {
-    name: 'Common loot',
-    description: 'Has to do for now...'
+    name: '常见战利品',
+    description: '暂时必须做的事...'
   },
   village_loot1: {
-    name: 'Uncommon loot',
-    description: 'Slightly better, but we can do more!'
+    name: '罕见的战利品',
+    description: '稍微好一点，但我们可以做得更多!'
   },
   village_loot2: {
-    name: 'Rare loot',
-    description: 'Finally something decent'
+    name: '稀有战利品',
+    description: '终于有像样的东西了'
   },
   village_loot3: {
-    name: 'Epic loot',
-    description: 'Now it\'s getting good'
+    name: '史诗战利品',
+    description: '现在情况正在好转'
   },
   village_loot4: {
-    name: 'Legendary loot',
-    description: 'LEGENDARY!'
+    name: '传说战利品',
+    description: '传说!'
   },
   village_loot5: {
-    name: 'Mythical loot',
-    description: 'And you thought these were lost forever'
+    name: '神话战利品',
+    description: '你以为这些已经永远消失了'
   },
   horde_bone: {
-    name: 'Bone',
-    description: 'Skeletal remains of the enemies you have slain'
+    name: '骨头',
+    description: '你杀死的敌人的骸骨'
   },
   horde_monsterPart: {
-    name: 'Monster part',
-    description: 'A disgusting organ that can be found at zone 10 or higher when enemies stop appearing'
+    name: '怪物零件',
+    description: '当敌人停止出现时，可以在 10 区或更高区域找到令人厌恶的器官'
   },
   horde_corruptedFlesh: {
-    name: 'Corrupted flesh',
-    description: 'This does not look healthy at all. The entire piece of flesh is purple and violently pulsing'
+    name: '腐烂的肉体',
+    description: '这看起来一点也不健康。 整块肉呈紫色，剧烈跳动'
   },
   horde_mysticalShard: {
-    name: 'Mystical shard',
-    description: 'Filled with untapped power'
+    name: '神秘碎片',
+    description: '充满未开发的力量'
   },
   horde_soulCorrupted: {
-    name: 'Corrupted soul',
-    description: 'These souls are corrupted, but not all hope is lost. They can still be saved with a complex ritual'
+    name: '腐败的灵魂',
+    description: '这些灵魂已经腐化，但并非所有希望都丧失了。 他们仍然可以通过复杂的仪式得救'
   },
   horde_soulEmpowered: {
-    name: 'Empowered soul',
-    description: 'Formerly corrupted souls that were purified and strengthened by a complex ritual'
+    name: '强大的灵魂',
+    description: '以前腐化的灵魂通过复杂的仪式得到净化和强化'
   },
   horde_crown: {
-    name: 'Crown',
-    description: 'They used to rule the towers, but are now dethroned'
+    name: '王冠',
+    description: '他们曾经统治着塔楼，但现在已被废黜'
   },
   horde_towerKey: {
-    name: 'Tower key',
-    description: 'A rare key that allows you to access a tower'
+    name: '塔楼钥匙',
+    description: '一把可以让你进入塔楼的稀有钥匙'
   },
   farm_vegetable: {
-    name: 'Vegetable',
-    description: 'Eat your veggies!'
+    name: '蔬菜',
+    description: '多吃蔬菜!'
   },
   farm_fruit: {
-    name: 'Fruit',
-    description: 'The fertile soil on this farm gives the fruit an intense taste'
+    name: '水果',
+    description: '这个农场肥沃的土壤赋予了水果浓郁的味道'
   },
   farm_grain: {
-    name: 'Grain',
-    description: 'Storing all your grain in one location is fine, just keep the rats away'
+    name: '粮食',
+    description: '将所有谷物存放在一个地方就可以了，只要让老鼠远离即可'
   },
   farm_flower: {
-    name: 'Flower',
-    description: 'You could spend hours just looking at these flowers'
+    name: '鲜花',
+    description: '你可能会花上几个小时只是看着这些花'
   },
   farm_gold: {
-    name: 'Gold',
-    description: 'Small nuggets of gold that were buried in the soil'
+    name: '黄金',
+    description: '埋在土里的小金块'
   },
   farm_seedHull: {
-    name: 'Seed hull',
-    description: 'An empty hull from a plant, the seed seems to be missing'
+    name: '种子壳',
+    description: '植物的外壳空了，种子似乎不见了'
   },
   farm_petal: {
-    name: 'Petal',
-    description: 'These petals grow on all flowers, but you only collect the most beautiful ones'
+    name: '花瓣',
+    description: '这些花瓣生长在所有花朵上，但您只收集最美丽的花朵'
   },
   farm_bug: {
-    name: 'Bug',
-    description: 'Your plants have attracted all kinds of bugs. Collecting them is the hard part'
+    name: '虫子',
+    description: '你的植物吸引了各种各样的虫子。 收集它们是困难的部分'
   },
   farm_butterfly: {
-    name: 'Butterfly',
-    description: 'Light and beautiful, but hard to catch'
+    name: '蝴蝶',
+    description: '轻盈美丽，但难以捕捉'
   },
   farm_ladybug: {
-    name: 'Ladybug',
-    description: 'They may be small, but if you are lucky, you can find these in larger groups'
+    name: '瓢虫',
+    description: '它们可能很小，但如果你幸运的话，你可以在更大的群体中找到它们'
   },
   farm_spider: {
-    name: 'Spider',
-    description: 'These creatures may seem scary, but they help with keeping other insects in check'
+    name: '蜘蛛',
+    description: '这些生物可能看起来很可怕，但它们有助于控制其他昆虫'
   },
   farm_bee: {
-    name: 'Bee',
-    description: 'Bees are a common sight on a garden. Don\'t bother them, just let them collect their nectar'
+    name: '蜜蜂',
+    description: '蜜蜂是花园里常见的景象。 不要打扰它们，让它们采集花蜜即可'
   },
   farm_goldenPetal: {
-    name: 'Golden petal',
-    description: 'This extremely rare petal can only be found on roses. Rumors say the roses with these petals look darker than others'
+    name: '金色花瓣',
+    description: '这种极其罕见的花瓣只能在玫瑰上找到。 有传言说带有这些花瓣的玫瑰看起来比其他玫瑰颜色更深'
   },
   gallery_beauty: {
-    name: 'Beauty',
-    description: 'This painting only gets more beautiful the more time you spend on it'
+    name: '美丽',
+    description: '你花的时间越多，这幅画就会变得越美丽'
   },
   gallery_converter: {
-    name: 'Converter',
-    description: 'Create new colors, or existing ones'
+    name: '转换器',
+    description: '创建新颜色或现有颜色'
   },
   gallery_inspiration: {
-    name: 'Inspiration',
-    description: 'Unlimited possibilities'
+    name: '灵感',
+    description: '无限可能'
   },
   gallery_package: {
-    name: 'Package',
-    description: 'What\'s inside? Nobody knows! Like a little mystery'
+    name: '包裹',
+    description: '里面有什么？ 没人知道！ 就像一个小秘密'
   },
   gallery_red: {
-    name: 'Red paint',
-    description: 'Paint with passion'
+    name: '红色油漆',
+    description: '充满激情地绘画'
   },
   gallery_redDrum: {
-    name: 'Red drum',
-    description: 'An entire drum filled with red paint'
+    name: '红色鼓',
+    description: '整个鼓充满了红色油漆'
   },
   gallery_orange: {
-    name: 'Orange paint',
-    description: 'New colors, new worlds'
+    name: '橙色油漆',
+    description: '新色彩，新世界'
   },
   gallery_orangeDrum: {
-    name: 'Orange drum',
-    description: 'This drum is filled with orange paint'
+    name: '橙色鼓',
+    description: '这个鼓充满了橙色油漆'
   },
   gallery_yellow: {
-    name: 'Yellow paint',
-    description: 'An easy way to get attention'
+    name: '黄色油漆',
+    description: '获得关注的简单方法'
   },
   gallery_yellowDrum: {
-    name: 'Yellow drum',
-    description: 'This drum is easy to see'
+    name: '黄色鼓',
+    description: '这个鼓很容易看到'
   },
   gallery_green: {
-    name: 'Green paint',
-    description: 'Looks toxic, but isn\'t'
+    name: '绿色油漆',
+    description: '看似有毒，其实不然'
   },
   gallery_greenDrum: {
-    name: 'Green drum',
-    description: 'Just like the drums next to that nuclear reactor'
+    name: '绿色鼓',
+    description: '就像核反应堆旁边的鼓一样'
   },
   gallery_blue: {
-    name: 'Blue paint',
-    description: 'So calm, this will be a great addition to your painting'
+    name: '蓝色油漆',
+    description: '如此平静，这将为你的绘画增色不少'
   },
   gallery_blueDrum: {
-    name: 'Blue drum',
-    description: 'Just like the other ones, but it\'s blue'
+    name: '蓝色鼓',
+    description: '和其他的一样，但它是蓝色的'
   },
   gallery_purple: {
     name: '紫色油漆',
