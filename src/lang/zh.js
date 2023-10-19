@@ -330,12 +330,12 @@ export default {
     math: {
       name: '数学',
       subtitle: '求解方程式',
-      description: 'Answer various equations to raise your score. Gain 1 score for each correct answer, and lose 1 score for each wrong answer (cannot go below 0). As your grade increases, numbers get bigger and new operators are introduced.',
+      description: '回答各种方程式来提高你的分数。 每个正确答案得 1 分，每个错误答案扣 1 分（不能低于 0）。 随着等级的提高，数量会越来越多，并且会引入新的操作员。',
     },
     literature: {
       name: '文学',
       subtitle: '写句子',
-      description: 'Type the displayed sentence to raise your score. Gain 1 score for each sentence typed. The same sentence will stay until it is typed correctly, and you can see the beginning of the next sentence. As your grade increases, sentences and words get longer and new special characters are introduced.',
+      description: '输入显示的句子来提高你的分数。 每输入一个句子即可获得 1 分。 同一个句子将一直保留到正确输入为止，并且您可以看到下一个句子的开头。 随着等级的提高，句子和单词会变得更长，并且会引入新的特殊字符。',
     },
     history: {
       name: '历史',
@@ -351,56 +351,56 @@ export default {
     }
   },
   hourglass: {
-    title: 'Ancient hourglass',
-    subtitle: 'Skip time for this feature',
-    subtitleSchool: 'Convert exam passes to golden dust',
-    timeInMinutes: 'Time (in minutes)'
+    title: '古老的沙漏',
+    subtitle: '跳过此功能的时间',
+    subtitleSchool: '将考试合格证转化为金粉',
+    timeInMinutes: '时间 (分钟)'
   },
   cryolab: {
-    frozen: '{0} / {1} features frozen',
-    active: 'Active: {0}%',
-    activeTitle: 'Prestige gain (active)',
-    activeDescription: 'Passively gain prestige currency equal to {0}% of your best prestige per day. This is only active when the feature is frozen.',
-    passive: 'Passive: {0}%',
-    passiveTitle: 'Prestige gain (passive)',
-    passiveDescription: 'Passively gain prestige currency equal to {0}% of your best prestige per day. This is only active when the feature is not frozen.',
-    expDescription: 'You have {0} / {1} experience and gain {2} experience per day if this feature is frozen.',
-    expDescription2: 'Experience gain is based on your best prestige.',
-    expNext: 'Next level effect:',
-    expNoGain: 'To gain experience for this feature, gain some prestige currency first',
-    cropExp: 'Gain up to this amount of experience for each crop (base grow time and gold cost reduce experience gained)',
+    frozen: '{0} / {1} 功能冻结',
+    active: '主动: {0}%',
+    activeTitle: '声望增益 (主动)',
+    activeDescription: '每天被动获得相当于您最佳声望的 {0}% 的声望货币。 仅当功能被冻结时此功能才有效。',
+    passive: '被动: {0}%',
+    passiveTitle: '声望增益 (被动)',
+    passiveDescription: '每天被动获得相当于您最佳声望的 {0}% 的声望货币。 仅当功能未冻结时此功能才处于激活状态。',
+    expDescription: '你有 {0} / {1} 经验和获得 {2} 经验每天如果此功能被冻结.',
+    expDescription2: '经验获取基于您的最佳声望。',
+    expNext: '下一级效果:',
+    expNoGain: '要获得此功能的经验，请先获得一些声望货币',
+    cropExp: '为每种作物获得最多此数量的经验（基础生长时间和黄金成本会减少获得的经验）',
     frozenFeature: {
-      title: 'Feature is frozen',
-      description: 'This feature is frozen by the cryolab. You will not gain any progress in this feature, but gain prestige currency automatically.'
+      title: '功能被冻结',
+      description: '此功能已被冷冻实验室冻结。 您不会在此功能中获得任何进展，但会自动获得声望货币。'
     }
   },
   general: {
-    completionReward: 'Completion reward',
-    questGained: '{0} gained',
+    completionReward: '完成奖励',
+    questGained: '{0} 增益',
     grobodal: {
-      name: 'Grobodal',
-      diggingDeeper: 'Digging deeper',
-      combatTraining: 'Combat training',
-      gardening: 'Gardening',
-      pitchBlack: 'Pitch black',
-      masterOfTheSystem: 'Master of the system',
-      thinkPlayerThink: 'Think, player, think!',
+      name: '格罗博达尔',
+      diggingDeeper: '挖掘得更深',
+      combatTraining: '战斗训练',
+      gardening: '园艺',
+      pitchBlack: '漆黑一片',
+      masterOfTheSystem: '系统大师',
+      thinkPlayerThink: '想一想，玩家，想一想!',
     },
     orladee: {
-      name: 'Orladee',
-      beautyOfThisWorld: 'Beauty of this world'
+      name: '奥拉迪',
+      beautyOfThisWorld: '这世间的美丽'
     },
     oppenschroe: {
-      name: 'Oppenschroe'
+      name: '奥本施罗'
     },
     bellux: {
-      name: 'Bellux'
+      name: '贝卢克斯'
     },
     onoclua: {
-      name: 'Onoclua'
+      name: '奥诺克卢亚'
     },
     omnisolix: {
-      name: 'Omnisolix'
+      name: '奥尼索利克斯'
     },
   },
   event: {
@@ -1292,54 +1292,54 @@ export default {
     coinNotAffected: 'Coins are not affected by "All resource gain"',
     faithNotAffected: 'Faith is not affected by "All resource gain" and "Mental resource gain"',
     offering: {
-      name: 'Offerings',
+      name: '供品',
       description: {
-        0: 'Sacrifice ',
-        1: ' for ',
-        2: ' and increase the cost of the next sacrifice. Sacrifice cost resets on prestige.'
+        0: '牺牲 ',
+        1: ' 花费 ',
+        2: ' 并增加下一次牺牲的成本。 声望时牺牲成本重置.'
       },
-      sacrifice: 'Sacrifice'
+      sacrifice: '牺牲'
     },
-    material: 'Material',
-    food: 'Food',
-    mental: 'Mental resources',
-    loot: 'Loot',
-    foodConsume: 'Consuming up to {0} per second'
+    material: '材料',
+    food: '食物',
+    mental: '精神资源',
+    loot: '掠夺',
+    foodConsume: '消耗高达 {0} 每秒'
   },
   horde: {
-    horde: 'Horde',
-    zone: 'Zone',
-    player: 'Player',
-    enemy: 'Enemy',
-    loadoutName: 'Loadout name',
-    newLoadout: 'New loadout',
-    noLoadouts: 'No loadouts',
+    horde: '部落',
+    zone: '区域',
+    player: '玩家',
+    enemy: '敌人',
+    loadoutName: '预载名称',
+    newLoadout: '新预载',
+    noLoadouts: '无预载',
     monsterPartHint: 'Go to zone 10+ and reach enemy #101 to discover a new currency! That currency is essential to progess further, as it helps you raise your bone capacity.',
-    enemyDescription: 'Each enemy in the same zone has x{0} attack, x{1} health and +{2}% bones compared to the previous enemy. This is enemy #{3} and has x{4} attack, x{5} health and +{6}% bones. All of these effects reset when you die.',
+    enemyDescription: '与前一个敌人相比，同一区域中的每个敌人都有 x{0} 攻击力、x{1} 生命值和 +{2}% 骨头。 这是敌人 #{3}，具有 x{4} 攻击力、x{5} 生命值和 +{6}% 骨头。 当你死后，所有这些效果都会重置。',
     enemySigil1: {
-      s: 'Enemies in this zone have {0} sigil',
-      p: 'Enemies in this zone have {0} sigils',
+      s: '该区域内的敌人有 {0} 印记',
+      p: '该区域内的敌人有 {0} 印记',
     },
     enemySigil2: {
       s: '.',
-      p: ', chosen from {0} different types.',
+      p: ', 选择自 {0} 不同种类.',
     },
     damageTypes: {
-      title: 'Damage types',
-      description: 'Each attack has one of three damage types. Damage dealt and taken can be modified for each damage type.',
-      dealt: 'Dealt',
-      taken: 'Taken',
-      physic: 'Physical',
-      magic: 'Magical',
-      bio: 'Biological'
+      title: '伤害类型',
+      description: '每次攻击都有三种伤害类型之一。 每种伤害类型所造成和承受的伤害都可以修改。',
+      dealt: '造成',
+      taken: '受到',
+      physic: '物理',
+      magic: '魔法',
+      bio: '生物武器'
     },
-    itemFindDescription: 'After defeating an enemy you have a chance to find this equipment',
-    attackDescription: 'The amount of damage dealt per attack',
+    itemFindDescription: '击败敌人后有几率获得该装备',
+    attackDescription: '每次攻击造成的伤害量',
     attackConversion: {
-      text: 'Regular attacks happen every second and have the following damage distribution: ',
-      physic: '{0}% physical',
-      magic: '{0}% magical',
-      bio: '{0}% biological'
+      text: '每秒发生一次常规攻击，伤害分布如下: ',
+      physic: '{0}% 物理伤害',
+      magic: '{0}% 魔法伤害',
+      bio: '{0}% 生物伤害'
     },
     healthDescription: 'The amount of damage you can take before dying',
     respawnDescription: 'How much time you need to recover from dying',
