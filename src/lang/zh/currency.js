@@ -669,79 +669,79 @@ export default {
     description: 'Just like the other ones, but it\'s blue'
   },
   gallery_purple: {
-    name: 'Purple paint',
-    description: 'Mysterious and unknown'
+    name: '紫色油漆',
+    description: '神秘而未知'
   },
   gallery_purpleDrum: {
-    name: 'Purple drum',
+    name: '紫色鼓',
     description: ''
   },
   "gallery_deep-orange": {
-    name: 'Red-orange paint',
-    description: 'This color looks new, but also familiar'
+    name: '橙红色油漆',
+    description: '这个颜色看起来很新，但也很熟悉'
   },
   "gallery_deep-orangeDrum": {
-    name: 'Red-orange drum',
+    name: '橙红色鼓',
     description: ''
   },
   gallery_amber: {
-    name: 'Golden paint',
+    name: '金色油漆',
     description: ''
   },
   gallery_amberDrum: {
-    name: 'Golden drum',
+    name: '金色鼓',
     description: ''
   },
   "gallery_light-green": {
-    name: 'Light green paint',
+    name: '浅绿色油漆',
     description: ''
   },
   "gallery_light-greenDrum": {
-    name: 'Light green drum',
+    name: '浅绿色油鼓',
     description: ''
   },
   gallery_teal: {
-    name: 'Teal paint',
+    name: '青色油漆',
     description: ''
   },
   gallery_tealDrum: {
-    name: 'Teal drum',
+    name: '青色鼓',
     description: ''
   },
   "gallery_light-blue": {
-    name: 'Light blue paint',
+    name: '浅蓝色油漆',
     description: ''
   },
   "gallery_light-blueDrum": {
-    name: 'Light blue drum',
+    name: '浅蓝色鼓',
     description: ''
   },
   gallery_pink: {
-    name: 'Pink paint',
+    name: '粉红色油漆',
     description: ''
   },
   gallery_pinkDrum: {
-    name: 'Pink drum',
+    name: '粉红鼓',
     description: ''
   },
   gallery_cash: {
-    name: 'Cash',
-    description: 'Easy money!'
+    name: '现金',
+    description: '轻松赚钱!'
   },
   school_book: {
-    name: 'Book',
-    description: 'It\'s hard to carry these heavy books'
+    name: '书籍',
+    description: '搬运这些重书很困难'
   },
   school_goldenDust: {
-    name: 'Golden dust',
-    description: 'It emits a strange energy, as if it could change time itself'
+    name: '金尘',
+    description: '它散发出一种奇怪的能量，仿佛可以改变时间本身'
   },
   school_examPass: {
-    name: 'Exam pass',
-    description: 'Strange, we didn\'t need them at our old school. Here they are needed to take an exam'
+    name: '考试通过',
+    description: '奇怪的是，我们原来的学校不需要它们。 这里需要他们参加考试'
   },
   treasure_fragment: {
-    name: 'Fragment',
-    description: 'Broken pieces of treasure'
+    name: '片段',
+    description: '破碎的宝藏碎片'
   }
 };

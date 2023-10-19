@@ -860,100 +860,100 @@ export default {
           description: 'First 5 player attacks crit'
         },
         tea: {
-          name: 'Tea',
+          name: '茶',
           description: 'The player heals 25 and crits on the next attack after an enemy freezes'
         },
         starShield: {
-          name: 'Star shield',
-          description: 'The player gets 5 armor in the first 3 turns'
+          name: '星盾',
+          description: '玩家在前 3 回合内获得 5 点护甲'
         },
         coffee: {
-          name: 'Coffee',
+          name: '咖啡',
           description: 'The player heals 8 on crit'
         },
         pebbles: {
-          name: 'Pebbles',
-          description: 'The player stuns targets on crit for 1 turn'
+          name: '鹅卵石',
+          description: '玩家在暴击时击晕目标 1 回合'
         },
         sunShield: {
-          name: 'Sun shield',
+          name: '日盾',
           description: ''
         },
         moonShield: {
-          name: 'Moon shield',
+          name: '月盾',
           description: ''
         },
         fireplace: {
-          name: 'Fireplace',
+          name: '壁炉',
           description: ''
         },
         specialSnowflake: {
-          name: 'Special snowflake',
+          name: '特殊雪花',
           description: ''
         },
         candyCane: {
-          name: 'Candy cane',
+          name: '糖果手杖',
           description: ''
         },
         shovel: {
-          name: 'Shovel',
+          name: '铲子',
           description: ''
         },
         turkey: {
-          name: 'Turkey',
+          name: '火鸡',
           description: ''
         }
       }
     },
     merchant: {
-      name: 'Merchant'
+      name: '商人'
     },
     casino: {
-      name: 'Casino',
-      prize: 'Prize',
+      name: '赌场',
+      prize: '奖品',
       bingo: {
-        1: '1x Bingo',
-        2: '2x Bingo',
-        3: '3x Bingo'
+        1: '1x 宾果',
+        2: '2x 宾果',
+        3: '3x 宾果'
       }
     },
     bank: {
-      name: 'Bank',
-      description: 'Manage your topaz in 1 of 3 options. Using one option disables all other ones. Paying back loans does not require or consume an action.',
+      name: '银行',
+      description: '通过 3 个选项之一管理您的黄玉。 使用一个选项会禁用所有其他选项。 偿还贷款不需要或消耗任何行动。',
       project: {
-        name: 'Project',
-        expandVault: 'Expand vault',
-        persuadeInvestors: 'Persuade investors',
-        improveCreditScore: 'Improve credit score',
-        businessMarketing: 'Business marketing',
-        cardTournament: 'Sponsor card tournament',
-        fund: 'Fund'
+        name: '项目',
+        expandVault: '扩展金库',
+        persuadeInvestors: '说服投资者',
+        improveCreditScore: '提高信用评分',
+        businessMarketing: '商业营销',
+        cardTournament: '赞助卡片锦标赛',
+        fund: '基金'
       },
       investment: {
-        name: 'Investment',
-        description: 'Invest topaz to get it back with interest at the next bank event. Gain {0}% interest for the first {1} topaz and {2}% for everything above',
-        invest: 'Invest'
+        name: '投资',
+        description: '投资黄玉可在下次银行活动时连本带利地收回。 前 {1} 颗黄玉获得 {0}% 的利息，以上所有物品均获得 {2}% 的利息',
+        invest: '投资'
       },
       loan: {
-        name: 'Loan',
-        description: 'Borrow topaz with {0}% interest and repay it later. Topaz debt is automatically paid back when you get topaz with a full capacity.',
-        repay: 'Repay',
-        borrow: 'Borrow'
+        name: '贷款',
+        description: '以 {0}% 的利息借用黄玉并稍后偿还。 当您获得满容量的黄玉时，黄玉债务会自动偿还。',
+        repay: '偿还',
+        borrow: '借用'
       }
     },
-    calendar: 'Calendar',
-    rewards: 'Rewards'
+    calendar: '日历',
+    rewards: '奖励'
   },
   globalLevel: {
-    name: 'Global level',
-    description: 'Based on the sum of multiple values. Used to unlock new features',
-    mining_0: 'Deepest ore mine rock broken',
-    mining_1: 'Deepest gas giant rock broken',
-    village_0: 'Maximum housing',
-    horde_0: 'Highest zone boss defeated',
-    farm_0: 'Sum of all crop levels',
-    gallery_0: 'Log5 of total beauty',
-    debug: 'Debug'
+    name: '全局等级',
+    description: '基于多个值的总和。 用于解锁新功能',
+    mining_0: '击碎最深矿井岩石击碎',
+    mining_1: '最深的气态巨岩击碎',
+    village_0: '最大容纳量',
+    horde_0: '击败最高区域首领',
+    farm_0: '所有作物等级的总和',
+    gallery_0: 'Log5 整体美感',
+    debug: '调试'
   },
   theme: {
     name: '主题',
