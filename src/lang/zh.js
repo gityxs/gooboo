@@ -1445,16 +1445,16 @@ export default {
       generic: '通用',
     },
     corruption: {
-      name: 'Corruption',
+      name: '腐败',
       effects: '效果',
       power: '攻击和生命值 x',
       sigil: '印记 +',
-      revive: 'Revive +'
+      revive: '复活 +'
     },
-    activeCooldown: 'Active cooldown',
+    activeCooldown: '主动冷却时间',
     itemsEquipped: '装备的物品',
     cleared: '已清理',
-    fighting: 'Fighting',
+    fighting: '战斗',
     items: {
       name: '装备',
       usableInStun: '可以在眩晕时使用',

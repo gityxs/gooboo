@@ -1,26 +1,26 @@
 export default {
-  maxLevel: '{0} maximum level',
-  queueEmpty: 'Queue empty',
+  maxLevel: '{0} 最高等级',
+  queueEmpty: '队列为空',
 
   keyset: {
     default: {
-      notFound: 'No upgrades found',
-      nextRequirement: 'Next upgrade unlocks at ',
-      persistent: 'This upgrade is persistent and won\'t reset on prestige',
-      bought: 'Upgrades bought'
+      notFound: '未发现升级',
+      nextRequirement: '下次升级解锁于 ',
+      persistent: '此升级是永久性的，不会重置声望',
+      bought: '已购买升级'
     },
     building: {
-      notFound: 'No buildings found',
-      nextRequirement: 'Next building unlocks at ',
-      persistent: 'This building is persistent and won\'t reset on prestige',
-      bought: 'Buildings constructed'
+      notFound: '未找到任何建筑物',
+      nextRequirement: '下一栋建筑解锁于 ',
+      persistent: '该建筑具有持久性，不会因声望而重置',
+      bought: '已建成的建筑物'
     }
   },
 
-  build: 'Build',
+  build: '建造',
   subtype: {
-    village_housing: 'This building counts as housing, increasing your global level for the first 25 built',
-    village_workstation: 'This building counts as a workstation'
+    village_housing: '该建筑算作住房，可提高前 25 栋建筑的全局等级',
+    village_workstation: '这座建筑算作一个工作站'
   },
 
   description: {
