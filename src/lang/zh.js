@@ -731,40 +731,40 @@ export default {
       }
     },
     snowdown: {
-      name: 'Snowdown',
-      fightCount: 'Fight',
-      fight: 'Fight',
-      fightDescription: 'Fight the shown opponent at the cost of a few snowballs. If you win, you get snowballs, snowdown tokens, a producer and a chance for a new non-producer item. The non-producer item is guaranteed for the first 5 fights. Your loot rating increases the chance for a new item and the amount of snowballs and snowdown tokens received.',
-      pickProducer: 'Pick a producer',
-      pickItem: 'Pick an item',
-      reroll: 'Reroll',
-      rerollDescription: 'Reroll an owned item into another item of the same category (producer or non-producer).',
-      buyItem: 'Buy item',
-      buyItemDescription: 'Get one of three random non-producer items',
-      attackDescription: 'Amount of damage your attacks deal. The final amount of damage will be between 80% and 120% of your attack.',
-      healthDescription: 'Amount of damage you can take before freezing and becoming unable to fight.',
-      defenseDescription: 'Reduces incoming damage by a flat amount.',
-      critDescription: 'Increases your chance of dealing a critical hit by 1% per crit rating. Critical hits deal +10 damage. Above 25% crit chance, you get less crit chance per crit rating as your crit chance approaches 75%. For each 1% crit chance lost to this, get +0.2 crit damage.',
-      blockDescription: 'Increases your chance of blocking an attack and taking no damage.',
-      boost: 'Get 1 day of progress instantly',
+      name: '降雪',
+      fightCount: '战斗',
+      fight: '战斗',
+      fightDescription: '以几个雪球为代价与显示的对手战斗。 如果你赢了，你将获得雪球、降雪代币、生产者和获得新的非生产者物品的机会。 非生产者物品在前 5 场比赛中得到保证。 您的战利品等级会增加获得新物品的机会以及收到的雪球和降雪代币的数量。',
+      pickProducer: '选择一个生产者',
+      pickItem: '选择一个物品',
+      reroll: '重掷',
+      rerollDescription: '将拥有的物品重掷到同一类别（生产者或非生产者）的另一个物品中。',
+      buyItem: '购买物品',
+      buyItemDescription: '获取三个随机非生产者物品之一',
+      attackDescription: '你的攻击造成的伤害量。 最终伤害量将在你攻击的 80% 到 120% 之间。',
+      healthDescription: '在冻结并无法战斗之前你可以承受的伤害量。',
+      defenseDescription: '将传入的伤害减少固定数量。',
+      critDescription: '每个暴击等级使你造成暴击的几率提高 1%。 暴击造成 +10 伤害。 暴击率高于 25% 时，当暴击率接近 75% 时，每个暴击等级的暴击率会降低。 为此每损失 1% 暴击率，获得 +0.2 暴击伤害。',
+      blockDescription: '增加你格挡攻击且不受伤害的几率。',
+      boost: '立即获得 1 天的进度',
       fighter: {
-        player: 'Player',
-        snowOwl: 'Snow owl',
-        dog: 'Dog',
-        cat: 'Cat',
-        penguin: 'Penguin',
-        rabbit: 'Rabbit',
-        turtle: 'Turtle',
-        toddler: 'Toddler',
-        babysitter: 'Babysitter',
-        kid: 'Kid',
-        fatKid: 'Fat kid',
-        teenager: 'Teenager',
-        bully: 'Bully',
-        youngAdult: 'Young adult',
-        hooligan: 'Hooligan',
-        adult: 'Adult',
-        snowBot: 'Snow-BOT'
+        player: '玩家',
+        snowOwl: '雪鸮',
+        dog: '狗',
+        cat: '猫',
+        penguin: '企鹅',
+        rabbit: '兔子',
+        turtle: '乌龟',
+        toddler: '学步儿童',
+        babysitter: '保姆',
+        kid: '小孩',
+        fatKid: '胖孩子',
+        teenager: '少年',
+        bully: '恶霸',
+        youngAdult: '青年人',
+        hooligan: '流氓',
+        adult: '成人',
+        snowBot: '雪地机器人'
       },
       item: {
         rollingPin: {
@@ -1046,7 +1046,7 @@ export default {
       }
     },
     automation: {
-      name: 'Automation',
+      name: '自动化',
       progressMining: {
         name: 'Mining autoprogress limit',
         description: 'When breaking a rock for the first time, you automatically advance to the next depth if breaking it takes X seconds or less'
@@ -1056,113 +1056,113 @@ export default {
       }
     },
     performance: {
-      name: 'Performance',
+      name: '性能',
       upgradeListItems: {
-        name: 'Upgrades per page'
+        name: '每页升级数'
       },
       cssShadows: {
-        name: 'Text shadows',
-        0: 'None',
-        1: 'Simple',
-        2: 'Smooth'
+        name: '文字阴影',
+        0: '无',
+        1: '简单',
+        2: '光滑'
       },
       particleAmount: {
-        name: 'Particle amount',
-        0: 'None',
-        1: 'Reduced',
-        2: 'Average',
-        3: 'Increased'
+        name: '粒子数量',
+        0: '无',
+        1: '减少',
+        2: '平均',
+        3: '增加'
       },
       recordAutoplay: {
-        name: 'Record autoplay data'
+        name: '记录自动播放数据'
       }
     },
     notification: {
-      name: 'Notifications',
+      name: '通知',
       position: {
-        name: 'Position',
-        0: 'Top left',
-        1: 'Top',
-        2: 'Top right',
-        3: 'Bottom right',
-        4: 'Bottom',
-        5: 'Bottom left'
+        name: '位置',
+        0: '左上',
+        1: '顶部',
+        2: '右上',
+        3: '右下',
+        4: '底部',
+        5: '左下'
       },
       autosave: {
-        name: 'Autosave hint'
+        name: '自动保存提示'
       },
       backupHint: {
-        name: 'Backup hint',
-        0: 'Off',
-        1: 'Rare',
-        2: 'Average',
-        3: 'Common'
+        name: '备份提示',
+        0: '关闭',
+        1: '稀少',
+        2: '平均',
+        3: '普通'
       },
       updateCheck: {
-        name: 'Check for updates'
+        name: '检查更新'
       },
       note: {
-        name: 'Note hint'
+        name: '笔记提示'
       },
       achievement: {
-        name: 'Achievement hint'
+        name: '成就提示'
       },
       heirloom: {
-        name: 'Heirloom hint'
+        name: '传家宝提示'
       },
       cardPackContent: {
-        name: 'Card pack content'
+        name: '卡包内容'
       },
       cropReady: {
-        name: 'Crop ready'
+        name: '作物成熟'
       }
     },
     confirm: {
-      name: 'Confirmation',
+      name: '确认',
       prestige: {
-        name: 'Prestiges'
+        name: '声望'
       },
       gem: {
-        name: 'Gem purchases'
+        name: '宝石购买'
       },
       eventToken: {
-        name: 'Event token purchases'
+        name: '活动代币购买'
       },
       farmRareResources: {
-        name: 'Rare farm resource purchases'
+        name: '稀有农场资源购买'
       },
       treasureDelete: {
-        name: 'Treasure deletion'
+        name: '宝藏删除'
       }
     }
   },
   statBreakdown: {
-    base: 'Base value',
-    min: 'Minimum value',
-    max: 'Maximum value',
-    globalLevel: 'Global level',
-    prestige: 'Prestige',
-    graniteBreaksMult: 'Log10 breaks',
-    miningTemperature: 'Temperature',
-    villageOffering: 'Offerings',
-    zoneCleared: 'Zone cleared',
-    zoneClearedTotal: 'Highest zone cleared',
-    zone: 'Zone',
-    hordeBasicLoot: 'Basic loot',
-    hordeItemPermanent: 'Equipment effect',
-    hordeNostalgia: 'Nostalgia',
-    hordeNostalgiaLost: 'Heirlooms found',
-    cards: 'Cards',
-    treasure: 'Treasure',
-    debug: 'Debug',
-    bankInvestment: 'Investment',
-    alloying: 'Alloying',
-    miningResin: 'Resin',
-    cryolab: 'Cryolab',
-    ritualTier: 'Ritual tier',
-    ritualPotionLevel: 'Potion level',
-    ritualHint: 'Discovered hints',
-    ritualIngredient: 'Bonus ingredient',
+    base: '基础值',
+    min: '最小值',
+    max: '最大值',
+    globalLevel: '全局等级',
+    prestige: '声望',
+    graniteBreaksMult: 'Log10 中断',
+    miningTemperature: '温度',
+    villageOffering: '供品',
+    zoneCleared: '区域已清理',
+    zoneClearedTotal: '清除最高区域',
+    zone: '区域',
+    hordeBasicLoot: '基础战利品',
+    hordeItemPermanent: '装备效果',
+    hordeNostalgia: '怀旧之情',
+    hordeNostalgiaLost: '发现传家宝',
+    cards: '卡片',
+    treasure: '宝藏',
+    debug: '调试',
+    bankInvestment: '投资',
+    alloying: '合金化',
+    miningResin: '树脂',
+    cryolab: '冷冻实验室',
+    ritualTier: '仪式层级',
+    ritualPotionLevel: '药水等级',
+    ritualHint: '发现提示',
+    ritualIngredient: '奖励成分',
   },
 
   // Feature specific translations
@@ -1186,111 +1186,111 @@ export default {
     durability: '耐用性',
     durabilityDescription: 'The amount of damage needed to break this rock',
     durabilityBreaks: {
-      s: 'This rock was broken {0} time',
-      p: 'This rock was broken {0} times'
+      s: '这块石头被打破了 {0} 次',
+      p: '这块石头被打破了 {0} 次'
     },
     toughness: '韧性',
-    toughnessDescription: 'Reduces incoming damage by a flat amount',
-    toughnessHigh: 'Toughness is severely reducing your damage',
-    toughnessTooHigh: 'Toughness is too high to deal any damage',
-    scrapDescription: 'Gain scrap each time you deal damage after you destroyed this rock at least once. When you destroy a rock you gain {0}x scrap rewards',
-    scrapNotBroken: 'You do not gain scrap yet because this rock has never been broken',
-    oreNotBroken: 'You do not gain ore yet because this rock has never been broken',
+    toughnessDescription: '将受到的伤害减少固定数量',
+    toughnessHigh: '韧性正在大幅减少你的伤害',
+    toughnessTooHigh: '韧性太高，无法造成任何伤害',
+    scrapDescription: '在你摧毁这块岩石至少一次后，每次造成伤害都会获得碎片。 当您摧毁一块岩石时，您将获得 {0}x 的废料奖励',
+    scrapNotBroken: '你还没有获得废料，因为这块岩石从未被破碎过',
+    oreNotBroken: '您还没有获得矿石，因为这块岩石从未被破碎过',
     oreDescription: {
-      short: 'Can be found at {0}m or below',
-      long: 'Can be found at {0}m - {1}m, or below if the depth is divisible by {2}'
+      short: '可以在 {0}米 或以下找到',
+      long: '可以在 {0}米 - {1}米 处找到，如果深度能被 {2} 整除，则可以在以下位置找到'
     },
-    rareEarthNotBroken: 'You do not gain rare earth yet because this rock has never been broken',
+    rareEarthNotBroken: '你还没有获得稀土，因为这块岩石从未被破碎过',
     rareEarthDescription: {
-      granite: 'Can be found at {0}m or below for rocks that have been broken 1000 times or more. For each power of 10 breaks above that, the amount gained doubles',
-      salt: 'Can be found at {0}m or below for rocks with exactly 1 ore',
-      coal: 'Can be found at {0}m or below on each rocks first break',
-      sulfur: 'Can be found at {0}m or below when hitting the deepest rock',
-      niter: 'Can be found at {0}m or below on power of 10 rock breaks',
-      obsidian: 'Can be found at {0}m or below if your pickaxe is not enhanced'
+      granite: '可以在 {0}m 或以下找到已破碎 1000 次或以上的岩石。 每突破 10 次，获得的数量就会翻倍',
+      salt: '可以在 {0}m 或以下找到含有 1 个矿石的岩石',
+      coal: '可以在每块岩石第一次破碎处的 {0} 米或以下位置找到',
+      sulfur: '当撞到最深的岩石时，可以在 {0} 米或以下找到',
+      niter: '可以在 {0} 米或以下的地方找到，力量为 10 次岩石破碎',
+      obsidian: '如果你的镐没有增强，可以在 {0}m 或以下找到'
     },
-    rareEarthNotAffected: 'This resource is not affected by rare earth gain',
-    scrapGainHint: 'You do not get scrap when hitting rocks you have never broken before. Sometimes it is smarter to stay on your current depth to collect more scrap instead of digging down immediately.',
-    oreCrafting: 'Click on ores to add them to crafting slots',
+    rareEarthNotAffected: '该资源不受稀土增益影响',
+    scrapGainHint: '当撞击您以前从未破碎过的岩石时，您不会产生废料。 有时，留在当前深度收集更多废料比立即向下挖掘更明智。',
+    oreCrafting: '点击矿石将其添加到制作槽中',
     crafting: {
       power: '力量',
       purity: '纯度',
       impurity: '杂质',
       craftPickaxe: '制作镐子',
-      purityDescription: 'To reach 50% minimum quality, your purity needs to match your impurity.',
-      premiumSlot: 'This is a premium crafting slot. Impurity above x1 is halved and purity is doubled.'
+      purityDescription: '要达到 50% 的最低质量，您的纯度需要与杂质相匹配。',
+      premiumSlot: '这是一个高级制作槽。 高于 x1 的杂质减半，纯度加倍。'
     },
-    craftingDescription: 'Consume selected ores and create a new pickaxe with a random power value. If it is better than your current pickaxe ({0} power), replace it.',
-    resinDescription: 'Each piece of resin adds 30% power and 25% purity. Up to {0} resin may be used per pickaxe craft.',
-    smokeDescription: 'Consume all smoke to create a new pickaxe with a fixed power value',
-    smeltery: 'Smeltery',
-    smelteryTemperatureDescription: 'Reach certain temperatures to unlock more smelteries. Smelteries also gain +{0}% speed per degree above the requirement',
+    craftingDescription: '消耗选定的矿石并创建具有随机力量值的新镐。 如果它比您当前的镐（{0} 功率）更好，请更换它。',
+    resinDescription: '每一块树脂增加 30% 的力量和 25% 的纯度。 每个镐工艺最多可以使用 {0} 个树脂。',
+    smokeDescription: '消耗所有烟雾以创建具有固定力量值的新镐',
+    smeltery: '冶炼厂',
+    smelteryTemperatureDescription: '达到一定温度即可解锁更多冶炼厂。 冶炼厂的速度也比要求高出每度 +{0}%',
     smelteryTemperatureDescription2: '由于温度原因，该冶炼厂的速度增加了 +{0}%',
     smelterySpeedDescription: '该冶炼厂的基准时间为 {0}',
     smelt: '冶炼',
     enhance: '增强',
     enhancement: {
       title: '增强',
-      description: 'Use bars to apply enhancements to your pickaxe. Each bar has their own unique enhancement that can be applied multiple times. But be careful, each successful enhancement makes the next one more difficult, so think about which enhancements you put on your pickaxe',
-      chanceDescription: 'Your enhancements have a {0}% chance to succeed and get {1}% harder when they do. Bars will always be consumed, but the enhancement only applies on success. When you fail, your success chance keeps increasing until you get a successful enhancement. Enhancements are also more likely to succeed at the end of your success bar',
-      barAluminium: 'Lightweight',
-      barBronze: 'Sturdy',
-      barSteel: 'Sharp',
-      barTitanium: 'Excavator',
-      barShiny: 'Rich'
+      description: '使用金属锭来增强你的镐。 每个金属锭都有自己独特的增强功能，可以多次应用。 但要小心，每一次成功的增强都会使下一个变得更加困难，所以请考虑一下你在镐上放置了哪些增强',
+      chanceDescription: '您的增强有 {0}% 的机会成功，并且成功后难度会增加 {1}%。 能量条总会被消耗，但增强效果仅在成功时生效。 当你失败时，你的成功机会会不断增加，直到你获得成功的增强。 增强功能也更有可能在成功条结束时取得成功',
+      barAluminium: '轻量',
+      barBronze: '坚固',
+      barSteel: '锋利',
+      barTitanium: '挖掘机',
+      barShiny: '丰富'
     },
     gasGain: {
-      0: 'Gain ',
-      1: '% of your obtainable ',
-      2: ' when you break this rock. You can get up to ',
-      3: ' in this depth'
+      0: '获得 ',
+      1: '% 你可获得的 ',
+      2: ' 当你打破这块石头时。 您最多可以 ',
+      3: ' 在这个深度'
     }
   },
   village: {
     job: {
-      name: 'Jobs',
-      collector: 'Collector',
-      farmer: 'Farmer',
-      harvester: 'Harvester',
-      miner: 'Miner',
-      wellWorker: 'Well worker',
-      librarian: 'Librarian',
-      glassblower: 'Glassblower',
-      entertainer: 'Entertainer',
-      lumberjack: 'Lumberjack',
-      blastMiner: 'Blast miner',
-      fisherman: 'Fisherman',
-      scientist: 'Scientist',
-      gardener: 'Gardener',
-      oilWorker: 'Oil worker',
-      sculptor: 'Sculptor',
-      explorer: 'Explorer',
+      name: '工作',
+      collector: '收集者',
+      farmer: '农夫',
+      harvester: '收割机',
+      miner: '矿工',
+      wellWorker: '井工',
+      librarian: '图书管理员',
+      glassblower: '玻璃吹制工',
+      entertainer: '艺人',
+      lumberjack: '伐木工',
+      blastMiner: '爆破矿工',
+      fisherman: '渔夫',
+      scientist: '科学家',
+      gardener: '园丁',
+      oilWorker: '石油工人',
+      sculptor: '雕塑家',
+      explorer: '探险家',
     },
     policy: {
-      name: 'Policies',
-      taxes: 'Taxes',
-      immigration: 'Immigration',
-      religion: 'Religion',
-      scanning: 'Scanning',
+      name: '政策',
+      taxes: '税收',
+      immigration: '移民',
+      religion: '宗教',
+      scanning: '扫描',
     },
-    buildings: 'Buildings',
-    village: 'Village',
-    pray: 'Pray',
-    unemployed: 'Unemployed',
-    unemployedDescription: 'Unemployed citizens do not produce resources. Assign them to a job below',
-    taxpayers: 'Taxpayers',
-    taxpayersDescription1: 'All working citizens consume up to {0} of each food per second and pay taxes equal to {1} ',
-    taxpayersDescription2: ' per food item consumed.',
-    happinessDescription: 'Happiness modifies all resource gain (except gold coins and faith)',
-    powerDescription: 'Gain a +50% increase to all material and food gain for each power. Your current power multiplies material and food gain by x{0}',
-    pollutionDescription: 'Reduce happiness by 1% for each point of pollution. If you have more pollution than tolerance, the happiness penalty increases by 1% per pollution over your tolerance. Your next point of pollution would reduce happiness by {0}%',
-    lootDescription: 'Find new loot every time the bar fills',
-    lootRarity: 'Loot quality determines your loot rarity distribution:',
-    lootNeedQuality: 'Needs over {0} quality',
-    buildingStat: 'Total buildings constructed',
-    housingStat: 'Total housing constructed (first 25 per building)',
-    coinNotAffected: 'Coins are not affected by "All resource gain"',
-    faithNotAffected: 'Faith is not affected by "All resource gain" and "Mental resource gain"',
+    buildings: '建筑',
+    village: '村庄',
+    pray: '祈祷',
+    unemployed: '未分配',
+    unemployedDescription: '未分配的村民不生产资源。 将他们分配给以下工作',
+    taxpayers: '纳税人',
+    taxpayersDescription1: '所有工作的村民每秒消耗每种食物最多 {0}，并缴纳相当于 {1} 的税款 ',
+    taxpayersDescription2: ' 每个消耗的食物物品.',
+    happinessDescription: '幸福感会修改所有资源增益（金币和信仰除外）',
+    powerDescription: '每个力量的所有材料和食物增益增加+50%。 您当前的力量将材料和食物增益乘以 x{0}',
+    pollutionDescription: '每污染一点，幸福感就会降低 1%。 如果你的污染程度超过了你的容忍度，那么每污染一次超过你的容忍度，幸福感惩罚就会增加 1%。 您的下一个污染点将使幸福感降低 {0}%',
+    lootDescription: '每次进度条填满时都会找到新的战利品',
+    lootRarity: '战利品质量决定了战利品的稀有度分布:',
+    lootNeedQuality: '需要超过 {0} 的质量',
+    buildingStat: '已建成建筑物总数',
+    housingStat: '已建成住房总数（每栋建筑前 25 栋）',
+    coinNotAffected: '金币不受“所有资源增益”的影响',
+    faithNotAffected: '信仰不受“所有资源增益”和“精神资源增益”影响',
     offering: {
       name: '供品',
       description: {
@@ -1314,7 +1314,7 @@ export default {
     loadoutName: '预载名称',
     newLoadout: '新预载',
     noLoadouts: '无预载',
-    monsterPartHint: 'Go to zone 10+ and reach enemy #101 to discover a new currency! That currency is essential to progess further, as it helps you raise your bone capacity.',
+    monsterPartHint: '前往 10+ 区并找到敌人 #101 来发现新货币！ 这种货币对于进一步进度至关重要，因为它可以帮助您提高骨头容量。',
     enemyDescription: '与前一个敌人相比，同一区域中的每个敌人都有 x{0} 攻击力、x{1} 生命值和 +{2}% 骨头。 这是敌人 #{3}，具有 x{4} 攻击力、x{5} 生命值和 +{6}% 骨头。 当你死后，所有这些效果都会重置。',
     enemySigil1: {
       s: '该区域内的敌人有 {0} 印记',
@@ -1369,31 +1369,31 @@ export default {
     minibossBioResist: 'Minibosses only take 50% biological damage',
     enemyRespawn: 'Enemies take {0} to respawn and up to {1} enemies can be waiting. Defeating a boss immediately respawns all enemies',
     taunt: {
-      title: 'Taunt mode',
-      description: 'When taunted, enemies keep spawning even when none are waiting, but all enemies spawned early carry no loot. Taunting only works when trying to reach the boss',
-      on: 'Taunt mode is on',
-      off: 'Taunt mode is off',
-      clickToToggle: 'click to toggle'
+      title: '嘲讽模式',
+      description: '当被嘲讽时，即使没有人在等待，敌人也会继续生成，但所有早期生成的敌人都不会携带战利品。 嘲讽仅在试图接近Boss时有效',
+      on: '嘲讽模式已开启',
+      off: '嘲讽模式已关闭',
+      clickToToggle: '点击切换'
     },
     reachBoss: {
-      title: 'Reach the boss',
-      description: 'To challenge the boss of this zone, you need to defeat {0} enemies without dying'
+      title: '到达Boss',
+      description: '要挑战该区域的Boss，您需要在不死亡的情况下击败 {0} 个敌人'
     },
     fightBoss: {
-      title: 'Fight boss',
-      description: 'You have defeated enough enemies to challenge the boss of this zone'
+      title: '打Boss',
+      description: '你已经击败了足够多的敌人来挑战这个区域的Boss'
     },
     fleeBoss: {
-      title: 'Flee from the boss',
-      description: 'Run away from this battle and keep fighting regular enemies'
+      title: '逃离Boss',
+      description: '逃离这场战斗并继续与普通敌人战斗'
     },
     defeatedBoss: {
-      title: 'Boss defeated',
-      description: 'You have defeated the boss of this zone, which allows you to travel to the next zone'
+      title: 'Boss被击败',
+      description: '你已经击败了这个区域的Boss，这让你可以前往下一个区域'
     },
-    souls: 'Souls',
+    souls: '灵魂',
     stat: {
-      crit: 'Crit'
+      crit: '暴击'
     },
     rampage: {
       name: 'Rampage',
@@ -1402,30 +1402,30 @@ export default {
       effectCurrent: 'This enemy has rampaged {0} times. It has x{1} attack, +{2}% crit chance, +{3}% crit damage and {4} stun resist.'
     },
     sigil: {
-      name: 'Sigil',
-      hasActive: 'Has active effect',
-      min: 'Appears at zone {0} or higher',
-      special: 'Only appears under special conditions',
-      inactive: 'inactive',
-      power: 'Power',
-      health: 'Health',
-      bashing: 'Bashing',
-      recovery: 'Recovery',
-      toughness: 'Toughness',
-      strength: 'Strength',
-      magic: 'Magic',
-      magicBolt: 'Magic bolt',
-      fireball: 'Fireball',
-      incorporeal: 'Incorporeal',
-      focus: 'Focus',
-      wisdom: 'Wisdom',
-      sparks: 'Sparks',
-      protection: 'Protection',
-      shielding: 'Shielding',
-      resistance: 'Resistance',
-      precision: 'Precision',
-      screaming: 'Screaming',
-      cure: 'Cure',
+      name: '印记',
+      hasActive: '具有积极作用',
+      min: '出现在区域 {0} 或更高区域',
+      special: '仅在特殊条件下出现',
+      inactive: '未激活',
+      power: '力量',
+      health: '生命值',
+      bashing: '猛击',
+      recovery: '恢复',
+      toughness: '韧性',
+      strength: '力量',
+      magic: '魔法',
+      magicBolt: '魔法箭',
+      fireball: '火球',
+      incorporeal: '无形',
+      focus: '聚焦',
+      wisdom: '智慧',
+      sparks: '火花',
+      protection: '保护',
+      shielding: '屏蔽',
+      resistance: '抵抗',
+      precision: '精确',
+      screaming: '尖叫',
+      cure: '治愈',
       sharp: 'Sharp',
       spitting: 'Spitting',
       burst: 'Burst',
