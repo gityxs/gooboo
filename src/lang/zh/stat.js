@@ -1,8 +1,8 @@
 export default {
   // Mining stats
   mining_maxDepth0: {
-    achievement: 'This is deep',
-    description: 'Maximum depth'
+    achievement: '这很深',
+    description: '最大深度'
   },
   mining_maxDepth1: {
     achievement: 'Digging deeper',
