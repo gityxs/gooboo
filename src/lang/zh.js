@@ -25,7 +25,7 @@ export default {
     unequipAll: '全部脱下',
     max: '最大',
     maxed: '最大',
-    free: '空闲',
+    free: '免费',
     capacity: '容量',
     multCapacity: '{0} 容量',
     gain: '增益',
