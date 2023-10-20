@@ -297,7 +297,7 @@ export default {
     title: '{0} error',
     source: 'Source: {0}',
     position: 'Line {0}, column {1}',
-    reportBug: 'Report bug'
+    reportBug: '报告错误'
   },
   note,
   school: {
