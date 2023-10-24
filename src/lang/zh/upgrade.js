@@ -1,6 +1,9 @@
 export default {
   maxLevel: '{0} 最高等级',
   queueEmpty: '队列为空',
+  nextLevels: '下一级别',
+  bookNotFound: '通过达到某些升级的最高级别来找到此功能的书籍升级',
+  bookNotFoundVillage: '通过达到某些升级或建筑物的最高级别来找到此功能的书籍升级',
 
   keyset: {
     default: {

@@ -133,6 +133,15 @@ export default {
     update: {
       get: '新的更新!',
       apply: '刷新 + 应用'
+    },
+    import: {
+      message: '文件无法加载',
+      base64: '解码失败',
+      json: 'JSON 无法解码',
+      key: '加载的存档文件缺少所需数据',
+      version: '该文件来自游戏的较新版本（v{0}，当前版本: v{1})',
+      testing: '测试版本中的文件无法在发布版本中使用',
+      migration: '从 v{0} 迁移到 v{1} 时出错'
     }
   },
   duplicateTab: {
@@ -233,6 +242,7 @@ export default {
   info: {
     title: 'Gooboo',
     subtitle: '开发者是 Tendsty',
+    testing: '测试',
     text: 'Gooboo 是一款放置/增量游戏，您可以在神秘、未知的世界中管理多个功能。 收集不同的资源来购买各种各样的升级，以增加你的资源收益。 取得主要功能的进展以解锁新内容并了解有关这个世界的更多信息。 当进展开始放缓时，声望个人功能可以将您的收获提升到一个新的等级。',
     updates: {
       web: '您使用的是网页版。 游戏会定期检查更新，自动使用最新版本，并在有可用更新时通知您。',
@@ -242,6 +252,11 @@ export default {
         2: ' 页面.'
       },
       steam: '您使用的是steam版本。 更新是通过 steam 处理的。'
+    },
+    testingDescription: {
+      0: '您正在玩测试版本。 功能可能未完成或有错误，游戏机制可能随时改变。 你可以玩发布版在 ',
+      1: '这里',
+      2: ' (测试版本中的保存文件无法在游戏的发布版本中使用)'
     },
     viewPatchnotes: '查看更新日志',
     numberFormatting: '数字格式',
@@ -279,6 +294,8 @@ export default {
       snackbars: 'v-snackbars',
       color: 'color',
       mdi: 'Material Design Icons',
+      jsfiledownload: 'Javascript File Download',
+      seedrandom: 'seedrandom',
       caveat: 'Caveat',
       roboto: 'Roboto',
       robotomono: 'Roboto Mono',
@@ -992,6 +1009,9 @@ export default {
   settings: {
     keybinds: {
       name: '键盘绑定',
+      prevMainFeature: {
+        name: '以前的主要功能'
+      },
       nextMainFeature: {
         name: '下一个主要功能'
       },
@@ -1134,7 +1154,15 @@ export default {
       treasureDelete: {
         name: '宝藏删除'
       }
-    }
+    },
+      experiment: {
+        name: '实验性',
+        warning: '这些设置仍处于实验阶段，可能存在错误、未完成、性能不佳或令人困惑。 启用它们的风险由您自行承担，如果您正在使用它们，请留下反馈！ 如果此部分为空，则表示当时没有可用的实验设置，或者您尚未取得足够的进展，无法看到它们',
+        gainTimer: {
+          name: '显示增益定时器',
+          description: '显示达到资源容量或承担升级所需的时间。 一些资源的收入使用估算不规则，但并非所有资源都有此情况'
+        }
+      }
   },
   statBreakdown: {
     base: '基础值',
@@ -1216,6 +1244,7 @@ export default {
       power: '力量',
       purity: '纯度',
       impurity: '杂质',
+      oreQuality: '制作镐所需的矿石量除以矿石质量',
       craftPickaxe: '制作镐子',
       purityDescription: '要达到 50% 的最低质量，您的纯度需要与杂质相匹配。',
       premiumSlot: '这是一个高级制作槽。 高于 x1 的杂质减半，纯度加倍。'
@@ -1298,7 +1327,9 @@ export default {
         1: ' 花费 ',
         2: ' 并增加下一次牺牲的成本。 声望时牺牲成本重置.'
       },
-      sacrifice: '牺牲'
+      sacrifice: '牺牲',
+      notUnlocked: '此供品尚未解锁。 您仍然可以牺牲和花费供品，但资源容量只有在您解锁供品后才会应用',
+      notUnlockedHint: '该供品尚未解锁，因此资源容量尚未适用'
     },
     material: '材料',
     food: '食物',
@@ -1362,6 +1393,7 @@ export default {
     silenceEnemy: '该敌人已被沉默且无法使用主动技能',
     stunPlayer: '你被眩晕并且无法攻击',
     stunEnemy: '该敌人处于眩晕状态，无法攻击',
+    shieldbreak: '更快打破分裂盾',
     stunResist: '从眩晕中恢复得更快',
     stunBoss: 'Boss 获得 +2 眩晕抗性',
     stunMiniboss: '小Boss获得 +1 眩晕抗性',
@@ -1370,7 +1402,7 @@ export default {
     enemyRespawn: '敌人需要 {0} 时间才能重生，最多可以等待 {1} 个敌人。 击败 Boss 后所有敌人都会立即重生',
     taunt: {
       title: '嘲讽模式',
-      description: '当被嘲讽时，即使没有人在等待，敌人也会继续生成，但所有早期生成的敌人都不会携带战利品。 嘲讽仅在试图接近Boss时有效',
+      description: '当被嘲讽时，即使没有人在等待，敌人也会继续生成，但所有提前生成的敌人都不会携带战利品。 嘲讽仅在试图接近Boss时有效',
       on: '嘲讽模式已开启',
       off: '嘲讽模式已关闭',
       clickToToggle: '点击切换'
@@ -1486,6 +1518,7 @@ export default {
       antidote: '解毒剂',
       brokenStopwatch: '坏了的秒表',
       luckyCharm: '幸运符',
+      mailbreaker: '邮件破坏者',
       club: '击棍',
       goldenStaff: '金色杖',
       toxicSword: '毒剑',
@@ -1494,6 +1527,7 @@ export default {
       healthyFruit: '健康水果',
       glasses: '玻璃',
       deadBird: '死鸟',
+      shieldDissolver: '护盾溶解器',
       calmingPill: '安神丸',
       cleansingFluid: '洁面液',
       forbiddenSword: '禁忌之剑',
@@ -1582,7 +1616,7 @@ export default {
       },
       antidote: {
         0: '移除',
-        1: '药水'
+        1: '中毒效果'
       },
       permanentStat: {
         0: '提高 ',
@@ -1591,7 +1625,11 @@ export default {
       },
       divisionShield: {
         0: '获得',
-        1: '师盾'
+        1: '分裂盾'
+      },
+      removeDivisionShield: {
+        0: '移除',
+        1: '来自对手的分裂盾'
       },
       reviveAll: '恢复所有生命值',
       removeStun: '移除眩晕',
@@ -1706,13 +1744,13 @@ export default {
       goldenRose: '金玫瑰'
     },
     cropUpgrade: {
-      yield: 'x1.15 产量',
-      grow: 'x0.8 生长时间',
-      exp: '+0.5 经验值',
-      gold: 'x1.12 黄金几率',
+      yield: 'x1.25 产量',
+      grow: 'x0.92 生长时间',
+      exp: '+0.35 经验值',
+      gold: 'x1.35 黄金几率',
       overgrow: '+50% 过度生长',
       cost: 'x0.75 成本, 至少降低-1成本',
-      double: 'x1.5 产量, 经验值和黄币几率和 x1.2 稀有掉落几率，但 x2 增长时间',
+      double: 'x1.5 产量, 经验值和黄币几率和 x1.3 稀有掉落几率，但 x2 生长时间',
       fertile: '肥料效果增强 25%',
       drops: 'x1.2 稀有掉率'
     },
@@ -1742,8 +1780,8 @@ export default {
       premiumOwned: '高级: {0} 已拥有',
       gardenGnome: {
         name: '花园侏儒',
-        description: '田里的庄稼收获时可能会产出黄金。 几率取决于作物的生长时间。',
-        descriptionPremium: '田里的庄稼收获时可能会产出黄金。 根据作物生长时间，几率加倍。',
+        description: '当花园侏儒放置在田野上时，田野上的农作物可能会在收获时产生黄金。 几率取决于作物的生长时间。',
+        descriptionPremium: '当花园侏儒放置在田野上时，田野上的农作物可能会在收获时产生黄金。 根据作物生长时间，几率加倍。',
       },
       sprinkler: {
         name: '洒水装置',

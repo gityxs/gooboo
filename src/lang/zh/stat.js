@@ -105,11 +105,11 @@ export default {
   },
   village_totalOffering: {
     achievement: '虚无主义者',
-    description: '供品总数'
+    description: '牺牲总数'
   },
   village_bestOffering: {
     achievement: '黑洞',
-    description: '一次声望种最大供品数量'
+    description: '一次声望中最大牺牲次数'
   },
   village_oil: {
     achievement: '拿走他们的油!',

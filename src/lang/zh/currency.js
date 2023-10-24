@@ -2,6 +2,9 @@ export default {
   overcapGain: '由于达到上限，收入减少至 {0}%',
   overcapNoGain: '由于超果上限没有收入',
   benefitLoss: '购买这个会导致利益损失',
+  gainTimerNeeded: '距离可以负担得起还有 {0}',
+  capTimerNeeded: '距离达到容量上限还有 {0}',
+  overcapTimerNeeded: '距离达到下一个容量等级还有 {0}',
 
   // Premium currencies
   gem_ruby: {
