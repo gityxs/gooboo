@@ -235,6 +235,9 @@ export default {
     achievement: '富有',
     description: '获得的现金'
   },
+  gallery_greenMax: {
+    description: '在一次声望中达到的最高绿色涂料'
+  },
   gallery_bestPrestige: {
     description: '一次声望中的最高现金'
   },
