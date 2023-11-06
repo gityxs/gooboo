@@ -1490,7 +1490,7 @@ export default {
     items: {
       name: '装备',
       usableInStun: '可以在眩晕时使用',
-      utilityOvertime: '实用活性物质可以以前一个电荷一半的速度存储多个电荷',
+      utilityOvertime: 'CD充满之后，以一半的速度充第二个CD',
       inactive: '不活动的装备效果以正常速度的 {0}% 恢复冷却时间',
       takeEquipped: '携带装备',
       dagger: '匕首',
