@@ -10,6 +10,11 @@ export default {
       title: '备份你的存档文件!',
       text: '基于浏览器的保存文件并不完全可靠，因此请经常备份您的保存文件！ 只需一次小事故就足以抹去您的进度，例如浏览器崩溃、断电、浏览器将游戏误认为是跟踪器或游戏中的错误。 每当出现提示以及发布新更新时下载备份，这样您就安全了。 iOS 用户和 itch 玩家保存文件丢失的风险较高，应将备份提示更改为“常见”'
     },
+    meta_7: {
+      title: 'Tooltips',
+      text: 'Many elements in the game display additional information if you hover over them with your mouse. Players on mobile devices can tap and hold to achieve the same result',
+      buttonTooltip: 'Click to toggle'
+    },
 
     mining_0: '使用镐子。 挖得更深一些',
     mining_1: '收集废料。 购买升级。',
@@ -77,6 +82,10 @@ export default {
     village_28: '令人放松的湖。 满满的都是鱼。',
     village_29: '知识丢失了。 随着时间的推移。 再次发现它。',
     village_30: '小生物。 喜欢这个。',
+    village_31: {
+      title: 'Moving queue elements',
+      text: 'You can change the order of elements in the building queue by dragging them around'
+    },
 
     horde_0: '成群的怪物。 阻塞路径。 只有一种方法可以进度。 杀够了。 然后杀掉首领。',
     horde_1: '一组死了。 但更多的出现。',
@@ -151,7 +160,7 @@ export default {
 
     school_0: '在学校学习。 正确回答。 取得好成绩。',
     school_1: '做一个热心的学生。 获得金粉。 可以跳过时间。',
-    school_2: '获取新书。 每隔一小时。 成绩更好的话甚至更多。',
+    school_2: 'Get new books. Every hour. Even more with more subjects.',
     school_3: '还要学写字。 获取更多书籍。',
     school_4: '历史很重要。 记住日期。 甚至更多的书。',
 

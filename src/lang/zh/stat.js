@@ -12,11 +12,11 @@ export default {
     achievement: '深渊',
     description: '15 分钟内达到最大深度'
   },
-  mining_depthDweller0: {
+  mining_depthDwellerCap0: {
     achievement: '垂直向下钻',
     description: '最大居民深度'
   },
-  mining_depthDweller1: {
+  mining_depthDwellerCap1: {
     achievement: '无火花',
     description: '最大气体居民深度'
   },
@@ -182,7 +182,7 @@ export default {
   },
   farm_maxOvergrow: {
     achievement: '园丁',
-    description: '最大过度生长'
+    description: 'Best harvest'
   },
   farm_bestPrestige: {
     achievement: '享有盛誉',

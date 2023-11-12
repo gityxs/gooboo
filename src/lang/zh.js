@@ -63,6 +63,7 @@ export default {
     levelSuffix: '等级',
     delete: '删除',
     convert: '转换',
+    add: '增加',
     playedBefore: {
       0: '以前玩过吗？ 加载你的保存文件 ',
       1: '这里'
@@ -234,6 +235,14 @@ export default {
   },
   unlock,
   mult,
+  text: {
+    farmUnlockDna: 'Unlock all DNA upgrades from level 1 genes',
+    farmGnomeBoost: 'Nearby garden gnomes increase all crop gains by 10%',
+    farmLonelyGrow: 'Grow twice as fast if no other crops of this type are on the field',
+    farmFertileBoost: 'Increase all crop gains by 30% of fertilizer grow time reduction',
+    farmYieldConversion: 'Convert 60% of yield to other yield types (20% each)',
+    farmFastPrestige: 'Prestige reduces crop level by 5 instead of resetting it to 0',
+  },
   upgrade,
   currency,
   stat,
@@ -250,6 +259,11 @@ export default {
         0: '您正在使用桌面版本。 您需要手动检查更新在 ',
         1: '正式版',
         2: ' 页面.'
+      },
+      offline: {
+        0: 'You are using the offline version. You need to check for updates manually on the ',
+        1: 'releases',
+        2: ' page.'
       },
       steam: '您使用的是steam版本。 更新是通过 steam 处理的。'
     },
@@ -1158,10 +1172,9 @@ export default {
       experiment: {
         name: '实验性',
         warning: '这些设置仍处于实验阶段，可能存在错误、未完成、性能不佳或令人困惑。 启用它们的风险由您自行承担，如果您正在使用它们，请留下反馈！ 如果此部分为空，则表示当时没有可用的实验设置，或者您尚未取得足够的进展，无法看到它们',
-        gainTimer: {
-          name: '显示增益定时器',
-          description: '显示达到资源容量或承担升级所需的时间。 一些资源的收入使用估算不规则，但并非所有资源都有此情况'
-        }
+        currencyLabel: {
+          name: 'Show currency labels',
+          description: 'Display currency gain and time until you reach capacity without needing to hover'
       }
   },
   statBreakdown: {
@@ -1180,6 +1193,7 @@ export default {
     hordeItemPermanent: '装备效果',
     hordeNostalgia: '怀旧之情',
     hordeNostalgiaLost: '发现传家宝',
+    farmEarlyGame: 'First crops',
     cards: '卡片',
     treasure: '宝藏',
     debug: '调试',
@@ -1206,6 +1220,7 @@ export default {
       description2: '当前居民深度每完成半米，你的声望奖励就会增加。',
       description3: '居民的最大可能深度是矿井中最大深度的 {0}%。',
       description4: '最大居民深度',
+      descriptionOvercap: 'The dweller can gain bonus depth after reaching its highest possible depth, giving a linear increase to your prestige reward. Dweller speed is reduced to {0}%, and every 10% after the highest possible depth reduces speed to {0}% again',
       nextTime: '你达到 {0}米 在 {1}'
     },
     pickaxePower: '这是你的镐的力量和基础伤害。 通过制作更好的镐来增加它。',
@@ -1247,7 +1262,8 @@ export default {
       oreQuality: '制作镐所需的矿石量除以矿石质量',
       craftPickaxe: '制作镐子',
       purityDescription: '要达到 50% 的最低质量，您的纯度需要与杂质相匹配。',
-      premiumSlot: '这是一个高级制作槽。 高于 x1 的杂质减半，纯度加倍。'
+      premiumSlot: '这是一个高级制作槽。 高于 x1 的杂质减半，纯度加倍。',
+      minPurity: 'You need at least 0.1% minimum quality to craft a pickaxe'
     },
     craftingDescription: '消耗选定的矿石并创建具有随机力量值的新镐。 如果它比您当前的镐（{0} 功率）更好，请更换它。',
     resinDescription: '每一块树脂增加 30% 的力量和 25% 的纯度。 每个镐工艺最多可以使用 {0} 个树脂。',
@@ -1261,12 +1277,14 @@ export default {
     enhancement: {
       title: '增强',
       description: '使用金属锭来增强你的镐。 每个金属锭都有自己独特的增强功能，可以多次应用。 但要小心，每一次成功的增强都会使下一个变得更加困难，所以请考虑一下你在镐上放置了哪些增强',
-      chanceDescription: '您的增强有 {0}% 的机会成功，并且成功后难度会增加 {1}%。 能量条总会被消耗，但增强效果仅在成功时生效。 当你失败时，你的成功机会会不断增加，直到你获得成功的增强。 增强功能也更有可能在成功条结束时取得成功',
+      barsDescription: 'Enhancements require any type of bars first. This amount increases with each enhancement',
+      enhancementDescription: 'Then you need a specific type of bars that determine the type of enhancement. This amount also increases with each enhancement of this bar type',
       barAluminium: '轻量',
       barBronze: '坚固',
       barSteel: '锋利',
       barTitanium: '挖掘机',
-      barShiny: '丰富'
+      barShiny: '丰富',
+      barIridium: 'Molten'
     },
     gasGain: {
       0: '获得 ',
@@ -1659,6 +1677,7 @@ export default {
     itemMastery: {
       name: '精通',
       description: '装备此物品击败 {0} 区或更高区域的Boss或小Boss，即可获得精通点数。 更高的区域Boss可以获得更多的精通点。',
+      gain: 'Receive {0} mastery points from bosses on this zone, and {1}% of that value ({2}) from minibosses',
       bonuses: '提高你的精通等级来解锁该装备的奖励',
       current: '该装备拥有 {0} / {1} 精通点',
       1: '声望后保留装备',
@@ -1692,11 +1711,14 @@ export default {
     expToLevelUp: '你还需要 {0} 次收获以达到下一等级',
     yield: '生产',
     rareDrops: '稀有掉落',
+    addRareDrop: 'Add rare drop ({0})',
+    addRareDropAmount: '{0} amount',
     prestige: {
       description: '您可以对已达到 4 级的农作物进行声望，将其声望等级提高到当前等级以获得奖励。 这将重置该作物的所有经验、等级和基因。 每个声望等级将所有作物增益乘以 x1.04。',
       current: '您当前的声望等级为 {0}，将所有农作物收益乘以 x{1}。',
       next: '声望此农作物可将您的声望等级提高 {0}。 这会将您的总声望等级提高到 {1}，将您的农作物收益增加到 x{2}。',
-      nextNoEffect: '您的等级不高于该作物的声望等级。 声望不会增加你的声望等级，但仍会重置等级和基因。'
+      nextNoEffect: '您的等级不高于该作物的声望等级。 声望不会增加你的声望等级，但仍会重置等级和基因。',
+      cropOnField: 'You cannot prestige now because this crop is on the field'
     },
     button: {
       plantAll: '在所有空地块上种植选定的作物 ({0})。 您还可以通过单击空地块来种植单一作物',
@@ -1743,33 +1765,31 @@ export default {
       violet: '紫罗兰',
       goldenRose: '金玫瑰'
     },
-    cropUpgrade: {
-      yield: 'x1.25 产量',
-      grow: 'x0.92 生长时间',
-      exp: '+0.35 经验值',
-      gold: 'x1.35 黄金几率',
-      overgrow: '+50% 过度生长',
-      cost: 'x0.75 成本, 至少降低-1成本',
-      double: 'x1.5 产量, 经验值和黄币几率和 x1.3 稀有掉落几率，但 x2 生长时间',
-      fertile: '肥料效果增强 25%',
-      drops: 'x1.2 稀有掉率'
-    },
-    cropUpgradeName: {
-      yield: '生产',
-      grow: '生长',
-      exp: '经验值',
-      gold: '黄金',
-      overgrow: '过度生长',
-      cost: '成本',
-      double: '双倍',
-      fertile: '肥沃',
-      drops: '掉落'
+    gene: {
+      name: 'Gene',
+      pickLevel: 'Pick a level {0} gene',
+      dnaDescription: 'You get DNA when this crop reaches a new level and can spend it on gene upgrades. The next crop level gives {0} DNA',
+      dnaDuplicate: 'Genes you choose do not appear on your next prestige. Not picking genes makes all 4 available on the next prestige',
+      dnaBlocked: 'Blocked genes',
+      hasUpgrade: 'Has gene upgrade',
+      yield: 'Yield',
+      gold: 'Gold',
+      exp: 'Experience',
+      rareDrop: 'Rare drops',
+      grow: 'Grow',
+      overgrow: 'Overgrow',
+      giant: 'Giant',
+      grass: 'Grass',
+      dna: 'DNA',
+      gnome: 'Gnome',
+      lonely: 'Lonely',
+      fertile: 'Fertile',
+      mystery: 'Mystery',
+      conversion: 'Conversion',
+      prestige: 'Prestige',
+      rareDropChance: 'Discovery'
     },
     fertilizerEffect: {
-      yield: '生产',
-      grow: '生长',
-      gold: '黄金',
-      drop: '稀有掉落几率',
       vegetable: '仅蔬菜',
       fruit: '仅水果',
       grain: '仅粮食',
@@ -1785,8 +1805,8 @@ export default {
       },
       sprinkler: {
         name: '洒水装置',
-        description: '同一行的农作物生长速度是原来的两倍',
-        descriptionPremium: '同一行的农作物生长速度是原来的三倍',
+        description: 'Crops in the same row grow +10% faster and have +250% overgrow',
+        descriptionPremium: 'Crops in the same row grow +20% faster and have +500% overgrow',
       },
       lectern: {
         name: '讲台',
@@ -1810,6 +1830,7 @@ export default {
     auction: '拍卖',
     colorSuffix: '颜色',
     openPackage: '打开',
+    colorGainReduced: 'Additional gains are reduced to square root after 100 color',
     idea: {
       tier: '层 {0} 创意',
       unlock: '解锁创意',

@@ -29,6 +29,10 @@ export default {
     name: '闪亮肥料',
     description: ''
   },
+  farm_juicy: {
+    name: 'Juicy fertilizer',
+    description: ''
+  },
   farm_potatoWater: {
     name: '土豆水',
     description: ''

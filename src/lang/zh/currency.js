@@ -331,6 +331,10 @@ export default {
     name: '铂矿石',
     description: '这种矿石如果稍微打磨一下，就会显得非常漂亮。 希望它不仅美观，而且实用'
   },
+  mining_oreIridium: {
+    name: 'Iridium ore',
+    description: 'Irid... what? You never heard of this one before, can it even be used for anything?'
+  },
   mining_granite: {
     name: '花岗岩',
     description: '从地下开采出来的巨大花岗岩块。 令人惊讶的是，里面没有任何废料'
@@ -374,6 +378,10 @@ export default {
   mining_barShiny: {
     name: '闪亮的金属锭',
     description: '这个不是很锋利也不耐用，但似乎还有其他用途'
+  },
+  mining_barIridium: {
+    name: 'Iridium bar',
+    description: 'What strange properties does this one have...'
   },
   mining_ember: {
     name: '余烬',
@@ -587,6 +595,10 @@ export default {
     name: '种子壳',
     description: '植物的外壳空了，种子似乎不见了'
   },
+  farm_grass: {
+    name: 'Grass',
+    description: 'This seems unnatural, grass shouldn\'t grow on crops'
+  },
   farm_petal: {
     name: '花瓣',
     description: '这些花瓣生长在所有花朵上，但您只收集最美丽的花朵'
@@ -610,6 +622,10 @@ export default {
   farm_bee: {
     name: '蜜蜂',
     description: '蜜蜂是花园里常见的景象。 不要打扰它们，让它们采集花蜜即可'
+  },
+  farm_mysteryStone: {
+    name: 'Mystery stone',
+    description: 'What is this? What uses does it have?'
   },
   farm_goldenPetal: {
     name: '金色花瓣',
