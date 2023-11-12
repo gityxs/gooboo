@@ -30,7 +30,7 @@ export default {
     description: ''
   },
   farm_juicy: {
-    name: 'Juicy fertilizer',
+    name: '多汁肥料',
     description: ''
   },
   farm_potatoWater: {

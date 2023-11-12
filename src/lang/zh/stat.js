@@ -182,7 +182,7 @@ export default {
   },
   farm_maxOvergrow: {
     achievement: '园丁',
-    description: 'Best harvest'
+    description: '最佳收获'
   },
   farm_bestPrestige: {
     achievement: '享有盛誉',

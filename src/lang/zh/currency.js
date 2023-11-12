@@ -332,8 +332,8 @@ export default {
     description: '这种矿石如果稍微打磨一下，就会显得非常漂亮。 希望它不仅美观，而且实用'
   },
   mining_oreIridium: {
-    name: 'Iridium ore',
-    description: 'Irid... what? You never heard of this one before, can it even be used for anything?'
+    name: '铱矿石',
+    description: 'Irid……什么？ 您以前从未听说过这个，它还能用来做什么吗？'
   },
   mining_granite: {
     name: '花岗岩',
@@ -380,8 +380,8 @@ export default {
     description: '这个不是很锋利也不耐用，但似乎还有其他用途'
   },
   mining_barIridium: {
-    name: 'Iridium bar',
-    description: 'What strange properties does this one have...'
+    name: '铱锭',
+    description: '这家伙到底有什么奇怪的属性……'
   },
   mining_ember: {
     name: '余烬',
@@ -596,8 +596,8 @@ export default {
     description: '植物的外壳空了，种子似乎不见了'
   },
   farm_grass: {
-    name: 'Grass',
-    description: 'This seems unnatural, grass shouldn\'t grow on crops'
+    name: '草',
+    description: '这看起来不自然，草不应该长在庄稼上'
   },
   farm_petal: {
     name: '花瓣',
@@ -624,8 +624,8 @@ export default {
     description: '蜜蜂是花园里常见的景象。 不要打扰它们，让它们采集花蜜即可'
   },
   farm_mysteryStone: {
-    name: 'Mystery stone',
-    description: 'What is this? What uses does it have?'
+    name: '神秘石',
+    description: '这是什么？ 它有什么用途？'
   },
   farm_goldenPetal: {
     name: '金色花瓣',

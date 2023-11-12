@@ -236,12 +236,12 @@ export default {
   unlock,
   mult,
   text: {
-    farmUnlockDna: 'Unlock all DNA upgrades from level 1 genes',
-    farmGnomeBoost: 'Nearby garden gnomes increase all crop gains by 10%',
-    farmLonelyGrow: 'Grow twice as fast if no other crops of this type are on the field',
-    farmFertileBoost: 'Increase all crop gains by 30% of fertilizer grow time reduction',
-    farmYieldConversion: 'Convert 60% of yield to other yield types (20% each)',
-    farmFastPrestige: 'Prestige reduces crop level by 5 instead of resetting it to 0',
+    farmUnlockDna: '解锁 1 级基因的所有 DNA 升级',
+    farmGnomeBoost: '附近的花园侏儒使所有农作物产量增加 10%',
+    farmLonelyGrow: '如果田间没有其他此类作物，生长速度会加快两倍',
+    farmFertileBoost: '所有作物产量增加 30%，肥料生长时间减少',
+    farmYieldConversion: '将 60% 的收益转换为其他收益类型（每种 20%）',
+    farmFastPrestige: '声望将作物等级降低 5，而不是重置为 0',
   },
   upgrade,
   currency,
@@ -261,9 +261,9 @@ export default {
         2: ' 页面.'
       },
       offline: {
-        0: 'You are using the offline version. You need to check for updates manually on the ',
-        1: 'releases',
-        2: ' page.'
+        0: '您使用的是离线版本。 您需要手动检查更新在 ',
+        1: '发布版',
+        2: ' 页面.'
       },
       steam: '您使用的是steam版本。 更新是通过 steam 处理的。'
     },
@@ -1173,8 +1173,8 @@ export default {
         name: '实验性',
         warning: '这些设置仍处于实验阶段，可能存在错误、未完成、性能不佳或令人困惑。 启用它们的风险由您自行承担，如果您正在使用它们，请留下反馈！ 如果此部分为空，则表示当时没有可用的实验设置，或者您尚未取得足够的进展，无法看到它们',
         currencyLabel: {
-          name: 'Show currency labels',
-          description: 'Display currency gain and time until you reach capacity without needing to hover'
+          name: '显示货币标签',
+          description: '显示货币收益和达到容量所需的时间，无需悬停'
       }
   },
   statBreakdown: {
@@ -1193,7 +1193,7 @@ export default {
     hordeItemPermanent: '装备效果',
     hordeNostalgia: '怀旧之情',
     hordeNostalgiaLost: '发现传家宝',
-    farmEarlyGame: 'First crops',
+    farmEarlyGame: '第一作物',
     cards: '卡片',
     treasure: '宝藏',
     debug: '调试',
@@ -1220,7 +1220,7 @@ export default {
       description2: '当前居民深度每完成半米，你的声望奖励就会增加。',
       description3: '居民的最大可能深度是矿井中最大深度的 {0}%。',
       description4: '最大居民深度',
-      descriptionOvercap: 'The dweller can gain bonus depth after reaching its highest possible depth, giving a linear increase to your prestige reward. Dweller speed is reduced to {0}%, and every 10% after the highest possible depth reduces speed to {0}% again',
+      descriptionOvercap: '居民在达到可能的最高深度后可以获得奖励深度，从而使你的声望奖励线性增加。 居民速度降低至 {0}%，达到最高可能深度后每 10% 速度就会再次降低至 {0}%',
       nextTime: '你达到 {0}米 在 {1}'
     },
     pickaxePower: '这是你的镐的力量和基础伤害。 通过制作更好的镐来增加它。',
@@ -1263,7 +1263,7 @@ export default {
       craftPickaxe: '制作镐子',
       purityDescription: '要达到 50% 的最低质量，您的纯度需要与杂质相匹配。',
       premiumSlot: '这是一个高级制作槽。 高于 x1 的杂质减半，纯度加倍。',
-      minPurity: 'You need at least 0.1% minimum quality to craft a pickaxe'
+      minPurity: '制作镐需要至少 0.1% 的最低质量'
     },
     craftingDescription: '消耗选定的矿石并创建具有随机力量值的新镐。 如果它比您当前的镐（{0} 功率）更好，请更换它。',
     resinDescription: '每一块树脂增加 30% 的力量和 25% 的纯度。 每个镐工艺最多可以使用 {0} 个树脂。',
@@ -1277,14 +1277,14 @@ export default {
     enhancement: {
       title: '增强',
       description: '使用金属锭来增强你的镐。 每个金属锭都有自己独特的增强功能，可以多次应用。 但要小心，每一次成功的增强都会使下一个变得更加困难，所以请考虑一下你在镐上放置了哪些增强',
-      barsDescription: 'Enhancements require any type of bars first. This amount increases with each enhancement',
-      enhancementDescription: 'Then you need a specific type of bars that determine the type of enhancement. This amount also increases with each enhancement of this bar type',
+      barsDescription: '增强功能首先需要任何类型的金属锭。 此数量随着每次增强而增加',
+      enhancementDescription: '然后，您需要特定类型的金属锭来确定增强类型。 此数量也会随着该金属锭类型的每次增强而增加',
       barAluminium: '轻量',
       barBronze: '坚固',
       barSteel: '锋利',
       barTitanium: '挖掘机',
       barShiny: '丰富',
-      barIridium: 'Molten'
+      barIridium: '熔岩'
     },
     gasGain: {
       0: '获得 ',
@@ -1677,7 +1677,7 @@ export default {
     itemMastery: {
       name: '精通',
       description: '装备此物品击败 {0} 区或更高区域的Boss或小Boss，即可获得精通点数。 更高的区域Boss可以获得更多的精通点。',
-      gain: 'Receive {0} mastery points from bosses on this zone, and {1}% of that value ({2}) from minibosses',
+      gain: '从该区域的 Boss 处获得 {0} 精通点，并从小 Boss 处获得该值的 {1}% ({2})',
       bonuses: '提高你的精通等级来解锁该装备的奖励',
       current: '该装备拥有 {0} / {1} 精通点',
       1: '声望后保留装备',
@@ -1711,14 +1711,14 @@ export default {
     expToLevelUp: '你还需要 {0} 次收获以达到下一等级',
     yield: '生产',
     rareDrops: '稀有掉落',
-    addRareDrop: 'Add rare drop ({0})',
-    addRareDropAmount: '{0} amount',
+    addRareDrop: '增加稀有掉落 ({0})',
+    addRareDropAmount: '{0} 数量',
     prestige: {
       description: '您可以对已达到 4 级的农作物进行声望，将其声望等级提高到当前等级以获得奖励。 这将重置该作物的所有经验、等级和基因。 每个声望等级将所有作物增益乘以 x1.04。',
       current: '您当前的声望等级为 {0}，将所有农作物收益乘以 x{1}。',
       next: '声望此农作物可将您的声望等级提高 {0}。 这会将您的总声望等级提高到 {1}，将您的农作物收益增加到 x{2}。',
       nextNoEffect: '您的等级不高于该作物的声望等级。 声望不会增加你的声望等级，但仍会重置等级和基因。',
-      cropOnField: 'You cannot prestige now because this crop is on the field'
+      cropOnField: '你现在无法声望，因为这种作物已经在田里了'
     },
     button: {
       plantAll: '在所有空地块上种植选定的作物 ({0})。 您还可以通过单击空地块来种植单一作物',
@@ -1766,28 +1766,28 @@ export default {
       goldenRose: '金玫瑰'
     },
     gene: {
-      name: 'Gene',
-      pickLevel: 'Pick a level {0} gene',
-      dnaDescription: 'You get DNA when this crop reaches a new level and can spend it on gene upgrades. The next crop level gives {0} DNA',
-      dnaDuplicate: 'Genes you choose do not appear on your next prestige. Not picking genes makes all 4 available on the next prestige',
-      dnaBlocked: 'Blocked genes',
-      hasUpgrade: 'Has gene upgrade',
-      yield: 'Yield',
-      gold: 'Gold',
-      exp: 'Experience',
-      rareDrop: 'Rare drops',
-      grow: 'Grow',
-      overgrow: 'Overgrow',
-      giant: 'Giant',
-      grass: 'Grass',
+      name: '基因',
+      pickLevel: '选择级别 {0} 的基因',
+      dnaDescription: '当这种作物达到新的等级时，你就会获得 DNA，并可以将其用于基因升级。 下一个作物等级提供 {0} DNA',
+      dnaDuplicate: '您选择的基因不会出现在您的下一个声望中。 不挑选基因可以在下一个声望中使用所有 4 个基因',
+      dnaBlocked: '阻断的基因',
+      hasUpgrade: '有基因升级',
+      yield: '产量',
+      gold: '黄金',
+      exp: '经验值',
+      rareDrop: '稀有掉落',
+      grow: '生长',
+      overgrow: '过度生长',
+      giant: '巨人',
+      grass: '草',
       dna: 'DNA',
-      gnome: 'Gnome',
-      lonely: 'Lonely',
-      fertile: 'Fertile',
-      mystery: 'Mystery',
-      conversion: 'Conversion',
-      prestige: 'Prestige',
-      rareDropChance: 'Discovery'
+      gnome: '侏儒',
+      lonely: '孤独',
+      fertile: '肥沃',
+      mystery: '神秘',
+      conversion: '转换',
+      prestige: '声望',
+      rareDropChance: '发现'
     },
     fertilizerEffect: {
       vegetable: '仅蔬菜',
@@ -1805,8 +1805,8 @@ export default {
       },
       sprinkler: {
         name: '洒水装置',
-        description: 'Crops in the same row grow +10% faster and have +250% overgrow',
-        descriptionPremium: 'Crops in the same row grow +20% faster and have +500% overgrow',
+        description: '同一行中的农作物生长速度加快 10%，并且过度生长 +250%',
+        descriptionPremium: '同一行中的农作物生长速度加快 20%，并且过度生长 +500%',
       },
       lectern: {
         name: '讲台',
@@ -1830,7 +1830,7 @@ export default {
     auction: '拍卖',
     colorSuffix: '颜色',
     openPackage: '打开',
-    colorGainReduced: 'Additional gains are reduced to square root after 100 color',
+    colorGainReduced: '100 种颜色后额外增益减少为平方根（',
     idea: {
       tier: '层 {0} 创意',
       unlock: '解锁创意',
