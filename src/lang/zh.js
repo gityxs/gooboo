@@ -1175,6 +1175,7 @@ export default {
         currencyLabel: {
           name: '显示货币标签',
           description: '显示货币收益和达到容量所需的时间，无需悬停'
+        }
       }
   },
   statBreakdown: {
@@ -1830,7 +1831,7 @@ export default {
     auction: '拍卖',
     colorSuffix: '颜色',
     openPackage: '打开',
-    colorGainReduced: '100 种颜色后额外增益减少为平方根（',
+    colorGainReduced: '100 种颜色后额外增益减少为平方根',
     idea: {
       tier: '层 {0} 创意',
       unlock: '解锁创意',
