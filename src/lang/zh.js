@@ -222,6 +222,7 @@ export default {
     },
     village: {
       0: '工人',
+      1: 'Crafters guild',
     },
     horde: {
       0: '装备',
@@ -399,7 +400,7 @@ export default {
     expDescription2: '经验获取基于您的最佳声望。',
     expNext: '下一级效果:',
     expNoGain: '要获得此功能的经验，请先获得一些声望货币',
-    cropExp: '为每种作物获得最多此数量的经验（基础生长时间和黄金成本会减少获得的经验）',
+    cropExp: 'Gain up to this amount of experience for each crop (base grow time and gold cost reduce experience gained). This is then multiplied by the difference between highest and current crop level (crops at their highest level get no experience)',
     frozenFeature: {
       title: '功能被冻结',
       description: '此功能已被冷冻实验室冻结。 您不会在此功能中获得任何进展，但会自动获得声望货币。'
@@ -1330,7 +1331,7 @@ export default {
     taxpayersDescription1: '所有工作的村民每秒消耗每种食物最多 {0}，并缴纳相当于 {1} 的税款 ',
     taxpayersDescription2: ' 每个消耗的食物物品.',
     happinessDescription: '幸福感会修改所有资源增益（金币和信仰除外）',
-    powerDescription: '每个力量的所有材料和食物增益增加+50%。 您当前的力量将材料和食物增益乘以 x{0}',
+    powerDescription: 'Gain a +20% increase to all material and food gain for each power. Your current power multiplies material and food gain by x{0}',
     pollutionDescription: '每污染一点，幸福感就会降低 1%。 如果你的污染程度超过了你的容忍度，那么每污染一次超过你的容忍度，幸福感惩罚就会增加 1%。 您的下一个污染点将使幸福感降低 {0}%',
     lootDescription: '每次进度条填满时都会找到新的战利品',
     lootRarity: '战利品质量决定了战利品的稀有度分布:',
@@ -1347,8 +1348,9 @@ export default {
         2: ' 并增加下一次牺牲的成本。 声望时牺牲成本重置.'
       },
       sacrifice: '牺牲',
-      notUnlocked: '此供品尚未解锁。 您仍然可以牺牲和花费供品，但资源容量只有在您解锁供品后才会应用',
-      notUnlockedHint: '该供品尚未解锁，因此资源容量尚未适用'
+      notUnlocked: 'This offering is not unlocked yet. You can still spend offerings, but not sacrifice and the resource capacity won\'t be applied until you unlock the offering',
+      notUnlockedHint: 'This offering is not unlocked, so the resource capacity does not apply yet',
+      autoGen: 'Generate 1% of your offerings gained this run ({0}) per hour'
     },
     material: '材料',
     food: '食物',
@@ -1806,8 +1808,8 @@ export default {
       },
       sprinkler: {
         name: '洒水装置',
-        description: '同一行中的农作物生长速度加快 10%，并且过度生长 +250%',
-        descriptionPremium: '同一行中的农作物生长速度加快 20%，并且过度生长 +500%',
+        description: 'Crops in the same row grow +50% faster and have +150% overgrow',
+        descriptionPremium: 'Crops in the same row grow +100% faster and have +300% overgrow',
       },
       lectern: {
         name: '讲台',
