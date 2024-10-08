@@ -336,11 +336,11 @@ export default {
     description: 'Irid……什么？ 您以前从未听说过这个，它还能用来做什么吗？'
   },
   mining_oreOsmium: {
-    name: 'Osmium ore',
+    name: '锇矿石',
     description: ''
   },
   mining_oreLead: {
-    name: 'Lead ore',
+    name: '铅矿石',
     description: ''
   },
   mining_granite: {
@@ -368,11 +368,11 @@ export default {
     description: '美丽的紫色碎片，它们看起来很脆弱'
   },
   mining_deeprock: {
-    name: 'Deeprock',
+    name: '深岩',
     description: ''
   },
   mining_glowshard: {
-    name: 'Glowshard',
+    name: '辉光碎片',
     description: ''
   },
   mining_barAluminium: {
@@ -400,7 +400,7 @@ export default {
     description: '这家伙到底有什么奇怪的属性……'
   },
   mining_barDarkIron: {
-    name: 'Dark iron bar',
+    name: '黑铁锭',
     description: ''
   },
   mining_ember: {
@@ -408,7 +408,7 @@ export default {
     description: '小心，天气还很热！'
   },
   mining_resin: {
-    name: 'Resin',
+    name: '树脂',
     description: '用于使镐使用寿命更长的粘性树脂'
   },
   mining_crystalGreen: {
@@ -452,8 +452,8 @@ export default {
     description: '通过向村民出售食物赚取金币'
   },
   village_copperCoin: {
-    name: 'Copper coin',
-    description: 'Coins earned by selling crafted items to your villagers'
+    name: '铜币',
+    description: '通过向村民出售手工制作的物品赚取的金币'
   },
   village_wood: {
     name: '木头',
@@ -520,8 +520,8 @@ export default {
     description: '村民们的希望终于成真了！ 未来一切都会更好！ 随着时间的推移，它会变得更容易！'
   },
   village_shares: {
-    name: 'Shares',
-    description: 'Invest to make more money!'
+    name: '股票',
+    description: '投资是为了赚更多的钱!'
   },
   village_offering: {
     name: '供品',
@@ -568,19 +568,19 @@ export default {
     description: '你以为这些已经永远消失了'
   },
   village_acidVial: {
-    name: 'Acid vial',
-    description: 'Be careful!'
+    name: '酸瓶',
+    description: '小心!'
   },
   village_snowflake: {
-    name: 'Snowflake',
+    name: '雪花',
     description: ''
   },
   village_chiliBundle: {
-    name: 'Chili bundle',
+    name: '辣椒包',
     description: ''
   },
   village_gears: {
-    name: 'Gears',
+    name: '齿轮',
     description: ''
   },
   horde_bone: {
@@ -608,8 +608,8 @@ export default {
     description: '以前腐化的灵魂通过复杂的仪式得到净化和强化'
   },
   horde_courage: {
-    name: 'Courage',
-    description: 'Bravery is a much needed virtue when facing a neverending horde'
+    name: '勇敢',
+    description: '面对无尽的敌人，勇敢是一种非常需要的美德'
   },
   horde_crown: {
     name: '王冠',
@@ -620,12 +620,12 @@ export default {
     description: '一把可以让你进入塔楼的稀有钥匙'
   },
   horde_blood: {
-    name: 'Blood',
-    description: 'Eww!'
+    name: '血液',
+    description: '呕!'
   },
   horde_lockpick: {
-    name: 'Lockpick',
-    description: 'Allows you to receive trinkets from already defeated bosses. Exclusive to the pirate'
+    name: '撬锁器',
+    description: '允许你从已经被击败的boss那里获得饰品。海盗专属'
   },
   farm_vegetable: {
     name: '蔬菜',
@@ -688,7 +688,7 @@ export default {
     description: '这种极其罕见的花瓣只能在玫瑰上找到。 有传言说带有这些花瓣的玫瑰看起来比其他玫瑰颜色更深'
   },
   farm_smallSeed: {
-    name: 'Small seed',
+    name: '小种子',
     description: ''
   },
   gallery_beauty: {
@@ -804,51 +804,51 @@ export default {
     description: ''
   },
   gallery_motivation: {
-    name: 'Motivation',
+    name: '动机',
     description: ''
   },
   gallery_mysteryShape: {
-    name: 'Mystery shape',
-    description: 'What is this shape? It looks strange, like it doesn\'t belong in this dimension'
+    name: '神秘形状',
+    description: '这是什么形状?它看起来很奇怪，好像它不属于这个维度'
   },
   gallery_circle: {
-    name: 'Circle',
+    name: '圆形',
     description: ''
   },
   gallery_rectangle: {
-    name: 'Rectangle',
+    name: '矩形',
     description: ''
   },
   gallery_triangle: {
-    name: 'Triangle',
-    description: 'Careful, those are dangerous'
+    name: '三角形',
+    description: '小心，那些东西很危险'
   },
   gallery_star: {
-    name: 'Star',
+    name: '星形',
     description: ''
   },
   gallery_ellipse: {
-    name: 'Ellipse',
+    name: '椭圆形',
     description: ''
   },
   gallery_heart: {
-    name: 'Heart',
+    name: '心形',
     description: '<3'
   },
   gallery_square: {
-    name: 'Square',
+    name: '正方形',
     description: ''
   },
   gallery_octagon: {
-    name: 'Octagon',
+    name: '八边形',
     description: ''
   },
   gallery_pentagon: {
-    name: 'Pentagon',
-    description: 'It\'s a shape, not a building'
+    name: '五边形',
+    description: '它是一个形状，不是一个建筑'
   },
   gallery_hexagon: {
-    name: 'Hexagon',
+    name: '六边形',
     description: ''
   },
   gallery_cash: {
@@ -868,11 +868,11 @@ export default {
     description: '奇怪的是，我们原来的学校不需要它们。 这里需要他们参加考试'
   },
   card_shinyDust: {
-    name: 'Shiny dust',
+    name: '闪亮的灰尘',
     description: ''
   },
   treasure_fragment: {
-    name: '片段',
+    name: '碎片',
     description: '破碎的宝藏碎片'
   }
 };

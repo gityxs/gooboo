@@ -70,13 +70,13 @@ export default {
     description: '花费的时间'
   },
   mining_bestPrestige0: {
-    description: 'Best prestige (ore mine)'
+    description: '最佳声望 (矿山)'
   },
   mining_bestPrestige1: {
-    description: 'Best prestige (gas giant)'
+    description: '最佳声望 (气体巨人)'
   },
   mining_prestigeCount: {
-    description: 'Prestiges'
+    description: '声望'
   },
 
   // Village stats
@@ -136,13 +136,13 @@ export default {
     description: '花费的时间'
   },
   village_bestPrestige0: {
-    description: 'Best prestige (workers)'
+    description: '最佳声望 (工人)'
   },
   village_bestPrestige1: {
-    description: 'Best prestige (crafters guild)'
+    description: '最佳声望 (工匠公会)'
   },
   village_prestigeCount: {
-    description: 'Prestiges'
+    description: '声望'
   },
 
   // Horde stats
@@ -151,7 +151,7 @@ export default {
     description: '最大区域'
   },
   horde_maxDifficulty: {
-    description: 'Maximum difficulty'
+    description: '最大难度'
   },
   horde_maxZoneSpeedrun: {
     achievement: '迅捷出击',
@@ -178,8 +178,8 @@ export default {
     description: '获得的腐化灵魂'
   },
   horde_maxCorruptionKill: {
-    achievement: 'Challenging evil',
-    description: 'Highest corruption enemy defeated'
+    achievement: '挑战邪恶',
+    description: '击败最高腐化敌人'
   },
   horde_maxMastery: {
     achievement: '一招',
@@ -200,13 +200,13 @@ export default {
     description: '花费的时间'
   },
   horde_bestPrestige0: {
-    description: 'Best prestige (equipment)'
+    description: '最佳声望 (装备)'
   },
   horde_bestPrestige1: {
-    description: 'Best prestige (classes)'
+    description: '最佳声望 (职业)'
   },
   horde_prestigeCount: {
-    description: 'Prestiges'
+    description: '声望'
   },
 
   // Farm stats
@@ -252,7 +252,7 @@ export default {
     description: '最奥蝴蝶数量'
   },
   farm_totalMystery: {
-    description: 'Mystery'
+    description: '神秘'
   },
 
   // Gallery stats
@@ -294,26 +294,26 @@ export default {
     description: '最高红鼓数量'
   },
   gallery_shapeComboTotal: {
-    achievement: 'Collector',
-    description: 'Total shapes collected'
+    achievement: '收藏家',
+    description: '收集的形状总数'
   },
   gallery_shapeComboHighest: {
-    achievement: 'Genius',
-    description: 'Highest shape combo'
+    achievement: '天才',
+    description: '最高形状组合'
   },
   gallery_canvasLevelTotal: {
-    achievement: 'Visionary',
-    description: 'Total canvas level'
+    achievement: '远见卓识',
+    description: '画布总等级'
   },
   gallery_hourglassHighest: {
-    achievement: 'Borrowed time',
-    description: 'Reach 1d of hourglass time'
+    achievement: '借来的时间',
+    description: '沙漏时间达到 1 天'
   },
   gallery_timeSpent: {
     description: '花费的时间'
   },
   gallery_prestigeCount: {
-    description: 'Prestiges'
+    description: '声望'
   },
 
   // Meta stats

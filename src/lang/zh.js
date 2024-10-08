@@ -157,18 +157,18 @@ export default {
     description: '为了防止与您的保存文件不一致，Gooboo 只能运行一个。 请关闭此选项卡并返回现有选项卡上的游戏。'
   },
   reset: {
-    feature: 'Want to start over? Here you can reset your progress for a single feature without touching other parts of the game.',
-    warning: 'This is NOT a prestige and there will be no rewards or refunds for doing this. Resets cannot be undone',
-    deleteSave: 'You can also delete your entire savefile here:',
-    deleteButton: 'Delete savefile'
+    feature: '想重新开始吗?在这里，你可以在不触及游戏其他部分的情况下重置单个功能的进度。',
+    warning: '这不是一种声望，这样做不会有任何奖励或退款。重置后无法恢复',
+    deleteSave: '您也可以在这里删除整个保存文件:',
+    deleteButton: '删除保存文件'
   },
   prestigeDescription: {
-    mining_ember: 'Gain ember equal to a percentage of your current dweller depth',
-    village_blessing: 'Faith will be transformed into blessings',
-    village_shares: 'Gain shares equal to 0.1% of your current amount of copper coins',
-    horde_soulEmpowered: 'Corrupted souls will be transformed into empowered souls',
-    horde_courage: 'Gain courage when you reach level 10, and gain more for each level reached after',
-    gallery_cash: 'Gain cash based on your total amount of beauty gained this run',
+    mining_ember: '获得相当于当前居住者深度百分比的余烬',
+    village_blessing: '信仰会转化为祝福',
+    village_shares: '获得相当于你当前铜币数量0.1%的股票',
+    horde_soulEmpowered: '堕落的灵魂将被转化为强大的灵魂',
+    horde_courage: '当你达到10级时获得勇气，之后每升一级获得更多勇气',
+    gallery_cash: '根据你获得的美丽的总数量获得现金',
   },
   confirm: {
     title: '确认操作',
@@ -191,7 +191,7 @@ export default {
     weatherChaosFishingRodBuy: '您将要购买钓鱼竿“{0}”，它需要花费稀有货币。 您确定要购买这个吗？',
     summerFestivalCellBuy: '您将要购买一个新的岛屿细胞，这需要花费稀有货币。 您确定要购买这个吗？',
     farmCrop: '您将要种植需要稀有货币的农作物。 您确定要购买这个吗？',
-    galleryMotivation: 'You are about to buy motivation, which cost rare currency. Are you sure you want to buy this?',
+    galleryMotivation: '你将购买动机，这需要稀有货币。你确定要买这个吗?',
     treasure: '您将要购买一件新的宝藏，该宝藏需要花费稀有货币。 您确定要购买这个吗？',
     schoolExamPass: '您将要购买一张考试通行证，这需要花费稀有货币。 您确定要购买这个吗？',
     treasureFragment: '您将要购买碎片，这需要花费稀有货币。 您确定要购买这个吗？',
@@ -200,9 +200,9 @@ export default {
     casinoWheelSpin: '您即将转动命运之轮，这需要花费稀有货币。 您确定要购买这个吗？',
     consumable: '此操作需要您没有的消耗品。 您想用稀有货币购买这些吗？',
     reset: {
-      text: 'Are you sure you want to reset the {0} feature? This action cannot be undone!',
+      text: '您确定要重置{0}功能吗? 此操作不能撤销!',
     },
-    resetAll: 'Are you sure you want to delete your savefile? This action cannot be undone!'
+    resetAll: '您确定要删除保存文件吗? 此操作不能撤销!'
   },
   feature: {
     subfeature: '子功能',
@@ -229,8 +229,8 @@ export default {
 
     // Subfeatures
     miningGas: '气体',
-    villageCrafting: 'Crafting',
-    hordeClasses: 'Classes',
+    villageCrafting: '制作',
+    hordeClasses: '职业',
     schoolLiterature: '文学',
     schoolHistory: '历史',
     schoolArt: '艺术',
@@ -2285,57 +2285,57 @@ export default {
       buildGreenReservoir: 'Build green reservoir',
       beMysterious: 'Be mysterious',
 
-      lookAtTheSky: 'Look at the sky',
-      chewBubblegum: 'Chew bubblegum',
-      buildBlueReservoir: 'Build blue reservoir',
+      lookAtTheSky: '看看天空',
+      chewBubblegum: '嚼泡泡糖',
+      buildBlueReservoir: '建设蓝色水库',
     },
     nextInspiration: {
       0: '下一个 ',
       1: ' 还有 '
     },
     shapes: {
-      name: 'Shapes',
-      upgrades: 'Shape upgrades',
-      description: 'Drag a shape to an adjacent one to switch postitons, or click one to collect it. Collecting requires 5 shapes of the same type to be connected and the amount of shapes gained per shape is equal to the collection combo.',
-      cost: 'Each action costs',
+      name: '形状',
+      upgrades: '形状升级',
+      description: '将一个形状拖到相邻的形状上以切换位置，或单击一个形状以收集它。收集需要连接5个相同类型的形状，每个形状获得的形状数量等于收集组合。',
+      cost: '每个行动的成本',
       special: {
-        name: 'Special shapes',
-        description: 'A special shape has a {0}% chance to appear instead of a regular shape, and special collections give {1}x shapes. There can only be one special shape on the grid',
-        bomb: 'All shapes in a + formation are special collected',
-        dice: 'All shapes that do not match the shape above (or below if at top row) this get rerolled',
-        accelerator: 'The surrounding 8 shapes are special collected. If all 8 of them are the same, spend all motivation to gain even more shapes',
-        sparkles: 'The 4 directly adjacent shapes get regular collected if possible and count as one big combo',
-        hourglass: 'Immediately get converters and packages, collect shapes to increase the time',
-        chest: 'Special collect 10 nearby shapes, the 8 surrounding ones and the ones to the left and right. If all 10 shapes are different, receive a special reward'
+        name: '特殊形状',
+        description: '特殊形状有{0}%的几率出现，而不是普通形状，特殊集合给出{1}x个形状。网格上只能有一种特殊形状',
+        bomb: '所有+形的形状都是特别收集的',
+        dice: '所有与上面(或下面)的形状不匹配的形状将被重洗',
+        accelerator: '周围的8个形状是特别收集的。如果这8个都是一样的，那就用所有的动机去获得更多的形状',
+        sparkles: '如果可能的话，4个直接相邻的形状被规则地收集起来，算作一个大组合',
+        hourglass: '立即获得转换器和包装，收集形状以增加时间',
+        chest: '特别收集10个附近的形状，8个周围的形状和左右的形状。如果10个形状都不一样，就会得到特别的奖励'
       },
       buyFor: {
-        0: 'Buy',
-        1: 'for'
+        0: '购买',
+        1: '花费'
       },
-      reroll: 'Reroll the entire grid for',
-      unlock: 'Unlock shape: {0}',
-      circle: 'Circle',
-      rectangle: 'Rectangle',
-      triangle: 'Triangle',
-      star: 'Star',
-      ellipse: 'Ellipse',
-      heart: 'Heart',
-      square: 'Square',
-      octagon: 'Octagon',
-      pentagon: 'Pentagon',
-      hexagon: 'Hexagon',
-      bomb: 'Bomb',
-      dice: 'Dice',
-      accelerator: 'Accelerator',
-      sparkles: 'Sparkles',
-      hourglass: 'Hourglass',
-      chest: 'Chest',
+      reroll: '重洗整个网格花费',
+      unlock: '解锁形状: {0}',
+      circle: '圆圈',
+      rectangle: '矩形',
+      triangle: '三角形',
+      star: '星形',
+      ellipse: '椭圆',
+      heart: '心形',
+      square: '正方形',
+      octagon: '八边形',
+      pentagon: '五边形',
+      hexagon: '六边形',
+      bomb: '炸弹',
+      dice: '骰子',
+      accelerator: '加速器',
+      sparkles: '闪光',
+      hourglass: '沙漏',
+      chest: '宝箱',
     },
     canvas: {
-      name: 'Canvas',
-      description: 'Put colors on the canvas to slowly increase their canvas level, granting you permanent bonuses',
-      level: 'Canvas level',
-      untilNextLevel: '{0} until next level'
+      name: '画布',
+      description: '把颜色放在画布上，慢慢提高他们的画布等级，给你永久的奖励',
+      level: '画布等级',
+      untilNextLevel: '{0} 到达下一级'
     }
   },
   gem: {
@@ -2358,7 +2358,7 @@ export default {
       special: '特殊效果'
     },
     buyFragment: {
-      0: '购买片段 (',
+      0: '购买碎片 (',
       1: ') 花费'
     },
     buyTreasure: '获得具有随机等级和效果的宝藏',
