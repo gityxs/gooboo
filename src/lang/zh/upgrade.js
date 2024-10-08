@@ -494,7 +494,7 @@ export default {
   horde_spiritLure: '精神诱惑',
   horde_mysticalCondenser: '神秘的电容器',
 
-  horde_precision: '精度',
+  horde_precision: '精确',
   horde_resolve: '解救',
   horde_determination: '决心',
   horde_education: '教育',
