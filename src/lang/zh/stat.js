@@ -69,6 +69,15 @@ export default {
   mining_timeSpent: {
     description: '花费的时间'
   },
+  mining_bestPrestige0: {
+    description: 'Best prestige (ore mine)'
+  },
+  mining_bestPrestige1: {
+    description: 'Best prestige (gas giant)'
+  },
+  mining_prestigeCount: {
+    description: 'Prestiges'
+  },
 
   // Village stats
   village_maxBuilding: {
@@ -126,11 +135,23 @@ export default {
   village_timeSpent: {
     description: '花费的时间'
   },
+  village_bestPrestige0: {
+    description: 'Best prestige (workers)'
+  },
+  village_bestPrestige1: {
+    description: 'Best prestige (crafters guild)'
+  },
+  village_prestigeCount: {
+    description: 'Prestiges'
+  },
 
   // Horde stats
   horde_maxZone: {
     achievement: '探险家',
     description: '最大区域'
+  },
+  horde_maxDifficulty: {
+    description: 'Maximum difficulty'
   },
   horde_maxZoneSpeedrun: {
     achievement: '迅捷出击',
@@ -156,6 +177,10 @@ export default {
     achievement: '灵魂的牧者',
     description: '获得的腐化灵魂'
   },
+  horde_maxCorruptionKill: {
+    achievement: 'Challenging evil',
+    description: 'Highest corruption enemy defeated'
+  },
   horde_maxMastery: {
     achievement: '一招',
     description: '最高精通等级'
@@ -173,6 +198,15 @@ export default {
   },
   horde_timeSpent: {
     description: '花费的时间'
+  },
+  horde_bestPrestige0: {
+    description: 'Best prestige (equipment)'
+  },
+  horde_bestPrestige1: {
+    description: 'Best prestige (classes)'
+  },
+  horde_prestigeCount: {
+    description: 'Prestiges'
   },
 
   // Farm stats
@@ -192,9 +226,9 @@ export default {
     achievement: '素食主义者',
     description: '获得的蔬菜'
   },
-  farm_fruit: {
-    achievement: '果食主义者',
-    description: '获得的水果'
+  farm_berry: {
+    achievement: '浆果不错',
+    description: '获得的浆果'
   },
   farm_grain: {
     achievement: '面包师',
@@ -216,6 +250,9 @@ export default {
   },
   farm_butterflyMax: {
     description: '最奥蝴蝶数量'
+  },
+  farm_totalMystery: {
+    description: 'Mystery'
   },
 
   // Gallery stats
@@ -256,8 +293,27 @@ export default {
     achievement: '笨蛋笨蛋笨蛋',
     description: '最高红鼓数量'
   },
+  gallery_shapeComboTotal: {
+    achievement: 'Collector',
+    description: 'Total shapes collected'
+  },
+  gallery_shapeComboHighest: {
+    achievement: 'Genius',
+    description: 'Highest shape combo'
+  },
+  gallery_canvasLevelTotal: {
+    achievement: 'Visionary',
+    description: 'Total canvas level'
+  },
+  gallery_hourglassHighest: {
+    achievement: 'Borrowed time',
+    description: 'Reach 1d of hourglass time'
+  },
   gallery_timeSpent: {
     description: '花费的时间'
+  },
+  gallery_prestigeCount: {
+    description: 'Prestiges'
   },
 
   // Meta stats

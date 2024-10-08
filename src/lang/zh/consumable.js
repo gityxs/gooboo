@@ -9,6 +9,14 @@ export default {
     name: '金锤',
     description: '为这门手艺找到最好的镐'
   },
+  village_ingredientBox: {
+    name: 'Ingredient box',
+    description: 'Contains special ingredients that can only be found in these boxes'
+  },
+  horde_manaPotion: {
+    name: 'Mana potion',
+    description: 'Refill 50% of your maximum mana'
+  },
   farm_basic: {
     name: '基础肥料',
     description: ''
@@ -33,6 +41,10 @@ export default {
     name: '多汁肥料',
     description: ''
   },
+  farm_dissolving: {
+    name: 'Crop dissolver',
+    description: ''
+  },
   farm_potatoWater: {
     name: '土豆水',
     description: ''
@@ -51,6 +63,18 @@ export default {
   },
   farm_premium: {
     name: '优质肥料',
+    description: ''
+  },
+  farm_analyzing: {
+    name: 'Analyzing fertilizer',
+    description: ''
+  },
+  farm_superJuicy: {
+    name: 'Super-juicy',
+    description: ''
+  },
+  farm_pellets: {
+    name: 'Pellets',
     description: ''
   },
   farm_sunshine: {

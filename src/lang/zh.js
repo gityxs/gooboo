@@ -9,6 +9,7 @@ import stat from './zh/stat'
 import unlock from './zh/unlock'
 import upgrade from './zh/upgrade'
 import patchnote from './zh/patchnote'
+import tag from './zh/tag'
 
 export default {
   ...zh,
@@ -23,6 +24,9 @@ export default {
     equip: '装备',
     unequip: '脱下',
     unequipAll: '全部脱下',
+    select: '选择',
+    deselect: '取消选择',
+    take: '拿走',
     max: '最大',
     maxed: '最大',
     free: '免费',
@@ -46,6 +50,7 @@ export default {
     saveManual: '保存',
     saveExport: '导出到文件',
     saveImport: '从文件加载',
+    resetProgress: '重置进度',
     closeAll: '全部关闭',
     draw: '画画',
     finish: '完成',
@@ -142,12 +147,28 @@ export default {
       key: '加载的存档文件缺少所需数据',
       version: '该文件来自游戏的较新版本（v{0}，当前版本: v{1})',
       testing: '测试版本中的文件无法在发布版本中使用',
-      migration: '从 v{0} 迁移到 v{1} 时出错'
+      testingVersion: '来自旧测试版本的文件不能使用',
+      migration: '从 v{0} 迁移到 v{1} 时出错',
+      checksum: '校验和无效',
     }
   },
   duplicateTab: {
     title: 'Gooboo 已在另一个选项卡中运行',
     description: '为了防止与您的保存文件不一致，Gooboo 只能运行一个。 请关闭此选项卡并返回现有选项卡上的游戏。'
+  },
+  reset: {
+    feature: 'Want to start over? Here you can reset your progress for a single feature without touching other parts of the game.',
+    warning: 'This is NOT a prestige and there will be no rewards or refunds for doing this. Resets cannot be undone',
+    deleteSave: 'You can also delete your entire savefile here:',
+    deleteButton: 'Delete savefile'
+  },
+  prestigeDescription: {
+    mining_ember: 'Gain ember equal to a percentage of your current dweller depth',
+    village_blessing: 'Faith will be transformed into blessings',
+    village_shares: 'Gain shares equal to 0.1% of your current amount of copper coins',
+    horde_soulEmpowered: 'Corrupted souls will be transformed into empowered souls',
+    horde_courage: 'Gain courage when you reach level 10, and gain more for each level reached after',
+    gallery_cash: 'Gain cash based on your total amount of beauty gained this run',
   },
   confirm: {
     title: '确认操作',
@@ -170,13 +191,18 @@ export default {
     weatherChaosFishingRodBuy: '您将要购买钓鱼竿“{0}”，它需要花费稀有货币。 您确定要购买这个吗？',
     summerFestivalCellBuy: '您将要购买一个新的岛屿细胞，这需要花费稀有货币。 您确定要购买这个吗？',
     farmCrop: '您将要种植需要稀有货币的农作物。 您确定要购买这个吗？',
+    galleryMotivation: 'You are about to buy motivation, which cost rare currency. Are you sure you want to buy this?',
     treasure: '您将要购买一件新的宝藏，该宝藏需要花费稀有货币。 您确定要购买这个吗？',
     schoolExamPass: '您将要购买一张考试通行证，这需要花费稀有货币。 您确定要购买这个吗？',
     treasureFragment: '您将要购买碎片，这需要花费稀有货币。 您确定要购买这个吗？',
     treasureDelete: '你即将摧毁一个宝藏，这将给予碎片作为回报。 您确定要购买这个吗？',
     casinoBingoBuy: '您将要购买一张宾果卡，该卡需要稀有货币。 您确定要购买这个吗？',
     casinoWheelSpin: '您即将转动命运之轮，这需要花费稀有货币。 您确定要购买这个吗？',
-    consumable: '此操作需要您没有的消耗品。 您想用稀有货币购买这些吗？'
+    consumable: '此操作需要您没有的消耗品。 您想用稀有货币购买这些吗？',
+    reset: {
+      text: 'Are you sure you want to reset the {0} feature? This action cannot be undone!',
+    },
+    resetAll: 'Are you sure you want to delete your savefile? This action cannot be undone!'
   },
   feature: {
     subfeature: '子功能',
@@ -203,6 +229,8 @@ export default {
 
     // Subfeatures
     miningGas: '气体',
+    villageCrafting: 'Crafting',
+    hordeClasses: 'Classes',
     schoolLiterature: '文学',
     schoolHistory: '历史',
     schoolArt: '艺术',
@@ -226,6 +254,7 @@ export default {
     },
     horde: {
       0: '装备',
+      1: 'Classes',
     },
     farm: {
       0: '花园',
@@ -236,13 +265,23 @@ export default {
   },
   unlock,
   mult,
+  tag,
   text: {
+    villageIngredientBoxGet: 'Receive 3 ingredient boxes',
+    hordeBattlePassUpgrade: 'New upgrade',
+    hordeBattlePassPrestigeUpgrade: 'New prestige upgrade',
     farmUnlockDna: '解锁 1 级基因的所有 DNA 升级',
-    farmGnomeBoost: '附近的花园侏儒使所有农作物产量增加 10%',
+    farmGnomeBoost: 'Increase all harvest gain by 4% for each nearby garden gnome. Premium garden gnomes count as 2',
     farmLonelyGrow: '如果田间没有其他此类作物，生长速度会加快两倍',
-    farmFertileBoost: '所有作物产量增加 30%，肥料生长时间减少',
-    farmYieldConversion: '将 60% 的收益转换为其他收益类型（每种 20%）',
+    farmFertileBoost: 'Increase yield by 30% per sapphire cost of fertilizer',
+    farmYieldConversion: '将 5% 的收益转换为其他收益类型',
     farmFastPrestige: '声望将作物等级降低 5，而不是重置为 0',
+    farmLuckyHarvest: '1% chance to receive 8x harvest gain',
+    farmSelfless: 'Increase yield by +5% for all crops',
+    farmUnyielding: '40% chance to replant this crop for free when harvested',
+    farmTeamwork: 'Having this gene on one crop of each type doubles all crop yield',
+    farmHunter: 'Resource rare drops native to this plant become hunted. Hunt chance is equal to 1% of your rare drop chance. Each time a hunt is successful, resource capacity is increased by 10% of the base value and base hunt chance gets reduced by 5%',
+    farmPatient: 'Increases yield by +3% per day passed since this gene was chosen, up to +180% at 60 days',
   },
   upgrade,
   currency,
@@ -319,6 +358,36 @@ export default {
       github: 'GitHub',
       website: '网站',
       googlefonts: 'Google Fonts'
+    },
+    cheater: {
+      0: {
+        title: 'Honorable',
+        description: 'Played the game without any of the tools mentioned below',
+      },
+      100: {
+        title: 'Automated',
+        description: 'Used tools to automatically perform human-like actions, while still following the game\'s rules',
+      },
+      200: {
+        title: 'Cheater',
+        description: 'Edited game variables or used tools to achieve otherwise impossible results or predicted / altered outcomes',
+      },
+      selfMark: 'Set cheater status',
+      selfMarkDescription: 'You can mark yourself as a cheater here. This is purely visual and can be reversed at any time',
+      noDetected: 'No cheats detected',
+      featureDetected: 'Cheats were detected in the following features:',
+      featureDetected2: 'You can remove the cheater mark by fully resetting these features',
+      globalDetected: 'Cheats were detected and your savefile has been permanently marked',
+      selfMarkClick: 'If you were cheating and the game did not detect it properly, you can click to see options to mark yourself as cheater',
+    },
+    statistics: {
+      name: 'Statistics',
+      overview: 'Overview',
+      other: 'Other',
+      gained: 'Gained',
+      maxOwned: 'Highest amount',
+      currentTotal: 'current / total',
+      defaultPlayerName: 'Player',
     }
   },
   error: {
@@ -729,6 +798,12 @@ export default {
       ritualHintDescription: '有几率揭示有关插槽或成分数量的提示。 仅对成功的新仪式给出提示。 对于每个找到的提示，此几率会降低 {0}%。 当发现暗示的仪式时，提示和提示几率惩罚会重置。',
       clickToAdd: '单击成分将其添加到仪式中',
       ingredientSizeDescription: '成分尺寸可让您以每种魔法货币找到更多成分',
+      favouriteIngredient: {
+        title: 'Favourite ingredient',
+        description: 'You can select one ingredient as favourite, and each time you find an ingredient you also receive your favourite ingredient',
+        copy: 'Copy found ingredient',
+      },
+      sackDescription: 'Sacks can appear with high magic amounts, consume 10x more magic and contain 10x the amount of ingredients, split evenly among all available ones',
       newDescription: {
         empty: '在这里你可以看到当前配方是否是新的（之前没有成功过）',
         isNew: '这是一个新配方，如果成功，您将收到夜间狩猎代币',
@@ -897,7 +972,7 @@ export default {
         },
         starShield: {
           name: '星盾',
-          description: '玩家在前 3 回合内获得 5 点护甲'
+          description: '玩家在前 3 回合内获得 5 点防御'
         },
         coffee: {
           name: '咖啡',
@@ -982,9 +1057,11 @@ export default {
     mining_0: '击碎最深矿井岩石击碎',
     mining_1: '最深的气态巨岩击碎',
     village_0: '最大容纳量',
+    village_1: 'Crafting milestones hit',
     horde_0: '击败最高区域首领',
+    horde_1: 'Battle pass level',
     farm_0: '所有作物等级的总和',
-    gallery_0: 'Log5 整体美感',
+    gallery_0: 'Log4 整体美感',
     debug: '调试'
   },
   theme: {
@@ -1078,6 +1155,10 @@ export default {
       relativeUpgradeStats: {
         name: '相对升级统计',
         description: '显示差异而不是之前/之后的值'
+      },
+      useLegacyFarmSelect: {
+        name: 'Old farm selection',
+        description: 'Uses the old menu to select crops and buildings in the farm'
       }
     },
     automation: {
@@ -1191,12 +1272,24 @@ export default {
     zoneCleared: '区域已清理',
     zoneClearedTotal: '清除最高区域',
     zone: '区域',
+    hordeMaxDifficulty: 'Difficulty cleared',
     hordeBasicLoot: '基础战利品',
     hordeItemPermanent: '装备效果',
+    hordeMastery: 'Equipment mastery',
+    hordeRest: 'Rest',
     hordeNostalgia: '怀旧之情',
     hordeNostalgiaLost: '发现传家宝',
+    hordeClassMult: 'Class multiplier',
+    hordeClassLevel: 'Class level',
+    hordeBattlePass: 'Battle pass',
+    hordeEnergy: 'Energy',
+    hordeMana: 'Mana',
+    hordeTime: 'Time',
+    hordeSacrifice: 'Sacrifice',
     farmEarlyGame: '第一作物',
+    galleryCanvas: 'Canvas',
     cards: '卡片',
+    cardsShiny: 'Shiny cards',
     treasure: '宝藏',
     debug: '调试',
     bankInvestment: '投资',
@@ -1207,6 +1300,8 @@ export default {
     ritualPotionLevel: '药水等级',
     ritualHint: '发现提示',
     ritualIngredient: '奖励成分',
+    interest: 'Interest',
+    multiplier: 'Multiplier',
   },
 
   // Feature specific translations
@@ -1252,7 +1347,9 @@ export default {
       coal: '可以在每块岩石第一次破碎处的 {0} 米或以下位置找到',
       sulfur: '当撞到最深的岩石时，可以在 {0} 米或以下找到',
       niter: '可以在 {0} 米或以下的地方找到，力量为 10 次岩石破碎',
-      obsidian: '如果你的镐没有增强，可以在 {0}m 或以下找到'
+      obsidian: '如果你的镐没有增强，可以在 {0}m 或以下找到',
+      deeprock: 'Can be found at {0}m or below if the digits of the current depth add to 14 or higher',
+      glowshard: 'Can be found at {0}m or below, with a chance of 0.1% per meter below the limit. Obtaining one requires you to dig 1m deeper, this limit gets reduced each day by 10%',
     },
     rareEarthNotAffected: '该资源不受稀土增益影响',
     scrapGainHint: '当撞击您以前从未破碎过的岩石时，您不会产生废料。 有时，留在当前深度收集更多废料比立即向下挖掘更明智。',
@@ -1286,13 +1383,31 @@ export default {
       barSteel: '锋利',
       barTitanium: '挖掘机',
       barShiny: '丰富',
-      barIridium: '熔岩'
+      barIridium: '熔岩',
+      barDarkIron: 'Void'
     },
     gasGain: {
       0: '获得 ',
       1: '% 你可获得的 ',
       2: ' 当你打破这块石头时。 您最多可以 ',
       3: ' 在这个深度'
+    },
+    beacon: {
+      noBeacon: 'No beacon',
+      clickToPlace: 'Click to place beacons',
+      selectToPlace: 'Select a beacon to place',
+      place: 'Place',
+      remove: 'Remove beacon',
+      removeDescription: 'You can remove a beacon at any time, but you\'ll need to wait 20 hours to remove another one',
+      removeCooldown: 'Wait {0} before you can remove beacons again',
+      piercing: 'Piercing beacon',
+      rich: 'Rich beacon',
+      wonder: 'Wonder beacon',
+      hope: 'Hope beacon',
+    },
+    anomaly: {
+      name: 'Anomaly',
+      toughness: 'This rock has 100x toughness',
     }
   },
   village: {
@@ -1322,6 +1437,48 @@ export default {
       religion: '宗教',
       scanning: '扫描',
     },
+    crafting: {
+      unlockNew: 'New crafting recipe: ',
+      owned: '{0} owned',
+      changeStat: {
+        value: 'Increase value to {0}',
+        timeNeeded: 'Decrease crafting time to {0}'
+      },
+      nextEffect: 'Next craft effects',
+      special: {
+        description: 'Special crafts provide permanent bonuses when crafted and their progress does not reset on prestige. Their cost increases with every craft and they do not have milestones'
+      },
+      rope: 'Rope',
+      woodenPlanks: 'Wooden planks',
+      brick: 'Brick',
+      screws: 'Screws',
+      waterBottle: 'Water bottle',
+      cocktailGlass: 'Cocktail glass',
+      boomerang: 'Boomerang',
+      polishedGem: 'Polished gem',
+      oilLamp: 'Oil lamp',
+      shower: 'Shower',
+      pouch: 'Pouch',
+      cupboard: 'Cupboard',
+      weight: 'Weight',
+      scissors: 'Scissors',
+      herbTea: 'Herb tea',
+      glasses: 'Glasses',
+      arrows: 'Arrows',
+      bowl: 'Bowl',
+      chain: 'Chain',
+      spear: 'Spear',
+      goldenRing: 'Golden ring',
+      poisonedArrows: 'Poisoned arrows',
+      frostSpear: 'Frost spear',
+      spicySoup: 'Spicy soup',
+      stopwatch: 'Stopwatch',
+      smallChest: 'Small chest',
+      bush: 'Bush',
+      handSaw: 'Hand saw',
+      garage: 'Garage',
+      diamondRing: 'Diamond ring',
+    },
     buildings: '建筑',
     village: '村庄',
     pray: '祈祷',
@@ -1340,6 +1497,8 @@ export default {
     housingStat: '已建成住房总数（每栋建筑前 25 栋）',
     coinNotAffected: '金币不受“所有资源增益”的影响',
     faithNotAffected: '信仰不受“所有资源增益”和“精神资源增益”影响',
+    artisanDescription: 'Artisans can be assigned to craft items for you',
+    counterDescription: 'Counters can be used to sell crafted items to your villagers',
     offering: {
       name: '供品',
       description: {
@@ -1356,6 +1515,7 @@ export default {
     food: '食物',
     mental: '精神资源',
     loot: '掠夺',
+    specialIngredient: 'Special ingredients',
     foodConsume: '消耗高达 {0} 每秒'
   },
   horde: {
@@ -1368,6 +1528,7 @@ export default {
     noLoadouts: '无预载',
     monsterPartHint: '前往 10+ 区并找到敌人 #101 来发现新货币！ 这种货币对于进一步进度至关重要，因为它可以帮助您提高骨头容量。',
     enemyDescription: '与前一个敌人相比，同一区域中的每个敌人都有 x{0} 攻击力、x{1} 生命值和 +{2}% 骨头。 这是敌人 #{3}，具有 x{4} 攻击力、x{5} 生命值和 +{6}% 骨头。 当你死后，所有这些效果都会重置。',
+    enemyDescriptionClasses: 'Each enemy in the same zone has x{0} attack, x{1} health and +{2}% blood compared to the previous enemy. This is enemy #{3} and has x{4} attack, x{5} health and +{6}% blood. All of these effects reset when you die.',
     enemySigil1: {
       s: '该区域内的敌人有 {0} 印记',
       p: '该区域内的敌人有 {0} 印记',
@@ -1391,7 +1552,8 @@ export default {
       text: '每秒发生一次常规攻击，伤害分布如下: ',
       physic: '{0}% 物理伤害',
       magic: '{0}% 魔法伤害',
-      bio: '{0}% 生物伤害'
+      bio: '{0}% 生物伤害',
+      strengthAmp: 'Each point of strength increases the damage of your regular attacks by +{0}%, for a total of +{1}%. This increases the damage of your regular attacks to {2}.'
     },
     healthDescription: '你在死亡前可承受的伤害数量',
     respawnDescription: '你需要多少时间才能从死亡中恢复过来',
@@ -1403,6 +1565,10 @@ export default {
     spellbladeDescription: '使用装备效果后造成额外魔法伤害。 对于冷却时间低于 10 秒的装备效果，这并不总是有效',
     cuttingDescription: '攻击后对目标当前生命值造成一定百分比的生物伤害',
     recoveryDescription: '杀死敌人后恢复一定百分比的损失生命值',
+    defenseDescription: 'Reduce incoming damage by a percentage of your maximum health',
+    executeDescription: 'Instantly kill enemies if they are below a certain health threshold',
+    energyDescription: 'Some actives require energy to use. It refills automatically over time',
+    manaDescription: 'Some actives require mana to use. It refills slowly over time',
     boss: 'Boss',
     miniboss: '小Boss',
     minibossDescription: '小Boss 会代替普通敌人出现，并且更强一些。 他们拥有宝贵的战利品，并且最多可以同时等待 2 个。 击败 1 名也算击败 4 名普通敌人',
@@ -1418,9 +1584,13 @@ export default {
     stunResist: '从眩晕中恢复得更快',
     stunBoss: 'Boss 获得 +2 眩晕抗性',
     stunMiniboss: '小Boss获得 +1 眩晕抗性',
-    bossBioResist: 'Boss 只受到 10% 的生物伤害',
-    minibossBioResist: '小 Boss 只受到 50% 的生物伤害',
+    bossBioResist: 'Boss 只受到 10% 的生物伤害，但是受到 35% 的魔法伤害',
+    minibossBioResist: '小 Boss 只受到 50% 的生物伤害，但是受到 10% 的魔法伤害',
     enemyRespawn: '敌人需要 {0} 时间才能重生，最多可以等待 {1} 个敌人。 击败 Boss 后所有敌人都会立即重生',
+    bossBonusDifficulty: 'Boss difficulty',
+    bossNoReward: 'You can fight this boss again at any difficulty, but will not receive rewards for doing so',
+    energyIncompatible: 'Your currently selected class cannot use this trinket because it requires energy',
+    manaIncompatible: 'Your currently selected class cannot use this trinket because it requires mana',
     taunt: {
       title: '嘲讽模式',
       description: '当被嘲讽时，即使没有人在等待，敌人也会继续生成，但所有提前生成的敌人都不会携带战利品。 嘲讽仅在试图接近Boss时有效',
@@ -1493,6 +1663,8 @@ export default {
       rainbow: '彩虹',
       drain: '流失',
       shocking: '令人震惊',
+      defense: '防御',
+      executing: '处决',
       berserk: '狂暴',
       iceGiant: '冰巨人',
       generic: '通用',
@@ -1500,12 +1672,14 @@ export default {
     corruption: {
       name: '腐败',
       effects: '效果',
-      power: '攻击和生命值 x',
-      sigil: '印记 +',
-      revive: '复活 +'
+      power: '攻击和生命值 x{0}',
+      sigil: '印记 +{0}',
+      revive: '复活 +{0}',
+      execute: '处决 +{0}%'
     },
     activeCooldown: '主动冷却时间',
-    itemsEquipped: '装备的物品',
+    activeBuffFor: 'For {0}:',
+    itemsEquipped: 'equipment slots used',
     cleared: '已清理',
     fighting: '战斗',
     items: {
@@ -1573,10 +1747,24 @@ export default {
       bomb: '炸弹',
       leechingStaff: '吸血杖',
       shatteredGem: '破碎的宝石',
+      hourglass: 'Hourglass',
+      glue: 'Glue',
       firework: '烟花',
       bowTie: '蝴蝶结',
+      forbiddenStopwatch: 'Forbidden stopwatch',
       mysticalAccelerator: '神秘加速器',
       blazingStaff: '炽热之杖',
+      shield: 'Shield',
+      armor: 'Armor',
+      natureStone: 'Nature stone',
+      evergrowingVine: 'Evergrowing vine',
+      energyDrink: 'Energy drink',
+      dragonheart: 'Dragonheart',
+      prism: 'Prism',
+      deathsword: 'Deathsword',
+      needle: 'Needle',
+      mine: 'Mine',
+      maskOfJoy: 'Mask of joy',
 
       // Chess pieces
       pawn: '士兵',
@@ -1599,6 +1787,18 @@ export default {
         0: '造成',
         1: '生物伤害'
       },
+      maxdamagePhysic: {
+        0: 'Deal',
+        1: 'enemy health physical damage'
+      },
+      maxdamageMagic: {
+        0: 'Deal',
+        1: 'enemy health magical damage'
+      },
+      maxdamageBio: {
+        0: 'Deal',
+        1: 'enemy health biological damage'
+      },
       heal: {
         0: '回复',
         1: '生命值'
@@ -1606,6 +1806,10 @@ export default {
       bone: {
         0: '获得',
         1: '最高区域骨头'
+      },
+      blood: {
+        0: '获得',
+        1: '最高难度血液'
       },
       monsterPart: {
         0: '获得',
@@ -1627,10 +1831,6 @@ export default {
         0: '移除',
         1: '来自对手的攻击'
       },
-      raiseAttack: {
-        0: '永久增加攻击力',
-        1: ''
-      },
       poison: {
         0: '应用',
         1: '药水'
@@ -1644,6 +1844,11 @@ export default {
         2: ' ',
         1: '(直到声望)'
       },
+      gainStat: {
+        0: 'Permanently increase ',
+        2: ' by',
+        1: ''
+      },
       divisionShield: {
         0: '获得',
         1: '分裂盾'
@@ -1651,6 +1856,22 @@ export default {
       removeDivisionShield: {
         0: '移除',
         1: '来自对手的分裂盾'
+      },
+      executeKill: {
+        0: 'Kill an enemy below',
+        1: 'health'
+      },
+      refillEnergy: {
+        0: 'Restore',
+        1: 'energy'
+      },
+      refillMana: {
+        0: 'Restore',
+        1: 'mana'
+      },
+      buff: {
+        duration: 'Buff duration',
+        suffix: '(buff)',
       },
       reviveAll: '恢复所有生命值',
       removeStun: '移除眩晕',
@@ -1676,10 +1897,12 @@ export default {
       brick: '砖',
       heat: '热',
       ice: '冰',
+      crystal: 'Crystal',
+      vitality: 'Vitality',
     },
     itemMastery: {
       name: '精通',
-      description: '装备此物品击败 {0} 区或更高区域的Boss或小Boss，即可获得精通点数。 更高的区域Boss可以获得更多的精通点。',
+      description: '装备此装备击败 {0} 区或更高区域的Boss或小Boss，即可获得精通点数。 更高的区域Boss可以获得更多的精通点。',
       gain: '从该区域的 Boss 处获得 {0} 精通点，并从小 Boss 处获得该值的 {1}% ({2})',
       bonuses: '提高你的精通等级来解锁该装备的奖励',
       current: '该装备拥有 {0} / {1} 精通点',
@@ -1692,7 +1915,7 @@ export default {
     tower: {
       name: '塔楼',
       description: '塔楼是需要塔楼钥匙才能进入的特殊场所。 你可以与敌人战斗，争夺王冠和独特的传家宝，直到死去。 到达特定楼层即可永久解锁新奖励',
-      zoneDescription: '位于您到达的最高楼层的这座塔中的敌人大约与 {0} 区敌人一样强大。 他们以 {1} 区敌人的力量开始，并在每层获得相当于 {2} 区的属性。 塔内禁止腐败',
+      zoneDescription: '位于您到达的最高楼层的这座塔中的敌人大约与 {0} 区敌人一样强大。 他们以 {1} 区敌人的力量开始，并在每层获得相当于 {2} 区的属性。',
       floorTitle: '最高层被击败',
       floorDescription: '击败某些楼层的敌人即可解锁永久奖励：',
       rewardTitle: '奖励',
@@ -1705,6 +1928,169 @@ export default {
       brick: '砖塔',
       fire: '火塔',
       ice: '冰塔',
+      danger: 'Danger tower',
+      toxic: 'Toxic tower',
+    },
+    classes: {
+      skill: 'Skill',
+      skillPointsLeft: '{0} skill point(s) left',
+      skillPointCost: 'Needs {0} skill points to level up',
+      skillTreeChoice: 'Here you can make a choice, picking one of these skills locks the other paths',
+      adventurer: {
+        name: 'Adventurer',
+        description: 'A versatile fighter that can deal with every situation'
+      },
+      archer: {
+        name: 'Archer',
+        description: 'A ranged fighter that focuses on critical strikes and consistent damage'
+      },
+      mage: {
+        name: 'Mage',
+        description: 'A fighter that utilizes spells to quickly deal with foes and allows autocasting'
+      },
+      knight: {
+        name: 'Knight',
+        description: 'A durable fighter that slowly takes down opponents, but can deal with strong enemies'
+      },
+      assassin: {
+        name: 'Assassin',
+        description: 'A nimble fighter that focuses on killing enemies quickly'
+      },
+      shaman: {
+        name: 'Shaman',
+        description: 'A fighter bound to nature that utilizes healing and poison to win fights'
+      },
+      pirate: {
+        name: 'Pirate',
+        description: 'The pirate may not be best combatant, but excels at looting'
+      },
+      undead: {
+        name: 'Undead',
+        description: 'A weak fighter that offsets this weakness with superior numbers'
+      },
+      cultist: {
+        name: 'Cultist',
+        description: 'A versatile fighter that specializes on one task at a time'
+      },
+      scholar: {
+        name: 'Scholar',
+        description: 'A supportive fighter that helps other classes'
+      }
+    },
+    battlePass: {
+      name: 'Battle pass',
+      quest: {
+        stat: 'Reach {0} {1}',
+        zone: 'Clear {0} zone {1}',
+        level: 'Reach level {0}',
+        boss: 'Defeat {0} (+{1})'
+      },
+      statType: {
+        base: 'base {0}',
+        total: 'total {0}',
+      }
+    },
+    enemyName: {
+      soldier: 'Soldier',
+      officer: 'Police officer',
+      hunter: 'Hunter',
+      sniper: 'Sniper',
+      strongMonkey: 'Strong monkey',
+      angryMonkey: 'Angry monkey',
+      dartMonkey: 'Dart monkey',
+      monkeyWizard: 'Monkey wizard',
+      monkeyDefender: 'Monkey defender',
+      monkeyMonk: 'Monkey Monk',
+      puppy: 'Puppy',
+      kitten: 'Kitten',
+      seal: 'Seal',
+      piglet: 'Piglet',
+      panda: 'Panda',
+      koala: 'Koala',
+      rabbit: 'Rabbit',
+      guineaPig: 'Guinea pig',
+    },
+    bossName: {
+      ohilio_guard1: 'Guard A',
+      ohilio_guard2: 'Guard B',
+      ohilio: 'ohilio',
+      chriz1: 'Chriz',
+      chriz2: 'Chriz',
+      mina: 'mina',
+    },
+    area: {
+      zoneEndless: 'Endless zone',
+      zoneBoss: 'Boss ({0})',
+      zone: 'Zone {0}',
+      difficulty: '{0} difficulty',
+      enemyAmount: '{0} enemies in this zone',
+      warzone: 'Warzone',
+      monkeyJungle: 'Monkey jungle',
+      loveIsland: 'Love island',
+    },
+    sign: {
+      sign_1: {
+        text: 'My aim is perfect, I never miss! You better watch out!',
+        signed: 'ohilio',
+      },
+      sign_2: {
+        text: 'Think you can hurt me? Never! I\'ll dodge everything, you won\' even be able to hit me! I\'m untouchable!',
+        signed: 'ohilio',
+      },
+      sign_3: {
+        text: 'I am the greatest, the best, perfect, undefeatable! Even my guards are nothing compared to me! You think you stand a chance against me? Hah! Prepare to die!',
+        signed: 'ohilio',
+      },
+      sign_4: {
+        text: 'After taking a close look at these cute animals, you notice they are not real. They are just will-o-wisps! But why are they here? To make you feel bad? No time to think about it, you need to fight to get past these animal spirits',
+        signed: '???',
+      },
+    },
+    quest: {
+      name: 'Quests',
+      description: 'Complete quests to advance your battle pass and unlock permanent rewards',
+      completed: '{0} completed',
+      allCompleted: 'All quests completed',
+    },
+    trinket: {
+      rarity: {
+        0: 'Unowned',
+        1: 'Common',
+        2: 'Uncommon',
+        3: 'Rare',
+        4: 'Epic',
+        5: 'Legendary',
+        6: 'Mythic',
+        7: 'Extraordinary',
+        8: 'Radiant',
+        9: 'Prismatic',
+        10: 'Finalized',
+        timeless: 'Timeless'
+      },
+      equipped: 'trinkets selected (equipped after prestige)',
+      vitality: 'Vitality',
+      energy: 'Energy',
+      magic: 'Magic',
+      fists: 'Fists',
+      sparks: 'Sparks',
+      haste: 'Haste',
+      precision: 'Precision',
+      wrath: 'Wrath',
+      strength: 'Strength',
+      toxins: 'Toxins',
+      wisdom: 'Wisdom',
+      extraction: 'Extraction',
+      learning: 'Learning',
+      preservation: 'Preservation',
+      energize: 'Energize',
+      automation: 'Automation',
+      cure: 'Cure',
+      duality: 'Duality',
+      love: 'Love',
+    },
+    sacrifice: {
+      name: 'Sacrifice',
+      description: 'Here you can temporarily sacrifice equipment slots to receive powerful bonuses in exchange'
     }
   },
   farm: {
@@ -1714,6 +2100,7 @@ export default {
     expToLevelUp: '你还需要 {0} 次收获以达到下一等级',
     yield: '生产',
     rareDrops: '稀有掉落',
+    huntedRareDrops: 'Hunted rare drops',
     addRareDrop: '增加稀有掉落 ({0})',
     addRareDropAmount: '{0} 数量',
     prestige: {
@@ -1766,7 +2153,12 @@ export default {
       grapes: '葡萄',
       hops: '啤酒花',
       violet: '紫罗兰',
-      goldenRose: '金玫瑰'
+      goldenRose: '金玫瑰',
+      sweetPotato: 'Sweet potato',
+      strawberry: 'Strawberry',
+      sesame: 'Sesame',
+      sunflower: 'Sunflower',
+      spinach: 'Spinach',
     },
     gene: {
       name: '基因',
@@ -1775,6 +2167,8 @@ export default {
       dnaDuplicate: '您选择的基因不会出现在您的下一个声望中。 不挑选基因可以在下一个声望中使用所有 4 个基因',
       dnaBlocked: '阻断的基因',
       hasUpgrade: '有基因升级',
+      lockOnField: 'This gene cannot be picked with this crop on the field',
+      basics: 'Basics',
       yield: '产量',
       gold: '黄金',
       exp: '经验值',
@@ -1790,17 +2184,25 @@ export default {
       mystery: '神秘',
       conversion: '转换',
       prestige: '声望',
-      rareDropChance: '发现'
+      rareDropChance: '发现',
+      lucky: 'Lucky',
+      finalize: 'Finalize',
+      selfless: 'Selfless',
+      unyielding: 'Unyielding',
+      teamwork: 'Teamwork',
+      hunter: 'Hunter',
+      patient: 'Patient',
     },
     fertilizerEffect: {
       vegetable: '仅蔬菜',
-      fruit: '仅水果',
+      berry: '仅浆果',
       grain: '仅粮食',
       flower: '仅鲜花'
     },
     building: {
       premium: '高级 {0}',
       premiumOwned: '高级: {0} 已拥有',
+      owned: '{0} 已拥有',
       gardenGnome: {
         name: '花园侏儒',
         description: '当花园侏儒放置在田野上时，田野上的农作物可能会在收获时产生黄金。 几率取决于作物的生长时间。',
@@ -1818,13 +2220,13 @@ export default {
       },
       pinwheel: {
         name: '风车',
-        description: '周围 8 格中每种独特农作物的掉落几率增加 +1%',
-        descriptionPremium: '周围 8 格中每种独特农作物的掉落几率增加 +2%',
+        description: '周围 8 格中每种独特农作物的掉落几率增加 +0.015x',
+        descriptionPremium: '周围 8 格中每种独特农作物的掉落几率增加 +0.03x',
       },
       flag: {
         name: '旗帜',
-        description: '如果作物位于与旗帜相关的正确位置，则作物增益增加 +50%。 蔬菜：左上、水果：右上、谷物：左下、花：右下',
-        descriptionPremium: '如果作物位于与旗帜相关的正确位置，则作物增益增加 +100%。 蔬菜：左上、水果：右上、谷物：左下、花：右下',
+        description: '如果作物位于与旗帜相关的正确位置，则作物增益增加 +50%。 蔬菜：左上，浆果：右上、谷物：左下、花：右下',
+        descriptionPremium: '如果作物位于与旗帜相关的正确位置，则作物增益增加 +100%。 蔬菜：左上，浆果：右上、谷物：左下、花：右下',
       }
     }
   },
@@ -1834,6 +2236,7 @@ export default {
     colorSuffix: '颜色',
     openPackage: '打开',
     colorGainReduced: '100 种颜色后额外增益减少为平方根',
+    drumCompounding: 'To be able to find this drum, you must also find all drums of previous colors in the same package. This reduces the effective chance of finding this drum',
     idea: {
       tier: '层 {0} 创意',
       unlock: '解锁创意',
@@ -1844,6 +2247,7 @@ export default {
       sortWaste: '垃圾分类',
       advertise: '广告',
       beImpatient: '缺乏耐心',
+      beExcited: 'Be excited',
 
       makeLemonade: '制作柠檬水',
       growATree: '种一棵树',
@@ -1851,16 +2255,80 @@ export default {
       observeRainbow: '观察彩虹',
       buildRedReservoir: '修建红色水库',
       orderMassiveSafe: '订购大量保险箱',
+      buyPen: 'Buy pen',
 
       drawOcean: '画海洋',
       makeWine: '酿酒',
       calculateOdds: '计算胜算',
       buildOrangeReservoir: '修建橙色水库',
       thinkHarder: '更加努力地思考',
+      paintFaster: 'Paint faster',
+      buyBrush: 'Buy brush',
+
+      harvestOranges: 'Harvest oranges',
+      pulverizeGold: 'Pulverize gold',
+      buildYellowReservoir: 'Build yellow reservoir',
+      paintForFun: 'Paint for fun',
+      printNewspaper: 'Print newspaper',
+      expandCanvas: 'Expand canvas',
+      hyperfocus: 'Hyperfocus',
+
+      cutGrass: 'Cut grass',
+      shapeClay: 'Shape clay',
+      buildGreenReservoir: 'Build green reservoir',
+      beMysterious: 'Be mysterious',
+
+      lookAtTheSky: 'Look at the sky',
+      chewBubblegum: 'Chew bubblegum',
+      buildBlueReservoir: 'Build blue reservoir',
     },
     nextInspiration: {
       0: '下一个 ',
       1: ' 还有 '
+    },
+    shapes: {
+      name: 'Shapes',
+      upgrades: 'Shape upgrades',
+      description: 'Drag a shape to an adjacent one to switch postitons, or click one to collect it. Collecting requires 5 shapes of the same type to be connected and the amount of shapes gained per shape is equal to the collection combo.',
+      cost: 'Each action costs',
+      special: {
+        name: 'Special shapes',
+        description: 'A special shape has a {0}% chance to appear instead of a regular shape, and special collections give {1}x shapes. There can only be one special shape on the grid',
+        bomb: 'All shapes in a + formation are special collected',
+        dice: 'All shapes that do not match the shape above (or below if at top row) this get rerolled',
+        accelerator: 'The surrounding 8 shapes are special collected. If all 8 of them are the same, spend all motivation to gain even more shapes',
+        sparkles: 'The 4 directly adjacent shapes get regular collected if possible and count as one big combo',
+        hourglass: 'Immediately get converters and packages, collect shapes to increase the time',
+        chest: 'Special collect 10 nearby shapes, the 8 surrounding ones and the ones to the left and right. If all 10 shapes are different, receive a special reward'
+      },
+      buyFor: {
+        0: 'Buy',
+        1: 'for'
+      },
+      reroll: 'Reroll the entire grid for',
+      unlock: 'Unlock shape: {0}',
+      circle: 'Circle',
+      rectangle: 'Rectangle',
+      triangle: 'Triangle',
+      star: 'Star',
+      ellipse: 'Ellipse',
+      heart: 'Heart',
+      square: 'Square',
+      octagon: 'Octagon',
+      pentagon: 'Pentagon',
+      hexagon: 'Hexagon',
+      bomb: 'Bomb',
+      dice: 'Dice',
+      accelerator: 'Accelerator',
+      sparkles: 'Sparkles',
+      hourglass: 'Hourglass',
+      chest: 'Chest',
+    },
+    canvas: {
+      name: 'Canvas',
+      description: 'Put colors on the canvas to slowly increase their canvas level, granting you permanent bonuses',
+      level: 'Canvas level',
+      untilNextLevel: '{0} until next level'
     }
   },
   gem: {
