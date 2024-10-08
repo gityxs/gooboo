@@ -1448,6 +1448,9 @@ export default {
       special: {
         description: 'Special crafts provide permanent bonuses when crafted and their progress does not reset on prestige. Their cost increases with every craft and they do not have milestones'
       },
+      crafts: '{0} / {1} crafts',
+      sellEvery: 'Sell 1 every ~{0}',
+      sellPrice: 'Sell price (Value: {0})',
       rope: 'Rope',
       woodenPlanks: 'Wooden planks',
       brick: 'Brick',
@@ -1873,6 +1876,8 @@ export default {
         duration: 'Buff duration',
         suffix: '(buff)',
       },
+      canCrit: 'can crit at {0}% efficiency',
+      canCritDiff: 'Active crit efficiency',
       reviveAll: 'Refill all revives',
       removeStun: 'Remove stuns',
     },
@@ -2237,6 +2242,8 @@ export default {
     openPackage: 'Open',
     colorGainReduced: 'Additional gains are reduced to square root after 100 color',
     drumCompounding: 'To be able to find this drum, you must also find all drums of previous colors in the same package. This reduces the effective chance of finding this drum',
+    allConverterInfo: 'Converting a color always consumes all converters',
+    converterOverload: 'You have way more converters than color for this conversion, resulting in x{0} conversion gain',
     idea: {
       tier: 'Tier {0} idea',
       unlock: 'Unlock idea',

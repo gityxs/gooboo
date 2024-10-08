@@ -1448,6 +1448,9 @@ export default {
       special: {
         description: 'Spezielle Gegenstände bieten permanente Effekte, wenn sie hergestellt werden und der Fortschritt wird beim Prestige nicht zurückgesetzt. Deren Kosten steigt mit jeder Herstellung und sie haben keine Meilensteine'
       },
+      crafts: '{0} / {1} hergestellt',
+      sellEvery: 'Verkaufe 1 alle ~{0}',
+      sellPrice: 'Verkaufspreis (Wert: {0})',
       rope: 'Seil',
       woodenPlanks: 'Holzbretter',
       brick: 'Ziegel',
@@ -1873,6 +1876,8 @@ export default {
         duration: 'Schubdauer',
         suffix: '(Schub)',
       },
+      canCrit: 'kann mit {0}% Effizienz kritisch treffen',
+      canCritDiff: 'Aktive kritische Effizienz',
       reviveAll: 'Stelle alle Wiederbelebungen her',
       removeStun: 'Entferne Betäubungen',
     },
@@ -2237,6 +2242,8 @@ export default {
     openPackage: 'Öffnen',
     colorGainReduced: 'Zusätzliches Einkommen wird nach 100 Farbe auf die Quadratwurzel reduziert',
     drumCompounding: 'Um diese Farbtrommel finden zu können, musst du auch alle Farbtrommeln der vorherigen Farben im selben Paket finden. Dies reduziert die effektive Chance, diese Farbtrommel zu finden',
+    allConverterInfo: 'Das Umwandeln einer Farbe verbraucht immer alle Konverter',
+    converterOverload: 'Du hast deutlich mehr Konverter als Farbe für diese Umwandlung, weshalb diese Umwandlung x{0} Farbe gibt',
     idea: {
       tier: 'Stufe-{0}-Idee',
       unlock: 'Idee freischalten',

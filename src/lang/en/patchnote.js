@@ -468,6 +468,23 @@ export default {
     385: 'Added the option to mark an ingredient as favourite',
     386: 'Sacks now appear for high magic amounts',
     387: 'Unequipped all horde equipment, don\'t forget to equip it again!',
+
+    // v1.5.1
+    388: 'Fixed item actives with increasing crit efficiency not showing this on upgrade',
+    389: 'Fixed currencies showing all in one column in some browsers',
+    390: 'Converters needed per color tier',
+    391: 'You now get more color per conversion if you have way more converters than color needed',
+    392: 'Fixed card power not properly resetting on prestige',
+    393: 'Fixed the class courage gain multiplier not properly resetting on prestige',
+    394: 'The conversion tooltip now states that all converters will be used',
+
+    // v1.5.2
+    395: 'Converter capacity per level of "Trash can"',
+
+    // v1.5.3
+    396: 'Fixed a bug with offerings breaking when updating multiple versions at once',
+    397: 'Bugged treasures from event rewards are now displayed correctly',
+    398: 'Fixed a bug where crafting milestones displayed the wrong rewards',
   },
   v: {
     1: {
