@@ -1448,6 +1448,9 @@ export default {
       special: {
         description: 'Special crafts provide permanent bonuses when crafted and their progress does not reset on prestige. Their cost increases with every craft and they do not have milestones'
       },
+      crafts: '{0} / {1} 制作',
+      sellEvery: '出售 1 每个 ~{0}',
+      sellPrice: '出售价格 (值: {0})',
       rope: 'Rope',
       woodenPlanks: 'Wooden planks',
       brick: 'Brick',
@@ -1870,9 +1873,11 @@ export default {
         1: 'mana'
       },
       buff: {
-        duration: 'Buff duration',
-        suffix: '(buff)',
+        duration: '增益持续时间',
+        suffix: '(增益)',
       },
+      canCrit: '能以{0}%的效率暴击',
+      canCritDiff: '激活暴击效率',
       reviveAll: '恢复所有生命值',
       removeStun: '移除眩晕',
     },
@@ -2236,7 +2241,9 @@ export default {
     colorSuffix: '颜色',
     openPackage: '打开',
     colorGainReduced: '100 种颜色后额外增益减少为平方根',
-    drumCompounding: 'To be able to find this drum, you must also find all drums of previous colors in the same package. This reduces the effective chance of finding this drum',
+    drumCompounding: '为了能够找到这个鼓，你还必须找到所有以前的颜色的鼓在同一包装。这降低了找到鼓的有效机会',
+    allConverterInfo: '转换颜色总是消耗所有转换器',
+    converterOverload: '对于这种转换，您有比颜色更多的转换器，从而产生x{0}转换增益',
     idea: {
       tier: '层 {0} 创意',
       unlock: '解锁创意',
