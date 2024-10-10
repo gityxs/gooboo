@@ -35,7 +35,7 @@ export default {
     gain: '增益',
     multGain: '{0} 增益',
     apply: '应用',
-    reset: '充值',
+    reset: '重置',
     unlock: '解锁',
     keep: '保留',
     consumable: '消耗品',
