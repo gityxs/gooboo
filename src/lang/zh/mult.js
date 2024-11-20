@@ -29,7 +29,7 @@ export default {
   miningBeaconHope: '希望信标',
   villageWorker: '工人',
   villageArtisan: '工匠',
-  villageCounter: '计数器',
+  villageCounter: '柜台',
   villageTaxRate: '税率',
   queueSpeedVillageBuilding: '建造速度',
   villageOfferingPower: '供品力量',
