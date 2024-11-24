@@ -237,7 +237,6 @@ export default {
   snowdownDefense: '防御',
   snowdownCritRating: '暴击率',
   snowdownBlockRating: '格挡率',
-  snowdownLootRating: '战利品率',
   snowdownPetAttack: '宠物攻击',
   snowdownPetHealth: '宠物生命值',
   snowdownPetDefense: '宠物防御',
@@ -245,4 +244,8 @@ export default {
   snowdownPetBlockRating: '宠物格挡率',
   snowdownAllAttack: '全部攻击',
   snowdownAllHealth: '全部生命值',
+  snowdownAllDefense: '全部防御',
+  snowdownRevengeStats: '复仇统计',
+  snowdownRevengeCrit: '复仇暴击率',
+  snowdownRevengeBlock: '复仇格挡率',
 };

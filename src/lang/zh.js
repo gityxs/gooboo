@@ -841,21 +841,29 @@ export default {
       name: '降雪',
       fightCount: '战斗',
       fight: '战斗',
-      fightDescription: '以几个雪球为代价与显示的对手战斗。 如果你赢了，你将获得雪球、降雪代币、生产者和获得新的非生产者物品的机会。 非生产者物品在前 5 场比赛中得到保证。 您的战利品等级会增加获得新物品的机会以及收到的雪球和降雪代币的数量。',
+      fightDescription: '以几个雪球为代价与显示的对手战斗。',
+      fightWin: '如果你赢，你会获得',
+      fightWinProducer: '您选择的生产商',
+      fightWinItem: '三件随机物品中的一件',
       pickProducer: '选择一个生产者',
       pickItem: '选择一个物品',
       reroll: '重掷',
-      rerollDescription: '将拥有的物品重掷到同一类别（生产者或非生产者）的另一个物品中。',
+      rerollDescription: '将拥有的物品重掷成另一个物品。',
       buyItem: '购买物品',
-      buyItemDescription: '获取三个随机非生产者物品之一',
-      attackDescription: '你的攻击造成的伤害量。 最终伤害量将在你攻击的 80% 到 120% 之间。',
-      healthDescription: '在冻结并无法战斗之前你可以承受的伤害量。',
-      defenseDescription: '将传入的伤害减少固定数量。',
-      critDescription: '每个暴击等级使你造成暴击的几率提高 1%。 暴击造成 +10 伤害。 暴击率高于 25% 时，当暴击率接近 75% 时，每个暴击等级的暴击率会降低。 为此每损失 1% 暴击率，获得 +0.2 暴击伤害。',
-      blockDescription: '增加你格挡攻击且不受伤害的几率。',
+      buyItemDescription: '从三个随机物品中选择一个',
+      attackDescription: '你的攻击造成的伤害。最终的伤害将在你攻击的80%到120%之间',
+      healthDescription: '在被冻结和无法战斗之前，你可以承受的伤害数量',
+      defenseDescription: '减少一定数量的伤害',
+      critDescription: '每暴击等级增加1%的暴击几率。暴击造成+10点伤害。在25%暴击率以上，当你的暴击率接近75%时，你的暴击率会减少。每损失1%的暴击机会，获得+0.2的暴击伤害。乘数攻击增加也会增加暴击伤害',
+      blockDescription: '增加你格挡攻击且不受伤害的几率',
       boost: '立即获得 1 天的进度',
+      revenge: {
+        name: '复仇',
+        description: '你已经连续输掉{0}场战斗。这会增加你的属性，直到你赢得一场打雪仗',
+        statsBase: '战斗失败时增加5%的攻击力和生命值',
+        statsScaling: '获得+5%的攻击和生命值，+{1}暴击等级和+{1}格挡等级当你输了一场战斗。每次你输掉一场战斗，你也会得到额外的+{2}%的攻击和生命值'
+      },
       fighter: {
-        player: '玩家',
         snowOwl: '雪鸮',
         dog: '狗',
         cat: '猫',
@@ -865,38 +873,32 @@ export default {
         toddler: '学步儿童',
         babysitter: '保姆',
         kid: '小孩',
-        fatKid: '胖孩子',
+        toughKid: '坚强的孩子',
         teenager: '少年',
         bully: '恶霸',
         youngAdult: '青年人',
         hooligan: '流氓',
         adult: '成人',
+        veteran: '老兵',
+        wallOfIce: '冰墙',
         snowBot: '雪地机器人'
       },
       item: {
         rollingPin: {
           name: '擀面杖',
-          description: '生产面团，可以将其烘烤成饼干，从而提高您的暴击率'
+          description: ''
         },
         forest: {
           name: '森林',
-          description: '产生树苗，可以长成松树，增强你的攻击力'
-        },
-        spiceJar: {
-          name: '香料罐',
-          description: '生产肉桂，可用于制作热红酒，提高你的格挡率'
-        },
-        tap: {
-          name: '水龙头',
-          description: '产生水，可以变成冰雕，提高你的战利品等级'
+          description: ''
         },
         snowCannon: {
           name: '雪炮',
-          description: '产生雪，可以用来堆雪人，为你提供额外的物品'
+          description: ''
         },
         shepherd: {
           name: '牧羊人',
-          description: '生产纱线，可制成羊毛帽子，提升您的生命值'
+          description: ''
         },
         animalTooth: {
           name: '动物牙齿',
@@ -1300,6 +1302,7 @@ export default {
     ritualPotionLevel: '药水等级',
     ritualHint: '发现提示',
     ritualIngredient: '奖励成分',
+    snowdownRevenge: '复仇',
     interest: '兴趣',
     multiplier: '乘数',
   },
@@ -2113,7 +2116,8 @@ export default {
       current: '您当前的声望等级为 {0}，将所有农作物收益乘以 x{1}。',
       next: '声望此农作物可将您的声望等级提高 {0}。 这会将您的总声望等级提高到 {1}，将您的农作物收益增加到 x{2}。',
       nextNoEffect: '您的等级不高于该作物的声望等级。 声望不会增加你的声望等级，但仍会重置等级和基因。',
-      cropOnField: '你现在无法声望，因为这种作物已经在田里了'
+      cropOnField: '你现在无法声望，因为这种作物已经在田里了',
+      increasedGLRequirement: '升到10级后，农作物每升1级才会增加全局等级',
     },
     button: {
       plantAll: '在所有空地块上种植选定的作物 ({0})。 您还可以通过单击空地块来种植单一作物',
@@ -2306,7 +2310,7 @@ export default {
         accelerator: '周围的8个形状是特别收集的。如果这8个都是一样的，那就用所有的动机去获得更多的形状',
         sparkles: '如果可能的话，4个直接相邻的形状被规则地收集起来，算作一个大组合',
         hourglass: '立即获得转换器和包装，收集形状以增加时间',
-        chest: '特别收集10个附近的形状，8个周围的形状和左右的形状。如果10个形状都不一样，就会得到特别的奖励'
+        chest: '特别收集10个附近的形状，8个周围的形状和左右的形状。如果所有10个形状都不相同，则获得特殊奖励，并在其根值处再次应用特殊形状乘数'
       },
       buyFor: {
         0: '购买',
