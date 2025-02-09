@@ -519,6 +519,26 @@ export default {
 
     // v1.5.5
     428: 'Ein Fehler, bei dem das Spiel für einige Spieler nicht gestartet ist, wurde behoben',
+
+    // v1.5.6
+    429: 'Opfer werden nicht mehr beim Prestige zurückgesetzt',
+    430: 'Opfergaben durch Opfer werden nun mit der Anzahl an Opfern multipliziert',
+    431: 'Passives Opfergaben-Einkommen',
+    432: 'Der "Nihilist"-Erfolg zählt nun die erhaltenen Opfergaben',
+    433: 'Der "Schwarzes Loch"-Erfolg zählt nun die Opfer',
+    434: 'Multiplikatoren zeigen nicht mehr ihren Namen, bevor sie freigeschaltet werden',
+    435: 'Verbesserungen, die Heilung beeinflussen, ändern nicht mehr die Beschreibung von aktiven Angriffen von Gegnern',
+    436: 'Gegenstandsopfer werden nun korrekt im Spielstand gespeichert',
+    437: 'Chips werden nun korrekt an Spieler verteilt, die das Event bereits gespielt haben',
+    438: 'Lichteinkommen pro globaler Stufe',
+    439: 'Erleuchtungs-Verbesserungen (außer die erste) erhöhen nun das Lichteinkommen um x1.5',
+
+    // v1.5.7
+    440: 'Opfergaben durch Opfer werden nun korrekt erhöht',
+
+    // v1.5.8
+    441: 'Ein Fehler wurde behoben, bei dem das Spiel bei manchen Spielern nicht gestartet ist',
+    442: 'Ein Fehler wurde behoben, bei dem ein Dünger nicht in der Liste aufgetaucht ist',
   },
   v: {
     1: {
