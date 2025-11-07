@@ -41,18 +41,29 @@ export default {
   },
   mining_oreVariety: {
     achievement: '多样性',
-    description: '发现的矿石类型'
+    description0: '发现的矿石类型',
+    description1: '发现矿石和稀土类型',
+    description2: '发现矿石、稀土和天然气类型',
   },
   mining_coal: {
     achievement: '黑暗',
     description: '获得的煤'
   },
-  mining_coalMax: {
-    description: '最高煤量'
-  },
   mining_resin: {
     achievement: '陷入困境',
     description: '得到的树脂'
+  },
+  mining_gasTotal: {
+    achievement: '急性子',
+    description: '最高气体量的数字总和'
+  },
+  mining_smoke: {
+    achievement: '很难看清',
+    description: '最高烟雾量'
+  },
+  mining_enhancementHighest: {
+    achievement: '准备好了',
+    description: '最高增强级别'
   },
   mining_craftingWasted: {
     achievement: '浪费了',
@@ -144,9 +155,6 @@ export default {
   village_prestigeCount: {
     description: '声望'
   },
-  village_offeringMax: {
-    description: '供品最高数量'
-  },
 
   // Horde stats
   horde_maxZone: {
@@ -161,12 +169,11 @@ export default {
     description: '30分钟内达到最大区域'
   },
   horde_totalDamage: {
-    achievement: '杀手',
-    description: '造成的基本攻击总伤害'
+    description: '造成的常规攻击总伤害'
   },
   horde_maxDamage: {
     achievement: '威猛',
-    description: '一次基本攻击造成最大伤害'
+    description: '一次常规攻击造成最大伤害'
   },
   horde_bone: {
     achievement: '狗的最爱',
@@ -192,12 +199,37 @@ export default {
     achievement: '多样性',
     description: '总计精通等级'
   },
+  horde_blood: {
+    achievement: '吸血鬼',
+    description: '获得血液'
+  },
+  horde_courage: {
+    achievement: '勇敢',
+    description: '获得勇气'
+  },
+  horde_trinket: {
+    achievement: '做好一切准备',
+    description: '所有饰品稀有度的总和'
+  },
   horde_unlucky: {
     achievement: '不幸',
     description: '失败有 99% 的传家宝几率'
   },
   horde_maxItems: {
     description: '最多装备使用'
+  },
+  horde_infiniteScore: {
+    achievement: '角斗士',
+    description: '在无尽的区域中击败的最高 # 敌人总数'
+  },
+  horde_warzoneInfiniteScore: {
+    description: '在无尽区（Warzone）击败最高 # 敌人'
+  },
+  horde_monkeyJungleInfiniteScore: {
+    description: '在无尽区域（猴子丛林）击败最高 # 敌人'
+  },
+  horde_loveIslandInfiniteScore: {
+    description: '无限区域（爱之岛）击败最高 # 敌人'
   },
   horde_timeSpent: {
     description: '花费的时间'
@@ -245,14 +277,9 @@ export default {
     achievement: '单片眼镜',
     description: '获得的黄金'
   },
-  farm_bugMax: {
-    description: '最高虫子数量'
-  },
-  farm_ladybugMax: {
-    description: '最高瓢虫数量'
-  },
-  farm_butterflyMax: {
-    description: '最奥蝴蝶数量'
+  farm_care: {
+    achievement: '珍贵植物',
+    description: '医疗应用'
   },
   farm_totalMystery: {
     description: '神秘'
@@ -275,18 +302,12 @@ export default {
     achievement: '富有',
     description: '获得的现金'
   },
-  gallery_greenMax: {
-    description: '在一次声望中达到的最高绿色涂料'
-  },
   gallery_bestPrestige: {
     description: '一次声望中的最高现金'
   },
   gallery_highestTierIdea: {
     achievement: '脑洞大',
     description: '应用的最高层创意'
-  },
-  gallery_inspirationMax: {
-    description: '最高灵感数量'
   },
   gallery_packageMax: {
     achievement: '纸板堡垒',
@@ -319,6 +340,11 @@ export default {
     description: '声望'
   },
 
+  // Other stats
+  school_totalPoints: {
+    description: '获得的总点数'
+  },
+
   // Meta stats
   meta_totalLevel: {
     achievement: '优等生',
@@ -331,5 +357,10 @@ export default {
   meta_longestOfflineTime: {
     achievement: '回来',
     description: '最长离线时长'
-  }
+  },
+
+  // Custom stats
+  custom_hordeBattlepass: {
+    description: '战斗通过等级'
+  },
 };

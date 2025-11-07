@@ -77,28 +77,44 @@ export default {
     name: '颗粒',
     description: ''
   },
-  farm_sunshine: {
-    name: '阳光',
+  farm_supplementsS: {
+    name: '补充 (S)',
     description: ''
   },
-  farm_superFlower: {
-    name: '超级鲜花',
+  farm_supplementsM: {
+    name: '补充 (M)',
     description: ''
   },
-  farm_smellyMud: {
-    name: '臭泥',
+  farm_supplementsL: {
+    name: '补充 (L)',
     description: ''
   },
-  farm_tropicalWater: {
-    name: '热带水',
+  farm_supplementsXL: {
+    name: '补充 (XL)',
     description: ''
   },
-  farm_fieldBlessing: {
-    name: '田野祝福',
+  farm_supplementsXXL: {
+    name: '补充 (XXL)',
     description: ''
   },
-  farm_cinnamonBag: {
-    name: '肉桂袋',
-    description: ''
+  gallery_surpriseParty: {
+    name: '惊喜派对',
+    description: '获得 500 动机'
+  },
+  treasure_upArrow: {
+    name: '上箭头',
+    description: '提高宝藏等级 2'
+  },
+  treasure_expander: {
+    name: '扩展器',
+    description: '宝藏等级随时间增加，但不能使用碎片升级'
+  },
+  treasure_wildcard: {
+    name: '通配符',
+    description: '所有的效果都可以重新选择'
+  },
+  treasure_eventStar: {
+    name: '活动星级',
+    description: '添加事件力量作为效果'
   },
 };
