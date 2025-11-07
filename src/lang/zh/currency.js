@@ -1,10 +1,22 @@
 export default {
+  overcapFullGain: '你已经达到了上限，但仍然得到了全额收入',
   overcapGain: '由于达到上限，收入减少至 {0}%',
   overcapNoGain: '由于超果上限没有收入',
   benefitLoss: '购买这个会导致利益损失',
   gainTimerNeeded: '距离可以负担得起还有 {0}',
   capTimerNeeded: '距离达到容量上限还有 {0}',
   overcapTimerNeeded: '距离达到下一个容量等级还有 {0}',
+  isNotSpent: '这种货币只是必需的，但不会被使用',
+  unknown: '未知货币',
+
+  subtype: {
+    village: {
+      foundationMaterial: '基础材料',
+      industrialMaterial: '工业材料',
+      luxuryMaterial: '奢侈材料',
+      modernMaterial: '现代材料',
+    },
+  },
 
   // Premium currencies
   gem_ruby: {
@@ -337,6 +349,7 @@ export default {
   },
   mining_granite: {
     name: '花岗岩',
+    hint: '在50米或以下的地方打碎岩石至少1000次时发现',
     description: '从地下开采出来的巨大花岗岩块。 令人惊讶的是，里面没有任何废料'
   },
   mining_salt: {
@@ -357,6 +370,7 @@ export default {
   },
   mining_obsidian: {
     name: '黑曜石',
+    hint: '使用未强化的镐子在150米以下的地方劈开岩石时发现',
     description: '美丽的紫色碎片，它们看起来很脆弱'
   },
   mining_deeprock: {
@@ -435,6 +449,19 @@ export default {
     name: '氡',
     description: ''
   },
+  mining_limestone: {
+    name: '石灰岩',
+    description: ''
+  },
+  mining_moonshard: {
+    name: '月之碎片',
+    hint: '你的居住者深度达到20米以下时，击碎岩石时发现',
+    description: ''
+  },
+  mining_phosphorus: {
+    name: '磷',
+    description: ''
+  },
   mining_crystalYellow: {
     name: '黄水晶',
     description: '这些晶体看起来也很棒！ 幸好你已经有了你的深度居民'
@@ -497,6 +524,7 @@ export default {
   },
   village_joy: {
     name: '快乐',
+    hint: '通过达到超过125%的幸福值获得',
     description: '通过达到超过 125% 的幸福值来获得快乐。 高于该值的更多快乐会产生更多快乐'
   },
   village_glass: {
@@ -581,6 +609,7 @@ export default {
   },
   horde_monsterPart: {
     name: '怪物零件',
+    hint: '在10区或更高区域，当敌人停止出现时被发现',
     description: '当敌人停止出现时，可以在 10 区或更高区域找到令人厌恶的器官'
   },
   horde_corruptedFlesh: {
@@ -589,6 +618,7 @@ export default {
   },
   horde_mysticalShard: {
     name: '神秘碎片',
+    hint: '使用精通等级5或更高的装备时发现',
     description: '充满未开发的力量'
   },
   horde_soulCorrupted: {
@@ -607,9 +637,49 @@ export default {
     name: '王冠',
     description: '他们曾经统治着塔楼，但现在已被废黜'
   },
+  horde_raidKey: {
+    name: '突袭钥匙',
+    description: '一把钥匙，可以让你挑战一个突袭Boss'
+  },
   horde_towerKey: {
     name: '塔楼钥匙',
     description: '一把可以让你进入塔楼的稀有钥匙'
+  },
+  horde_fireEssence: {
+    name: '火精华',
+    description: ''
+  },
+  horde_thunderEssence: {
+    name: '雷精华',
+    description: ''
+  },
+  horde_windEssence: {
+    name: '风精华',
+    description: ''
+  },
+  horde_waterEssence: {
+    name: '水精华',
+    description: ''
+  },
+  horde_iceEssence: {
+    name: '冰精华',
+    description: ''
+  },
+  horde_earthEssence: {
+    name: '地精华',
+    description: ''
+  },
+  horde_natureEssence: {
+    name: '自然精华',
+    description: ''
+  },
+  horde_lightEssence: {
+    name: '光精华',
+    description: ''
+  },
+  horde_shadowEssence: {
+    name: '暗影精华',
+    description: ''
   },
   horde_blood: {
     name: '血液',
@@ -618,6 +688,18 @@ export default {
   horde_lockpick: {
     name: '撬锁器',
     description: '允许你从已经被击败的boss那里获得饰品。海盗专属'
+  },
+  horde_monsterToothWarzone: {
+    name: '锋利的怪物牙齿',
+    description: ''
+  },
+  horde_monsterToothMonkeyJungle: {
+    name: '苔藓怪物牙齿',
+    description: ''
+  },
+  horde_monsterToothLoveIsland: {
+    name: '可爱的怪物牙齿',
+    description: ''
   },
   farm_vegetable: {
     name: '蔬菜',
@@ -639,12 +721,27 @@ export default {
     name: '黄金',
     description: '埋在土里的小金块'
   },
+  farm_rainwater: {
+    name: '雨水',
+    description: ''
+  },
+  farm_mixedSeeds: {
+    name: '混合种子',
+    hint: '从事件中获得',
+    description: '一种可以用来种植野花的种子。它们可以在事件期间获得'
+  },
+  farm_cactusSeed: {
+    name: '仙人掌种子',
+    hint: '从大事件中获得',
+    description: '可以用来种仙人掌的种子。只有在大型事件期间才能获得'
+  },
   farm_seedHull: {
     name: '种子壳',
     description: '植物的外壳空了，种子似乎不见了'
   },
   farm_grass: {
     name: '草',
+    hint: '在作物等级达到5级后可以从基因中获得',
     description: '这看起来不自然，草不应该长在庄稼上'
   },
   farm_petal: {
@@ -675,12 +772,21 @@ export default {
     name: '神秘石',
     description: '这是什么？ 它有什么用途？'
   },
-  farm_goldenPetal: {
-    name: '金色花瓣',
-    description: '这种极其罕见的花瓣只能在玫瑰上找到。 有传言说带有这些花瓣的玫瑰看起来比其他玫瑰颜色更深'
-  },
   farm_smallSeed: {
     name: '小种子',
+    description: ''
+  },
+  farm_ancientSeed: {
+    name: '远古种子',
+    hint: '有时由商人出售',
+    description: '一种极其古老而稀有的种子，可以用来种植一种神秘的植物'
+  },
+  farm_snail: {
+    name: '蜗牛',
+    description: ''
+  },
+  farm_oldRoot: {
+    name: '老根',
     description: ''
   },
   gallery_beauty: {
@@ -859,9 +965,13 @@ export default {
     name: '考试通过',
     description: '奇怪的是，我们原来的学校不需要它们。 这里需要他们参加考试'
   },
+  relic_power: {
+    name: '圣遗物能量',
+    description: ''
+  },
   card_shinyDust: {
     name: '闪亮的灰尘',
-    description: ''
+    description: '这些灰尘是由重复的闪亮卡片组成的。可用于创建内含未拥有的闪亮卡牌的卡牌包'
   },
   treasure_fragment: {
     name: '碎片',
