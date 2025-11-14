@@ -80,6 +80,9 @@ export default {
   mining_timeSpent: {
     description: '花费的时间'
   },
+  mining_relicActivesUsed: {
+    description: '遗物激活已使用'
+  },
   mining_bestPrestige0: {
     description: '最佳声望 (矿山)'
   },
@@ -145,6 +148,9 @@ export default {
   },
   village_timeSpent: {
     description: '花费的时间'
+  },
+  village_relicActivesUsed: {
+    description: '遗物激活已使用'
   },
   village_bestPrestige0: {
     description: '最佳声望 (工人)'
@@ -233,6 +239,9 @@ export default {
   },
   horde_timeSpent: {
     description: '花费的时间'
+  },
+  horde_relicActivesUsed: {
+    description: '遗物激活已使用'
   },
   horde_bestPrestige0: {
     description: '最佳声望 (装备)'
@@ -335,6 +344,9 @@ export default {
   },
   gallery_timeSpent: {
     description: '花费的时间'
+  },
+  gallery_relicActivesUsed: {
+    description: '遗物激活已使用'
   },
   gallery_prestigeCount: {
     description: '声望'

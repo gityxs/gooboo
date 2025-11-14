@@ -144,7 +144,8 @@ export default {
       perfectScore: '(完美!)',
       grade: '{0}% 成绩',
       gradePlus: '你的成绩提高了!',
-      dust: '+{0} 金尘'
+      dust: '+{0} 金尘',
+      bonusDust: '+{0} 奖励尘埃',
     },
     unlock: {
       card: '新卡包!',
@@ -578,6 +579,7 @@ export default {
     questEquipCard: '卡片激活',
     questFailedSubfeature: '您在错误的子功能中！请声望并重试',
     questFailedTime: '时间已达上限！请声望并重试',
+    questFailedRelicActive: '遗物激活使用！声望后再试',
     questFailedCard: '卡牌未激活! 请声望并重试',
     questFailedCardUnowned: '这张卡不能再复制了！拜访商人以获得更多',
     grobodal: {
@@ -2734,7 +2736,7 @@ export default {
     level: '等级',
     tier: '层',
     tierItem: '层 {0} 宝藏',
-    emptySlot: '空槽',
+    emptySlot: '空槽 (点击选择)',
     modifiers: '修饰符',
     specialGroup: '特殊',
     tierEffect: {

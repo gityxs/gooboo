@@ -76,7 +76,7 @@ export default {
     name: '笔记本',
     active: '抄作业',
     description: '获得 {0} 总点数',
-    formula: '提高你的总点数 {0}, 或者通过考试获得 {1} 总点数代替'
+    formula: '提高你的总点数 {0}, 或者通过考试获得 {1} 总点数代替 (仅限常规任务)'
   },
 
   friendlyBat: {
